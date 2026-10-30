@@ -44,7 +44,7 @@ The data is invented: 120 comments about an invented game called Hollowgate, wit
 
 These runs cost $0.0291. All live runs on this project, including the 3 dev runs and the 3 replaced test runs described under known limits, cost about $0.095.
 
-The checks mattered more than the score. In test-1 the first response returned only 8 of the 80 comments, and the retry produced a complete answer. In test-3 the model copied a quote as "i have to mute team every game bc of the abuse", when the comment says "every game now bc". It looks right to a reader, but the check caught the missing word, the retry did not fix it, and the report shows that quote flagged as unverified.
+The checks mattered more than the score. In test-1 the first response returned only 8 of the 80 comments, and the retry produced a complete answer. In test-3 the model copied a quote as "i have to mute team every game bc of the abuse", when the comment says "every game now bc". It looks right to a reader, but the check caught the missing word, the retry did not fix it, and `results/test-3.json` keeps that quote marked as unverified. The report page draws its themes from the median run, test-2, so there this miss shows only as 72/73 in the scores table.
 
 ## Known limits
 
