@@ -19,8 +19,3 @@ export function parseCsv(text) {
   const [header, ...lines] = text.trim().split(/\r?\n/).map(parseLine);
   return lines.map((fields) => Object.fromEntries(header.map((name, i) => [name, fields[i]])));
 }
-
-export function toCsv(rows, columns) {
-  const quote = (v) => (/[",]/.test(v) ? `"${v.replace(/"/g, '""')}"` : v);
-  return [columns.join(','), ...rows.map((r) => columns.map((c) => quote(r[c])).join(','))].join('\n') + '\n';
-}

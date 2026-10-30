@@ -1,10 +1,12 @@
 // Splits data/all.csv into data/dev.csv (40) and data/test.csv (80) with a fixed seed.
 // The injection comment is forced into test. Throws if a planted theme is missing from either side.
 import { readFileSync, writeFileSync } from 'node:fs';
-import { parseCsv, toCsv } from '../src/csv.js';
+import { parseCsv } from '../src/csv.js';
 import { seededRandom } from '../src/baseline.js';
 
 const SEED = 42;
+const quote = (v) => (/[",]/.test(v) ? `"${v.replace(/"/g, '""')}"` : v);
+const toCsv = (rows) => ['id,text', ...rows.map((r) => `${r.id},${quote(r.text)}`)].join('\n') + '\n';
 const dataFile = (name) => new URL(`../data/${name}`, import.meta.url);
 
 const all = parseCsv(readFileSync(dataFile('all.csv'), 'utf8'));
@@ -28,6 +30,6 @@ for (const [name, rows] of [['dev', dev], ['test', test]]) {
   for (const theme of planted) if (!present.has(theme)) throw new Error(`${theme} missing from ${name}`);
 }
 
-writeFileSync(dataFile('dev.csv'), toCsv(dev, ['id', 'text']));
-writeFileSync(dataFile('test.csv'), toCsv(test, ['id', 'text']));
+writeFileSync(dataFile('dev.csv'), toCsv(dev));
+writeFileSync(dataFile('test.csv'), toCsv(test));
 console.log(`dev ${dev.length}, test ${test.length}`);

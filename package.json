@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "engines": { "node": ">=22" },
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "split": "node scripts/split-data.mjs",
     "triage": "node --env-file-if-exists=.env bin/run.js",
     "report": "node bin/run.js report",
     "test": "node --test test/*.test.js",
     "smoke": "node test/smoke.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.64.1"
   }
 }
