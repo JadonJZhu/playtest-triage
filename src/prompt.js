@@ -15,7 +15,7 @@ Rules:
 - "severity" is how much the problem stops people playing: low, medium or high.
 - "summary" is one or two plain sentences on what players report. Use commas and full stops, never em or en dashes.
 
-Think briefly. Your reasoning and answer share a strict length limit, so do not draft the JSON or go through the comments one by one while reasoning.`;
+Keep your reasoning to a few sentences: read the comments once, decide the themes, then answer. Your reasoning and answer share a strict length limit, and running out of length loses the whole answer, so never draft the JSON or go through the comments one by one while reasoning.`;
 
 export function userMessage(rows) {
   const lines = rows.map((row) => `${row.id}: ${row.text}`);

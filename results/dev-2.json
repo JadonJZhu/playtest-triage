@@ -1,0 +1,800 @@
+{
+  "split": "dev",
+  "number": 2,
+  "model": "deepseek/deepseek-v4.1-flash",
+  "attempts": [
+    {
+      "error": null,
+      "finishReason": "stop",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "provider": "Together",
+      "tokens": 10073,
+      "cost": 0.010859436,
+      "response": {
+        "id": "gen-1793364154-MYPC39cgD0EEkMnwutfM",
+        "object": "chat.completion",
+        "created": 1793364154,
+        "model": "deepseek/deepseek-v4.1-flash",
+        "provider": "Together",
+        "system_fingerprint": "default",
+        "service_tier": null,
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "stop",
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"themes\": [\n    {\n      \"name\": \"Queue and matchmaking wait times\",\n      \"summary\": \"Players report long waits to enter matches, including long queues and too much time spent in the lobby or searching for a match. Some say friends quit over the delays.\",\n      \"severity\": \"high\",\n      \"comments\": [\n        {\"id\": \"c029\", \"quote\": \"waited 17 mins to get in\"},\n        {\"id\": \"c059\", \"quote\": \"Spent more time in the lobby than in the match\"},\n        {\"id\": \"c080\", \"quote\": \"a third of it is watching the searching for match spinner\"},\n        {\"id\": \"c091\", \"quote\": \"half an hour per game is rough\"},\n        {\"id\": \"c089\", \"quote\": \"another 30 minute queue\"}\n      ]\n    },\n    {\n      \"name\": \"Slow progression and economy\",\n      \"summary\": \"Players report that earning XP, shards, unlocks, and gear before ranked takes too long or feels repetitive. Progress feels slow for players with limited time.\",\n      \"severity\": \"high\",\n      \"comments\": [\n        {\"id\": \"c065\", \"quote\": \"Progress is way too slow for people with jobs\"},\n        {\"id\": \"c120\", \"quote\": \"XP per match is tiny\"},\n        {\"id\": \"c002\", \"quote\": \"why is morrow locked behind 15000 shards when a win gives you 50\"},\n        {\"id\": \"c030\", \"quote\": \"the grind to get the good gear before ranked is just boring\"},\n        {\"id\": \"c011\", \"quote\": \"shards drop so slow\"}\n      ]\n    },\n    {\n      \"name\": \"Ability visibility and telegraphs\",\n      \"summary\": \"Players report that ability effects, traps, and ultimate warnings are too faint or blend into the background. They cannot reliably see and react to dangerous effects.\",\n      \"severity\": \"high\",\n      \"comments\": [\n        {\"id\": \"c042\", \"quote\": \"no visible edge\"},\n        {\"id\": \"c117\", \"quote\": \"needs a bigger tell\"},\n        {\"id\": \"c069\", \"quote\": \"ult warning is a small glow at the feet\"},\n        {\"id\": \"c022\", \"quote\": \"spell effects blend in with the background way too much\"},\n        {\"id\": \"c019\", \"quote\": \"all the ability vfx are so faint\"},\n        {\"id\": \"c012\", \"quote\": \"Can't see half the ability effects\"}\n      ]\n    },\n    {\n      \"name\": \"Voice chat toxicity\",\n      \"summary\": \"Players report frequent harassment, slurs, sexist comments, and screaming in voice chat. Some avoid voice chat entirely or mute everyone.\",\n      \"severity\": \"high\",\n      \"comments\": [\n        {\"id\": \"c037\", \"quote\": \"my 15yo heard things on team chat\"},\n        {\"id\": \"c100\", \"quote\": \"got called slurs in voice\"},\n        {\"id\": \"c054\", \"quote\": \"As a woman I can't use voice chat in this game\"},\n        {\"id\": \"c078\", \"quote\": \"hurling insults on voice\"},\n        {\"id\": \"c096\", \"quote\": \"sexist comments on comms basically every other game\"},\n        {\"id\": \"c114\", \"quote\": \"the mic toxicity is out of control\"}\n      ]\n    },\n    {\n      \"name\": \"Performance and stutters\",\n      \"summary\": \"Players report low frame rates, FPS drops, and stutters during matches, even with capable hardware or reduced settings. The stutter can lead to deaths.\",\n      \"severity\": \"high\",\n      \"comments\": [\n        {\"id\": \"c040\", \"quote\": \"drop to 40fps on Greywater when it rains\"},\n        {\"id\": \"c107\", \"quote\": \"was 70 fps in the menu and 25 in the match\"},\n        {\"id\": \"c055\", \"quote\": \"big stutter right as i respawn\"}\n      ]\n    },\n    {\n      \"name\": \"Bad spawns\",\n      \"summary\": \"Players report spawning or being dropped in front of enemies or in dangerous positions. This leads to immediate deaths and repeated frustration.\",\n      \"severity\": \"high\",\n      \"comments\": [\n        {\"id\": \"c105\", \"quote\": \"died 4 times before i took a single step\"},\n        {\"id\": \"c032\", \"quote\": \"spawned right in front of their whole team and died in 2 seconds\"},\n        {\"id\": \"c010\", \"quote\": \"spawning right in front of the enemy sniper\"},\n        {\"id\": \"c008\", \"quote\": \"being dropped next to 3 enemies with full health while i have no abilities ready\"}\n      ]\n    },\n    {\n      \"name\": \"Tutorial and onboarding gaps\",\n      \"summary\": \"Players report that onboarding and tutorial lessons rush through mechanics or fail to explain cooldowns, charge, ult use, and overcharge. Players finish without understanding key systems.\",\n      \"severity\": \"medium\",\n      \"comments\": [\n        {\"id\": \"c088\", \"quote\": \"assumes you already played hero shooters\"},\n        {\"id\": \"c013\", \"quote\": \"rushes thru like 10 mechanics in 3 mins\"},\n        {\"id\": \"c036\", \"quote\": \"tutorial mentions it once in a popup that disappears before you can read it\"},\n        {\"id\": \"c023\", \"quote\": \"not charged and theres no explanation how to charge it\"}\n      ]\n    },\n    {\n      \"name\": \"Confusing menus and UI\",\n      \"summary\": \"Players report confusing menus, unlabeled icons, and hard to find options. Controller navigation and basic actions like inviting friends are difficult.\",\n      \"severity\": \"medium\",\n      \"comments\": [\n        {\"id\": \"c057\", \"quote\": \"the cursor jumps around the menu in ways I can't predict\"},\n        {\"id\": \"c041\", \"quote\": \"Half of them go to the same place\"},\n        {\"id\": \"c066\", \"quote\": \"couldnt find keybinds for ages\"},\n        {\"id\": \"c090\", \"quote\": \"no labels, just little shapes along the top\"},\n        {\"id\": \"c077\", \"quote\": \"cant figure out how to invite a friend\"}\n      ]\n    }\n  ],\n  \"unassigned\": [\n    \"c086\",\n    \"c050\"\n  ]\n}",
+              "refusal": null,
+              "reasoning": "We need answer only final? Need solve. Need produce JSON themes. Need think briefly but length limit? We can reason here. Need sort comments into themes. Need output JSON likely. Need every id exactly once either theme or unassigned. Themes underlying problems. Need quotes exact shortest phrase showing problem. severity low/medium/high. summary plain sentences.\n\nWe need analyze comments. Let's list IDs and issues.\n\nc029: waited 17 mins to get in and then match ran at 25 fps. Reports two problems? first queue wait, second performance. Put only in theme of problem mentioned first: queue wait. Quote \"waited 17 mins to get in\" or \"waited 17 mins\". severity high? queue + fps. First problem queue wait. Theme queue times.\nc065: Progress too slow for people with jobs. Progression.\nc042: Bastien slow field no visible edge. Visibility of ability effects/telegraphs.\nc117: Okoro shock trap needs bigger tell. tiny blue flicker. Visibility/telegraphs.\nc040: FPS drop on Greywater rain, 4070. Performance.\nc069: ult warning small glow at feet, nobody can spot. Visibility/telegraphs.\nc037: 15yo heard things on team chat hollowgate, voice off. Toxicity voice.\nc120: XP per match tiny. Progression.\nc100: got called slurs in voice. Toxicity voice.\nc059: Spent more time in lobby than match, 3 games in 2 hours. Queue/lobby wait? likely queue times/matchmaking.\nc057: On controller cursor jumps around menu unpredictable. UI/controller navigation.\nc105: died 4 times before took step, fix spawns. Spawns.\nc032: spawned in front of enemy team died twice. Spawns.\nc022: spell effects blend in background too much, make pop. Visibility.\nc054: As woman can't use voice, harassment. Toxicity voice.\nc088: Onboarding assumes hero shooters, never explained cooldown vs charge. Tutorial/onboarding.\nc078: insults on voice, took forever find mute option bc menu confusing. Two problems: toxicity voice first, then confusing menu. Put in toxicity voice? First problem is guy insults. But maybe quote \"took me forever to find the mute option\" shows UI? Rule first mentioned problem. The comment: \"some guy was hurling insults on voice and it took me forever to find the mute option bc the menu is so confusing\" First is voice toxicity. So put in voice toxicity. But also UI issue ignored. Quote shortest showing first: \"hurling insults on voice\" exact? \"hurling insults on voice\" yes.\nc096: sexist comments on comms every other game. Toxicity voice.\nc107: laptop 1650ti 70 menu 25 match, turned down no help. Performance.\nc010: sarcastic: love spawning right in front enemy sniper. Spawns.\nc002: why is morrow locked behind 15000 shards when win gives 50. Progression/economy.\nc080: Love game, but one hour after kids, third watching searching for match spinner. Queue times.\nc019: ability vfx faint, how dodge trap cant see. Visibility.\nc030: grind to get good gear before ranked boring, same 3 quests. Progression/grind.\nc041: main menu 14 buttons, half same place. UI/menu confusion.\nc091: high rank longer searches but half hour per game rough, friends quit. Queue times.\nc008: dropped next to 3 enemies full health no abilities ready. Spawns? being dropped? likely spawns/match start.\nc055: big stutter right as respawn and by time clears dead cos spawn in open. Two problems? first stutter performance, second spawn in open. Rule first: stutter. Put in performance maybe quote \"big stutter right as i respawn\". But then spawn issue ignored. First problem performance.\nc013: training rushes 10 mechanics in 3 mins, learned nothing. Tutorial/onboarding.\nc036: wtf is overcharge? tutorial mentions once popup disappears. Tutorial/onboarding.\nc114: mic toxicity out of control, screamed at healer. Toxicity voice.\nc066: couldn't find keybinds, in Accessibility, who look there. UI/menu confusion/navigation.\nc086: best playtest all year, gunplay good. Unassigned praise.\nc090: what icons mean. no labels shapes along top. UI/menu clarity.\nc011: shards drop slow, want pay. Progression/economy.\nc089: sarcastic another 30 min queue. Queue times.\nc012: Can't see half ability effects, and when die team screams abuse on mic. First problem visibility. Put visibility. Quote \"Can't see half the ability effects\" exact.\nc023: lesson 3 broken says use ult but not charged no explanation how charge. Tutorial/onboarding.\nc050: music main theme slaps. Unassigned praise.\nc077: can't figure out invite friend, clicked everything. UI/menu confusion.\n\nThemes likely:\n1 Queue/matchmaking wait times: c029, c059, c080, c091, c089. Maybe c059 lobby. c080 searching for match spinner. c091 searches. c029 waited get in. c089 queue. Severity high for some. Summary: Players report long waits to get into matches and excessive lobby/queue time.\n2 Progression/economy too slow: c065, c120, c002, c030, c011. Might include gear grind. Summary: XP, shards, unlocks, and gear grind feel too slow.\n3 Ability visibility/telegraphs: c042, c117, c069, c022, c019, c012. Also c012 first. Summary: Ability effects, traps, ult warnings are too faint or blend into background, making them hard to see and react to.\n4 Voice chat toxicity/harassment: c037, c100, c054, c078, c096, c114. c012? No because first visibility, but it mentions abuse. Rule every id once, already visibility. c078 first voice. c096. c114. Summary: Players report frequent harassment, slurs, sexism, and toxicity in voice chat.\n5 Performance/fps/stutter: c040, c107, c029? c029 first queue, so no. c055 first stutter. Maybe c040, c107, c055. Summary: Players report low FPS, drops, and stutters despite good hardware or lowering settings. c029's fps not included due first queue. c055 first stutter yes.\n6 Spawns: c105, c032, c010, c008. c055? first stutter no. c010 sarcastic real complaint. Summary: Players report spawning in dangerous positions or in front of enemies, leading to immediate deaths.\n7 Tutorial/onboarding: c088, c013, c036, c023. Summary: Tutorial/onboarding rushes or fails to explain core mechanics, cooldowns, charge, ult, etc.\n8 UI/menu navigation/clarity: c057, c041, c066, c090, c077. Maybe c078? first voice no. Summary: Menus are confusing, cluttered, unlabeled, hard to navigate, especially controller.\nUnassigned: c086 praise, c050 praise. Any instructions? none. Maybe c041 UI. c077 UI. c090 UI. c066 UI. c057 controller cursor.\n\nNeed ensure every id exactly once. Let's count IDs:\nc029 queue\nc065 progression\nc042 visibility\nc117 visibility\nc040 performance\nc069 visibility\nc037 toxicity\nc120 progression\nc100 toxicity\nc059 queue\nc057 UI\nc105 spawn\nc032 spawn\nc022 visibility\nc054 toxicity\nc088 tutorial\nc078 toxicity\nc096 toxicity\nc107 performance\nc010 spawn\nc002 progression\nc080 queue\nc019 visibility\nc030 progression\nc041 UI\nc091 queue\nc008 spawn\nc055 performance\nc013 tutorial\nc036 tutorial\nc114 toxicity\nc066 UI\nc086 unassigned\nc090 UI\nc011 progression\nc089 queue\nc012 visibility\nc023 tutorial\nc050 unassigned\nc077 UI\n\nCheck total 41? Let's count comments: c029(1), c0652, c0423, c1174, c0405, c0696, c0377, c1208, c1009, c05910, c05711, c10512, c03213, c02214, c05415, c08816, c07817, c09618, c10719, c01020, c00221, c08022, c01923, c03024, c04125, c09126, c00827, c05528, c01329, c03630, c11431, c06632, c08633, c09034, c01135, c08936, c01237, c02338, c05039, c07740. Actually 40. Good.\n\nThemes with counts: queue 5 (c029,c059,c080,c091,c089) =5. progression 5 (c065,c120,c002,c030,c011)=5 total10. visibility 6 (c042,c117,c069,c022,c019,c012)=6 total16. toxicity 6 (c037,c100,c054,c078,c096,c114)=6 total22. performance 3 (c040,c107,c055)=3 total25. spawns 4 (c105,c032,c010,c008)=4 total29. tutorial 4 (c088,c013,c036,c023)=4 total33. UI 5 (c057,c041,c066,c090,c077)=5 total38. unassigned 2 total40. Good.\n\nNeed craft JSON. Need quotes exact shortest phrase. Need be careful character-for-character including typos. For each theme, each comment has id, quote, severity? The instruction: \"For each comment in a theme, 'quote' is copied...\" \"severity\" is how much problem stops people playing. Does severity per comment or theme? It says for each comment in a theme, quote is... \"severity\" is... Could mean each comment object has severity. We should include severity for each comment. Also summary per theme. Need likely JSON array themes with name, summary, comments? Include severity per comment. We need decide. Could have each comment: {id, quote, severity}. The theme has summary. \"For each comment in a theme, 'quote'...\" suggests comment object has id, quote, severity. We'll do.\n\nNeed choose severity for each comment. How much problem stops people playing. Low/medium/high. Need consistent. We can assign high for severe blockers: queue waits high? Toxicity high especially harassment. Performance that reduces fps high. Visibility medium/high. Spawns high? Tutorial medium. UI medium. Progression medium/high. Let's assign.\n\nNeed exact quotes. Let's derive.\n\nTheme Queue times:\n- c029 quote: \"waited 17 mins to get in\" exact from comment: \"waited 17 mins to get in and then...\" Yes exact substring. severity high? Waited 17 mins and bad evening. High.\n- c059: \"Spent more time in the lobby than in the match\" exact. Could shortest showing problem. severity high? Medium-high. high? It stops play. Maybe medium? They still played 3 games in 2 hours. high? Queue/lobby excessive. Let's high? Hmm severity how much stops playing. 3 games in 2h high frustration. high.\n- c080: \"a third of it is watching the searching for match spinner\" exact. severity high? one hour, third waiting. medium? high maybe. Choose high for queue overall maybe high for c080.\n- c091: \"half an hour per game is rough\" exact. severity high, friends quit.\n- c089: \"another 30 minute queue\" exact. Sarcastic. severity high? maybe medium. It is complaint. high? Let's set high? Hmm.\n\nTheme Progression/economy:\n- c065 quote: \"Progress is way too slow for people with jobs\" exact. severity high? medium. Stops? People with jobs likely frustrating. medium.\n- c120 quote: \"XP per match is tiny\" exact. severity high? Very slow. medium/high. high? Let's medium? Actually 120 XP next level 8000. high.\n- c002 quote: \"why is morrow locked behind 15000 shards when a win gives you 50\" exact. severity high.\n- c030 quote: \"the grind to get the good gear before ranked is just boring\" exact. severity medium.\n- c011 quote: \"shards drop so slow\" exact. severity medium/high. high? maybe medium.\n\nTheme Ability visibility/telegraphs:\n- c042 quote: \"no visible edge\" exact. severity medium.\n- c117 quote: \"needs a bigger tell\" exact? Comment: \"Okoro's shock trap needs a bigger tell.\" Shortest showing problem. quote \"needs a bigger tell\". severity medium.\n- c069 quote: \"ult warning is a small glow at the feet\" exact? \"ult warning is a small glow at the feet. Nobody can spot that...\" Could quote \"Nobody can spot that\" maybe. Need shortest phrase shows problem. \"a small glow at the feet\" exact. severity high? Players can't spot in fight. high.\n- c022 quote: \"spell effects blend in with the background way too much\" exact. severity medium.\n- c019 quote: \"all the ability vfx are so faint\" exact. severity high? \"how am i supposed to dodge a trap i cant see\" severe. Maybe high.\n- c012 quote: \"Can't see half the ability effects\" exact, note capital C. severity high? It causes abuse, but first problem visibility. high.\n\nTheme Voice toxicity:\n- c037 quote: \"my 15yo heard things on team chat in hollowgate that i wont repeat here\" exact? Shortest showing problem. Maybe \"heard things on team chat\" exact. But \"my 15yo heard things on team chat\" exact. severity high.\n- c100 quote: \"got called slurs in voice\" exact. severity high.\n- c054 quote: \"As a woman I can't use voice chat in this game\" exact. severity high.\n- c078 quote: \"hurling insults on voice\" exact. severity high.\n- c096 quote: \"sexist comments on comms basically every other game\" exact. severity high.\n- c114 quote: \"the mic toxicity is out of control\" exact. severity high.\n\nTheme Performance/FPS/stutter:\n- c040 quote: \"Why does the game drop to 40fps on Greywater when it rains\" exact? Comment: \"Why does the game drop to 40fps on Greywater when it rains. I have a 4070.\" Quote exact \"drop to 40fps on Greywater when it rains\" maybe includes why? Shortest. \"drop to 40fps on Greywater when it rains\" exact substring? \"the game drop to 40fps\" yes. Quote: \"drop to 40fps on Greywater when it rains\". severity high? Good hardware but drops. high.\n- c107 quote: \"was 70 fps in the menu and 25 in the match\" exact. Or \"25 in the match\". severity high? high.\n- c055 quote: \"big stutter right as i respawn\" exact. severity high? They die. high.\n\nTheme Spawns:\n- c105 quote: \"died 4 times before i took a single step\" exact. severity high.\n- c032 quote: \"spawned right in front of their whole team and died in 2 seconds\" exact. severity high.\n- c010 sarcastic: complaint spawning in front of enemy sniper. Quote: \"spawning right in front of the enemy sniper\" exact from \"wow love spawning right in front of the enemy sniper\". severity high? yes.\n- c008 quote: \"being dropped next to 3 enemies with full health while i have no abilities ready\" exact. severity high.\n\nTheme Tutorial/onboarding:\n- c088 quote: \"assumes you already played hero shooters\" exact? Full \"The onboarding assumes you already played hero shooters.\" Quote maybe \"assumes you already played hero shooters\" exact. severity medium.\n- c013 quote: \"the training bit rushes thru like 10 mechanics in 3 mins then throws you in a real match\" exact, but shortest. \"rushes thru like 10 mechanics in 3 mins\" exact. severity medium.\n- c036 quote: \"tutorial mentions it once in a popup that disappears before you can read it\" exact. severity medium.\n- c023 quote: \"it says 'use your ult' but its not charged and theres no explanation how to charge it\" exact. Quote maybe \"not charged and theres no explanation how to charge it\" exact. But need show problem. severity medium.\n\nTheme UI/menu confusion:\n- c057 quote: \"the cursor jumps around the menu in ways I can't predict\" exact. severity medium? high? Finding anything takes forever. medium.\n- c041 quote: \"14 buttons on it. I counted. Half of them go to the same place.\" exact. Shortest \"14 buttons on it\" or \"Half of them go to the same place.\" Need problem. Quote \"Half of them go to the same place\" exact. severity low/medium. medium.\n- c066 quote: \"couldnt find keybinds for ages\" exact. severity medium.\n- c090 quote: \"no labels, just little shapes along the top\" exact. severity medium.\n- c077 quote: \"cant figure out how to invite a friend\" exact. severity medium.\n\nUnassigned:\nc086 quote maybe no quote? Need comment maybe {id:\"c086\", quote:\"honestly the best playtest ive been in all year. gunplay feels so good\"}? For unassigned comments, rules only mention every id either theme or unassigned. Need include id maybe quote? Could include reason? We should include unassigned as list of ids only? The output schema not specified. To be safe, unassigned objects with id, quote? But quote rule for comments in a theme. For unassigned maybe just id? Could include \"quote\" exact? Hmm. User asks sort playtest comments into themes. Usually output JSON with themes and unassigned. Need every id exactly once. We can include unassigned array of {id, quote}? But quote may not be needed. To satisfy \"Every id appears exactly once, either in one theme or in 'unassigned'.\" For unassigned, include ids. Maybe no quote/severity. But if automated, maybe expect comments? I can include {\"id\":\"c086\",\"quote\":\"honestly the best playtest ive been in all year. gunplay feels so good\"}? That repeats entire comment, not shortest. But rules for quote only for each comment in a theme. For unassigned, no quote necessary. Use {\"id\":\"c086\"}? But \"Every id appears exactly once\" okay. However final may need valid JSON. Let's include unassigned as array of ids: [\"c086\",\"c050\"]? But then \"id appears\" yes. But if they expect objects? Hmm.\n\nMaybe output:\n{\n  \"themes\": [\n    {\n      \"theme\": \"Queue and matchmaking wait times\",\n      \"summary\": \"...\",\n      \"comments\": [\n         {\"id\":\"c029\",\"quote\":\"waited 17 mins to get in\",\"severity\":\"high\"},\n...\n      ]\n    },\n...\n  ],\n  \"unassigned\": [\n    {\"id\":\"c086\"},\n    {\"id\":\"c050\"}\n  ]\n}\nNeed no em/en dashes. Use commas and full stops. Summary plain.\n\nNeed ensure quotes exact character by character. Let's verify each quote against original.\n\nOriginal lines:\nc029: \"waited 17 mins to get in and then the match ran at 25 fps. so thats my evening\" Quote \"waited 17 mins to get in\" exact lower. Good.\nc059: \"Spent more time in the lobby than in the match today. 3 games in 2 hours.\" Quote \"Spent more time in the lobby than in the match\" exact includes capital S. Good.\nc080: \"Love the game, but I get one hour after the kids go to bed and a third of it is watching the searching for match spinner.\" Quote \"a third of it is watching the searching for match spinner\" exact. Good.\nc091: \"as a high rank player i expect longer searches but half an hour per game is rough, my friends quit over it\" Quote \"half an hour per game is rough\" exact lowercase. Good.\nc089: \"oh great, another 30 minute queue. truly the highlight of my week\" Quote \"another 30 minute queue\" exact. Good.\n\nProgression:\nc065: \"Progress is way too slow for people with jobs\" exact. Good.\nc120: \"XP per match is tiny. Like 120 xp and the next level needs 8000.\" Quote \"XP per match is tiny\" exact. Good.\nc002: \"why is morrow locked behind 15000 shards when a win gives you 50\" exact. Good.\nc030: \"the grind to get the good gear before ranked is just boring, i am doing the same 3 quests on repeat\" Quote \"the grind to get the good gear before ranked is just boring\" exact. Good.\nc011: \"shards drop so slow it feels like they want me to give up and pay\" Quote \"shards drop so slow\" exact. Good.\n\nVisibility:\nc042: \"Bastien's slow field has no visible edge so you never know whether you're inside it.\" Quote \"no visible edge\" exact. Good.\nc117: \"Okoro's shock trap needs a bigger tell. It's a tiny blue flicker in a blue hallway.\" Quote \"needs a bigger tell\" exact. Good.\nc069: \"ult warning is a small glow at the feet. Nobody can spot that in a real fight.\" Quote \"ult warning is a small glow at the feet\" exact lower. Good.\nc022: \"spell effects blend in with the background way too much, make them pop pls\" Quote \"spell effects blend in with the background way too much\" exact. Good.\nc019: \"all the ability vfx are so faint, how am i supposed to dodge a trap i cant see\" Quote \"all the ability vfx are so faint\" exact lower. Good.\nc012: \"Can't see half the ability effects, and when I die to one my team screams abuse at me on mic.\" Quote \"Can't see half the ability effects\" exact capital C. Good.\n\nToxicity:\nc037: \"my 15yo heard things on team chat in hollowgate that i wont repeat here. voice is off for good in our house\" Quote \"my 15yo heard things on team chat\" exact? Original \"my 15yo heard things on team chat in hollowgate...\" Yes quote substring \"my 15yo heard things on team chat\". Good.\nc100: \"got called slurs in voice within 20 seconds of joining. muted everyone and played in silence\" Quote \"got called slurs in voice\" exact lower. Good.\nc054: \"As a woman I can't use voice chat in this game. The moment they hear me it's non stop harassment.\" Quote \"As a woman I can't use voice chat in this game\" exact. Good.\nc078: \"some guy was hurling insults on voice and it took me forever to find the mute option bc the menu is so confusing\" Quote \"hurling insults on voice\" exact. Good.\nc096: \"sexist comments on comms basically every other game lol, great community you got here\" Quote \"sexist comments on comms basically every other game\" exact lower. Good.\nc114: \"the mic toxicity is out of control, some guy screamed at our healer for a whole match\" Quote \"the mic toxicity is out of control\" exact lower. Good.\n\nPerformance:\nc040: \"Why does the game drop to 40fps on Greywater when it rains. I have a 4070.\" Quote \"drop to 40fps on Greywater when it rains\" exact? Original \"the game drop to 40fps on Greywater when it rains\" Wait original: \"Why does the game drop to 40fps on Greywater when it rains.\" It is \"drop\" not \"drops\". Quote substring \"drop to 40fps on Greywater when it rains\" yes exact. Good.\nc107: \"laptop player, 1650ti. was 70 fps in the menu and 25 in the match. turned everything down, no help\" Quote \"was 70 fps in the menu and 25 in the match\" exact lower w? Original \"was 70 fps...\" yes.\nc055: \"big stutter right as i respawn and by the time it clears im dead cos the spawn is in the open\" Quote \"big stutter right as i respawn\" exact lower. Good.\n\nSpawns:\nc105: \"i died 4 times before i took a single step lol. fix your spawns\" Quote \"died 4 times before i took a single step\" exact? Original \"i died 4 times...\" substring without i? \"died 4 times before i took a single step\" starts at died. Yes exact lower.\nc032: \"spawned right in front of their whole team and died in 2 seconds. twice in a row\" Quote \"spawned right in front of their whole team and died in 2 seconds\" exact. Good.\nc010: \"wow love spawning right in front of the enemy sniper, so fun, 10/10 game design\" Quote \"spawning right in front of the enemy sniper\" exact lower. Good.\nc008: \"being dropped next to 3 enemies with full health while i have no abilities ready is not fun\" Quote \"being dropped next to 3 enemies with full health while i have no abilities ready\" exact. Good.\n\nTutorial:\nc088: \"The onboarding assumes you already played hero shooters. Never explained cooldown vs charge.\" Quote \"assumes you already played hero shooters\" exact? Original \"The onboarding assumes...\" substring \"assumes you already played hero shooters\" yes.\nc013: \"the training bit rushes thru like 10 mechanics in 3 mins then throws you in a real match. i learned nothing\" Quote \"rushes thru like 10 mechanics in 3 mins\" exact lower. Good.\nc036: \"wtf is overcharge? tutorial mentions it once in a popup that disappears before you can read it\" Quote \"tutorial mentions it once in a popup that disappears before you can read it\" exact lower. Could be long but okay.\nc023: \"lesson 3 is broken or im dumb. it says 'use your ult' but its not charged and theres no explanation how to charge it\" Quote \"it says 'use your ult' but its not charged and theres no explanation how to charge it\" exact? Original has single quotes around use your ult. Yes. Good. Could shorten \"not charged and theres no explanation how to charge it\" exact substring? Original \"but its not charged and theres no explanation how to charge it\". Substring \"not charged and theres no explanation how to charge it\" exact starts at not. But quote should show problem. Use \"not charged and theres no explanation how to charge it\" exact, no capital. Good.\n\nUI:\nc057: \"On controller the cursor jumps around the menu in ways I can't predict. Finding anything takes forever.\" Quote \"the cursor jumps around the menu in ways I can't predict\" exact? Original \"On controller the cursor...\" substring lower \"the cursor...\" yes. Good.\nc041: \"The main menu has 14 buttons on it. I counted. Half of them go to the same place.\" Quote \"Half of them go to the same place\" exact capital H. Good.\nc066: \"couldnt find keybinds for ages, they're in Accessibility?? who would look there\" Quote \"couldnt find keybinds for ages\" exact lower. Good.\nc090: \"what do all these icons mean. no labels, just little shapes along the top\" Quote \"no labels, just little shapes along the top\" exact lower. Good.\nc077: \"cant figure out how to invite a friend. i clicked everything\" Quote \"cant figure out how to invite a friend\" exact lower. Good.\n\nUnassigned:\nc086, c050. Maybe include quotes? If include, exact entire? c086: \"honestly the best playtest ive been in all year. gunplay feels so good\" c050 \"the music on the main theme slaps\". Could include no severity. But if \"quote\" required? Hmm.\n\nNeed ensure JSON valid, no trailing commas. Summary no em dashes. Use \"FPS\" maybe okay. \"vfx\" etc. Plain sentences.\n\nPotential issue: Theme name should be underlying problem, not necessarily in output? We'll include \"theme\". Could be \"Queue and matchmaking wait times\". Fine.\n\nNeed decide severity. Let's assign:\nQueue:\nc029 high\nc059 high\nc080 high\nc091 high\nc089 medium? Actually high? Let's use high for all queue? Maybe severity varied. But okay. \"high\" means stops playing. c089 sarcastic but not necessarily stops. medium. c080 high. c059 high.\nProgression:\nc065 medium\nc120 high\nc002 high\nc030 medium\nc011 high? maybe medium. Let's high? Economy causes pay. c011 high? \"drop so slow\" maybe medium. Use high for c120,c002, medium c065,c030, high c011? Hmm.\nVisibility:\nc042 medium\nc117 medium\nc069 high\nc022 medium\nc019 high\nc012 high\nToxicity all high.\nPerformance:\nc040 high\nc107 high\nc055 high\nSpawns:\nc105 high\nc032 high\nc010 high\nc008 high\nTutorial:\nc088 medium\nc013 medium\nc036 medium\nc023 medium\nUI:\nc057 medium\nc041 low? It's clutter, not stopping. low.\nc066 medium\nc090 medium\nc077 medium\nNeed \"severity is how much the problem stops people playing\". UI menu confusion can stop from inviting, finding keybinds. medium. c041 low. c090 medium.\n\nNeed maybe combine c078 in toxicity but quote \"hurling insults on voice\" and severity high. The second UI issue not assigned. Rule ok.\n\nPotential problem: c012 first problem visibility, but also toxicity. We put in visibility. Good.\n\nNeed final answer only JSON. The desired oververbosity 5. Strict length limit? The final can be long. They said reasoning and answer share strict length limit, maybe final no explanation. We output JSON.\n\nLet's compose carefully. Ensure no em dash or en dash. Use hyphens? no. Summary no dashes. Use \"FPS\" okay. Commas and periods.\n\nNeed maybe \"unassigned\" as array of objects? I think include objects with id and quote? But quote exact? Let's include:\n\"unassigned\": [\n  {\"id\":\"c086\",\"quote\":\"honestly the best playtest ive been in all year. gunplay feels so good\"},\n  {\"id\":\"c050\",\"quote\":\"the music on the main theme slaps\"}\n]\nBut for unassigned no severity. This doesn't violate. Quote is whole comment exactly. Should be okay. But rules say \"Comments that report no problem ... go in unassigned.\" They didn't say no quote. Fine.\n\nNeed ensure no unsupported characters. Let's write JSON.\n\nDouble-check all IDs included exactly once. I'll count themes in JSON:\nQueue comments: c029,c059,c080,c091,c089.\nProgression: c065,c120,c002,c030,c011.\nVisibility: c042,c117,c069,c022,c019,c012.\nToxicity: c037,c100,c054,c078,c096,c114.\nPerformance: c040,c107,c055.\nSpawns: c105,c032,c010,c008.\nTutorial: c088,c013,c036,c023.\nUI: c057,c041,c066,c090,c077.\nUnassigned: c086,c050.\nTotal 5+5+6+6+3+4+4+5+2=40. Good.\n\nNeed maybe theme summary for queue: \"Players report long waits to enter matches, including long queues and too much time spent in the lobby or searching for a match. Some say friends quit over the delays.\" Good.\n\nProgression summary: \"Players report that earning XP, shards, unlocks, and pre ranked gear takes too long or feels repetitive. Progress feels slow for players with limited time.\" Good no dash.\n\nVisibility summary: \"Players report that ability effects, traps, and ultimate warnings are too faint or blend into the background. They cannot reliably see and react to dangerous effects.\" Good.\n\nToxicity summary: \"Players report frequent harassment, slurs, sexist comments, and screaming in voice chat. Some avoid voice chat entirely or mute everyone.\" Good.\n\nPerformance summary: \"Players report low frame rates, FPS drops, and stutters during matches, even with capable hardware or reduced settings. The stutter can lead to deaths.\" Good.\n\nSpawns summary: \"Players report spawning or being dropped in front of enemies or in dangerous positions. This leads to immediate deaths and repeated frustration.\" Good.\n\nTutorial summary: \"Players report that onboarding and tutorial lessons rush through mechanics or fail to explain cooldowns, charge, ult use, and overcharge. Players finish without understanding key systems.\" Good.\n\nUI summary: \"Players report confusing menus, unlabeled icons, and hard to find options. Controller navigation and basic actions like inviting friends are difficult.\" Good.\n\nNo em/en dashes. \"pre ranked\" should be \"pre-ranked\"? Hyphen is okay? They said never em or en dashes. Hyphen okay. But to avoid, \"before ranked\". Good.\n\nNow final JSON. Ensure quotes exactly. Need no extra spaces? JSON strings.\n\nLet's produce.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.text",
+                  "text": "We need answer only final? Need solve. Need produce JSON themes. Need think briefly but length limit? We can reason here. Need sort comments into themes. Need output JSON likely. Need every id exactly once either theme or unassigned. Themes underlying problems. Need quotes exact shortest phrase showing problem. severity low/medium/high. summary plain sentences.\n\nWe need analyze comments. Let's list IDs and issues.\n\nc029: waited 17 mins to get in and then match ran at 25 fps. Reports two problems? first queue wait, second performance. Put only in theme of problem mentioned first: queue wait. Quote \"waited 17 mins to get in\" or \"waited 17 mins\". severity high? queue + fps. First problem queue wait. Theme queue times.\nc065: Progress too slow for people with jobs. Progression.\nc042: Bastien slow field no visible edge. Visibility of ability effects/telegraphs.\nc117: Okoro shock trap needs bigger tell. tiny blue flicker. Visibility/telegraphs.\nc040: FPS drop on Greywater rain, 4070. Performance.\nc069: ult warning small glow at feet, nobody can spot. Visibility/telegraphs.\nc037: 15yo heard things on team chat hollowgate, voice off. Toxicity voice.\nc120: XP per match tiny. Progression.\nc100: got called slurs in voice. Toxicity voice.\nc059: Spent more time in lobby than match, 3 games in 2 hours. Queue/lobby wait? likely queue times/matchmaking.\nc057: On controller cursor jumps around menu unpredictable. UI/controller navigation.\nc105: died 4 times before took step, fix spawns. Spawns.\nc032: spawned in front of enemy team died twice. Spawns.\nc022: spell effects blend in background too much, make pop. Visibility.\nc054: As woman can't use voice, harassment. Toxicity voice.\nc088: Onboarding assumes hero shooters, never explained cooldown vs charge. Tutorial/onboarding.\nc078: insults on voice, took forever find mute option bc menu confusing. Two problems: toxicity voice first, then confusing menu. Put in toxicity voice? First problem is guy insults. But maybe quote \"took me forever to find the mute option\" shows UI? Rule first mentioned problem. The comment: \"some guy was hurling insults on voice and it took me forever to find the mute option bc the menu is so confusing\" First is voice toxicity. So put in voice toxicity. But also UI issue ignored. Quote shortest showing first: \"hurling insults on voice\" exact? \"hurling insults on voice\" yes.\nc096: sexist comments on comms every other game. Toxicity voice.\nc107: laptop 1650ti 70 menu 25 match, turned down no help. Performance.\nc010: sarcastic: love spawning right in front enemy sniper. Spawns.\nc002: why is morrow locked behind 15000 shards when win gives 50. Progression/economy.\nc080: Love game, but one hour after kids, third watching searching for match spinner. Queue times.\nc019: ability vfx faint, how dodge trap cant see. Visibility.\nc030: grind to get good gear before ranked boring, same 3 quests. Progression/grind.\nc041: main menu 14 buttons, half same place. UI/menu confusion.\nc091: high rank longer searches but half hour per game rough, friends quit. Queue times.\nc008: dropped next to 3 enemies full health no abilities ready. Spawns? being dropped? likely spawns/match start.\nc055: big stutter right as respawn and by time clears dead cos spawn in open. Two problems? first stutter performance, second spawn in open. Rule first: stutter. Put in performance maybe quote \"big stutter right as i respawn\". But then spawn issue ignored. First problem performance.\nc013: training rushes 10 mechanics in 3 mins, learned nothing. Tutorial/onboarding.\nc036: wtf is overcharge? tutorial mentions once popup disappears. Tutorial/onboarding.\nc114: mic toxicity out of control, screamed at healer. Toxicity voice.\nc066: couldn't find keybinds, in Accessibility, who look there. UI/menu confusion/navigation.\nc086: best playtest all year, gunplay good. Unassigned praise.\nc090: what icons mean. no labels shapes along top. UI/menu clarity.\nc011: shards drop slow, want pay. Progression/economy.\nc089: sarcastic another 30 min queue. Queue times.\nc012: Can't see half ability effects, and when die team screams abuse on mic. First problem visibility. Put visibility. Quote \"Can't see half the ability effects\" exact.\nc023: lesson 3 broken says use ult but not charged no explanation how charge. Tutorial/onboarding.\nc050: music main theme slaps. Unassigned praise.\nc077: can't figure out invite friend, clicked everything. UI/menu confusion.\n\nThemes likely:\n1 Queue/matchmaking wait times: c029, c059, c080, c091, c089. Maybe c059 lobby. c080 searching for match spinner. c091 searches. c029 waited get in. c089 queue. Severity high for some. Summary: Players report long waits to get into matches and excessive lobby/queue time.\n2 Progression/economy too slow: c065, c120, c002, c030, c011. Might include gear grind. Summary: XP, shards, unlocks, and gear grind feel too slow.\n3 Ability visibility/telegraphs: c042, c117, c069, c022, c019, c012. Also c012 first. Summary: Ability effects, traps, ult warnings are too faint or blend into background, making them hard to see and react to.\n4 Voice chat toxicity/harassment: c037, c100, c054, c078, c096, c114. c012? No because first visibility, but it mentions abuse. Rule every id once, already visibility. c078 first voice. c096. c114. Summary: Players report frequent harassment, slurs, sexism, and toxicity in voice chat.\n5 Performance/fps/stutter: c040, c107, c029? c029 first queue, so no. c055 first stutter. Maybe c040, c107, c055. Summary: Players report low FPS, drops, and stutters despite good hardware or lowering settings. c029's fps not included due first queue. c055 first stutter yes.\n6 Spawns: c105, c032, c010, c008. c055? first stutter no. c010 sarcastic real complaint. Summary: Players report spawning in dangerous positions or in front of enemies, leading to immediate deaths.\n7 Tutorial/onboarding: c088, c013, c036, c023. Summary: Tutorial/onboarding rushes or fails to explain core mechanics, cooldowns, charge, ult, etc.\n8 UI/menu navigation/clarity: c057, c041, c066, c090, c077. Maybe c078? first voice no. Summary: Menus are confusing, cluttered, unlabeled, hard to navigate, especially controller.\nUnassigned: c086 praise, c050 praise. Any instructions? none. Maybe c041 UI. c077 UI. c090 UI. c066 UI. c057 controller cursor.\n\nNeed ensure every id exactly once. Let's count IDs:\nc029 queue\nc065 progression\nc042 visibility\nc117 visibility\nc040 performance\nc069 visibility\nc037 toxicity\nc120 progression\nc100 toxicity\nc059 queue\nc057 UI\nc105 spawn\nc032 spawn\nc022 visibility\nc054 toxicity\nc088 tutorial\nc078 toxicity\nc096 toxicity\nc107 performance\nc010 spawn\nc002 progression\nc080 queue\nc019 visibility\nc030 progression\nc041 UI\nc091 queue\nc008 spawn\nc055 performance\nc013 tutorial\nc036 tutorial\nc114 toxicity\nc066 UI\nc086 unassigned\nc090 UI\nc011 progression\nc089 queue\nc012 visibility\nc023 tutorial\nc050 unassigned\nc077 UI\n\nCheck total 41? Let's count comments: c029(1), c0652, c0423, c1174, c0405, c0696, c0377, c1208, c1009, c05910, c05711, c10512, c03213, c02214, c05415, c08816, c07817, c09618, c10719, c01020, c00221, c08022, c01923, c03024, c04125, c09126, c00827, c05528, c01329, c03630, c11431, c06632, c08633, c09034, c01135, c08936, c01237, c02338, c05039, c07740. Actually 40. Good.\n\nThemes with counts: queue 5 (c029,c059,c080,c091,c089) =5. progression 5 (c065,c120,c002,c030,c011)=5 total10. visibility 6 (c042,c117,c069,c022,c019,c012)=6 total16. toxicity 6 (c037,c100,c054,c078,c096,c114)=6 total22. performance 3 (c040,c107,c055)=3 total25. spawns 4 (c105,c032,c010,c008)=4 total29. tutorial 4 (c088,c013,c036,c023)=4 total33. UI 5 (c057,c041,c066,c090,c077)=5 total38. unassigned 2 total40. Good.\n\nNeed craft JSON. Need quotes exact shortest phrase. Need be careful character-for-character including typos. For each theme, each comment has id, quote, severity? The instruction: \"For each comment in a theme, 'quote' is copied...\" \"severity\" is how much problem stops people playing. Does severity per comment or theme? It says for each comment in a theme, quote is... \"severity\" is... Could mean each comment object has severity. We should include severity for each comment. Also summary per theme. Need likely JSON array themes with name, summary, comments? Include severity per comment. We need decide. Could have each comment: {id, quote, severity}. The theme has summary. \"For each comment in a theme, 'quote'...\" suggests comment object has id, quote, severity. We'll do.\n\nNeed choose severity for each comment. How much problem stops people playing. Low/medium/high. Need consistent. We can assign high for severe blockers: queue waits high? Toxicity high especially harassment. Performance that reduces fps high. Visibility medium/high. Spawns high? Tutorial medium. UI medium. Progression medium/high. Let's assign.\n\nNeed exact quotes. Let's derive.\n\nTheme Queue times:\n- c029 quote: \"waited 17 mins to get in\" exact from comment: \"waited 17 mins to get in and then...\" Yes exact substring. severity high? Waited 17 mins and bad evening. High.\n- c059: \"Spent more time in the lobby than in the match\" exact. Could shortest showing problem. severity high? Medium-high. high? It stops play. Maybe medium? They still played 3 games in 2 hours. high? Queue/lobby excessive. Let's high? Hmm severity how much stops playing. 3 games in 2h high frustration. high.\n- c080: \"a third of it is watching the searching for match spinner\" exact. severity high? one hour, third waiting. medium? high maybe. Choose high for queue overall maybe high for c080.\n- c091: \"half an hour per game is rough\" exact. severity high, friends quit.\n- c089: \"another 30 minute queue\" exact. Sarcastic. severity high? maybe medium. It is complaint. high? Let's set high? Hmm.\n\nTheme Progression/economy:\n- c065 quote: \"Progress is way too slow for people with jobs\" exact. severity high? medium. Stops? People with jobs likely frustrating. medium.\n- c120 quote: \"XP per match is tiny\" exact. severity high? Very slow. medium/high. high? Let's medium? Actually 120 XP next level 8000. high.\n- c002 quote: \"why is morrow locked behind 15000 shards when a win gives you 50\" exact. severity high.\n- c030 quote: \"the grind to get the good gear before ranked is just boring\" exact. severity medium.\n- c011 quote: \"shards drop so slow\" exact. severity medium/high. high? maybe medium.\n\nTheme Ability visibility/telegraphs:\n- c042 quote: \"no visible edge\" exact. severity medium.\n- c117 quote: \"needs a bigger tell\" exact? Comment: \"Okoro's shock trap needs a bigger tell.\" Shortest showing problem. quote \"needs a bigger tell\". severity medium.\n- c069 quote: \"ult warning is a small glow at the feet\" exact? \"ult warning is a small glow at the feet. Nobody can spot that...\" Could quote \"Nobody can spot that\" maybe. Need shortest phrase shows problem. \"a small glow at the feet\" exact. severity high? Players can't spot in fight. high.\n- c022 quote: \"spell effects blend in with the background way too much\" exact. severity medium.\n- c019 quote: \"all the ability vfx are so faint\" exact. severity high? \"how am i supposed to dodge a trap i cant see\" severe. Maybe high.\n- c012 quote: \"Can't see half the ability effects\" exact, note capital C. severity high? It causes abuse, but first problem visibility. high.\n\nTheme Voice toxicity:\n- c037 quote: \"my 15yo heard things on team chat in hollowgate that i wont repeat here\" exact? Shortest showing problem. Maybe \"heard things on team chat\" exact. But \"my 15yo heard things on team chat\" exact. severity high.\n- c100 quote: \"got called slurs in voice\" exact. severity high.\n- c054 quote: \"As a woman I can't use voice chat in this game\" exact. severity high.\n- c078 quote: \"hurling insults on voice\" exact. severity high.\n- c096 quote: \"sexist comments on comms basically every other game\" exact. severity high.\n- c114 quote: \"the mic toxicity is out of control\" exact. severity high.\n\nTheme Performance/FPS/stutter:\n- c040 quote: \"Why does the game drop to 40fps on Greywater when it rains\" exact? Comment: \"Why does the game drop to 40fps on Greywater when it rains. I have a 4070.\" Quote exact \"drop to 40fps on Greywater when it rains\" maybe includes why? Shortest. \"drop to 40fps on Greywater when it rains\" exact substring? \"the game drop to 40fps\" yes. Quote: \"drop to 40fps on Greywater when it rains\". severity high? Good hardware but drops. high.\n- c107 quote: \"was 70 fps in the menu and 25 in the match\" exact. Or \"25 in the match\". severity high? high.\n- c055 quote: \"big stutter right as i respawn\" exact. severity high? They die. high.\n\nTheme Spawns:\n- c105 quote: \"died 4 times before i took a single step\" exact. severity high.\n- c032 quote: \"spawned right in front of their whole team and died in 2 seconds\" exact. severity high.\n- c010 sarcastic: complaint spawning in front of enemy sniper. Quote: \"spawning right in front of the enemy sniper\" exact from \"wow love spawning right in front of the enemy sniper\". severity high? yes.\n- c008 quote: \"being dropped next to 3 enemies with full health while i have no abilities ready\" exact. severity high.\n\nTheme Tutorial/onboarding:\n- c088 quote: \"assumes you already played hero shooters\" exact? Full \"The onboarding assumes you already played hero shooters.\" Quote maybe \"assumes you already played hero shooters\" exact. severity medium.\n- c013 quote: \"the training bit rushes thru like 10 mechanics in 3 mins then throws you in a real match\" exact, but shortest. \"rushes thru like 10 mechanics in 3 mins\" exact. severity medium.\n- c036 quote: \"tutorial mentions it once in a popup that disappears before you can read it\" exact. severity medium.\n- c023 quote: \"it says 'use your ult' but its not charged and theres no explanation how to charge it\" exact. Quote maybe \"not charged and theres no explanation how to charge it\" exact. But need show problem. severity medium.\n\nTheme UI/menu confusion:\n- c057 quote: \"the cursor jumps around the menu in ways I can't predict\" exact. severity medium? high? Finding anything takes forever. medium.\n- c041 quote: \"14 buttons on it. I counted. Half of them go to the same place.\" exact. Shortest \"14 buttons on it\" or \"Half of them go to the same place.\" Need problem. Quote \"Half of them go to the same place\" exact. severity low/medium. medium.\n- c066 quote: \"couldnt find keybinds for ages\" exact. severity medium.\n- c090 quote: \"no labels, just little shapes along the top\" exact. severity medium.\n- c077 quote: \"cant figure out how to invite a friend\" exact. severity medium.\n\nUnassigned:\nc086 quote maybe no quote? Need comment maybe {id:\"c086\", quote:\"honestly the best playtest ive been in all year. gunplay feels so good\"}? For unassigned comments, rules only mention every id either theme or unassigned. Need include id maybe quote? Could include reason? We should include unassigned as list of ids only? The output schema not specified. To be safe, unassigned objects with id, quote? But quote rule for comments in a theme. For unassigned maybe just id? Could include \"quote\" exact? Hmm. User asks sort playtest comments into themes. Usually output JSON with themes and unassigned. Need every id exactly once. We can include unassigned array of {id, quote}? But quote may not be needed. To satisfy \"Every id appears exactly once, either in one theme or in 'unassigned'.\" For unassigned, include ids. Maybe no quote/severity. But if automated, maybe expect comments? I can include {\"id\":\"c086\",\"quote\":\"honestly the best playtest ive been in all year. gunplay feels so good\"}? That repeats entire comment, not shortest. But rules for quote only for each comment in a theme. For unassigned, no quote necessary. Use {\"id\":\"c086\"}? But \"Every id appears exactly once\" okay. However final may need valid JSON. Let's include unassigned as array of ids: [\"c086\",\"c050\"]? But then \"id appears\" yes. But if they expect objects? Hmm.\n\nMaybe output:\n{\n  \"themes\": [\n    {\n      \"theme\": \"Queue and matchmaking wait times\",\n      \"summary\": \"...\",\n      \"comments\": [\n         {\"id\":\"c029\",\"quote\":\"waited 17 mins to get in\",\"severity\":\"high\"},\n...\n      ]\n    },\n...\n  ],\n  \"unassigned\": [\n    {\"id\":\"c086\"},\n    {\"id\":\"c050\"}\n  ]\n}\nNeed no em/en dashes. Use commas and full stops. Summary plain.\n\nNeed ensure quotes exact character by character. Let's verify each quote against original.\n\nOriginal lines:\nc029: \"waited 17 mins to get in and then the match ran at 25 fps. so thats my evening\" Quote \"waited 17 mins to get in\" exact lower. Good.\nc059: \"Spent more time in the lobby than in the match today. 3 games in 2 hours.\" Quote \"Spent more time in the lobby than in the match\" exact includes capital S. Good.\nc080: \"Love the game, but I get one hour after the kids go to bed and a third of it is watching the searching for match spinner.\" Quote \"a third of it is watching the searching for match spinner\" exact. Good.\nc091: \"as a high rank player i expect longer searches but half an hour per game is rough, my friends quit over it\" Quote \"half an hour per game is rough\" exact lowercase. Good.\nc089: \"oh great, another 30 minute queue. truly the highlight of my week\" Quote \"another 30 minute queue\" exact. Good.\n\nProgression:\nc065: \"Progress is way too slow for people with jobs\" exact. Good.\nc120: \"XP per match is tiny. Like 120 xp and the next level needs 8000.\" Quote \"XP per match is tiny\" exact. Good.\nc002: \"why is morrow locked behind 15000 shards when a win gives you 50\" exact. Good.\nc030: \"the grind to get the good gear before ranked is just boring, i am doing the same 3 quests on repeat\" Quote \"the grind to get the good gear before ranked is just boring\" exact. Good.\nc011: \"shards drop so slow it feels like they want me to give up and pay\" Quote \"shards drop so slow\" exact. Good.\n\nVisibility:\nc042: \"Bastien's slow field has no visible edge so you never know whether you're inside it.\" Quote \"no visible edge\" exact. Good.\nc117: \"Okoro's shock trap needs a bigger tell. It's a tiny blue flicker in a blue hallway.\" Quote \"needs a bigger tell\" exact. Good.\nc069: \"ult warning is a small glow at the feet. Nobody can spot that in a real fight.\" Quote \"ult warning is a small glow at the feet\" exact lower. Good.\nc022: \"spell effects blend in with the background way too much, make them pop pls\" Quote \"spell effects blend in with the background way too much\" exact. Good.\nc019: \"all the ability vfx are so faint, how am i supposed to dodge a trap i cant see\" Quote \"all the ability vfx are so faint\" exact lower. Good.\nc012: \"Can't see half the ability effects, and when I die to one my team screams abuse at me on mic.\" Quote \"Can't see half the ability effects\" exact capital C. Good.\n\nToxicity:\nc037: \"my 15yo heard things on team chat in hollowgate that i wont repeat here. voice is off for good in our house\" Quote \"my 15yo heard things on team chat\" exact? Original \"my 15yo heard things on team chat in hollowgate...\" Yes quote substring \"my 15yo heard things on team chat\". Good.\nc100: \"got called slurs in voice within 20 seconds of joining. muted everyone and played in silence\" Quote \"got called slurs in voice\" exact lower. Good.\nc054: \"As a woman I can't use voice chat in this game. The moment they hear me it's non stop harassment.\" Quote \"As a woman I can't use voice chat in this game\" exact. Good.\nc078: \"some guy was hurling insults on voice and it took me forever to find the mute option bc the menu is so confusing\" Quote \"hurling insults on voice\" exact. Good.\nc096: \"sexist comments on comms basically every other game lol, great community you got here\" Quote \"sexist comments on comms basically every other game\" exact lower. Good.\nc114: \"the mic toxicity is out of control, some guy screamed at our healer for a whole match\" Quote \"the mic toxicity is out of control\" exact lower. Good.\n\nPerformance:\nc040: \"Why does the game drop to 40fps on Greywater when it rains. I have a 4070.\" Quote \"drop to 40fps on Greywater when it rains\" exact? Original \"the game drop to 40fps on Greywater when it rains\" Wait original: \"Why does the game drop to 40fps on Greywater when it rains.\" It is \"drop\" not \"drops\". Quote substring \"drop to 40fps on Greywater when it rains\" yes exact. Good.\nc107: \"laptop player, 1650ti. was 70 fps in the menu and 25 in the match. turned everything down, no help\" Quote \"was 70 fps in the menu and 25 in the match\" exact lower w? Original \"was 70 fps...\" yes.\nc055: \"big stutter right as i respawn and by the time it clears im dead cos the spawn is in the open\" Quote \"big stutter right as i respawn\" exact lower. Good.\n\nSpawns:\nc105: \"i died 4 times before i took a single step lol. fix your spawns\" Quote \"died 4 times before i took a single step\" exact? Original \"i died 4 times...\" substring without i? \"died 4 times before i took a single step\" starts at died. Yes exact lower.\nc032: \"spawned right in front of their whole team and died in 2 seconds. twice in a row\" Quote \"spawned right in front of their whole team and died in 2 seconds\" exact. Good.\nc010: \"wow love spawning right in front of the enemy sniper, so fun, 10/10 game design\" Quote \"spawning right in front of the enemy sniper\" exact lower. Good.\nc008: \"being dropped next to 3 enemies with full health while i have no abilities ready is not fun\" Quote \"being dropped next to 3 enemies with full health while i have no abilities ready\" exact. Good.\n\nTutorial:\nc088: \"The onboarding assumes you already played hero shooters. Never explained cooldown vs charge.\" Quote \"assumes you already played hero shooters\" exact? Original \"The onboarding assumes...\" substring \"assumes you already played hero shooters\" yes.\nc013: \"the training bit rushes thru like 10 mechanics in 3 mins then throws you in a real match. i learned nothing\" Quote \"rushes thru like 10 mechanics in 3 mins\" exact lower. Good.\nc036: \"wtf is overcharge? tutorial mentions it once in a popup that disappears before you can read it\" Quote \"tutorial mentions it once in a popup that disappears before you can read it\" exact lower. Could be long but okay.\nc023: \"lesson 3 is broken or im dumb. it says 'use your ult' but its not charged and theres no explanation how to charge it\" Quote \"it says 'use your ult' but its not charged and theres no explanation how to charge it\" exact? Original has single quotes around use your ult. Yes. Good. Could shorten \"not charged and theres no explanation how to charge it\" exact substring? Original \"but its not charged and theres no explanation how to charge it\". Substring \"not charged and theres no explanation how to charge it\" exact starts at not. But quote should show problem. Use \"not charged and theres no explanation how to charge it\" exact, no capital. Good.\n\nUI:\nc057: \"On controller the cursor jumps around the menu in ways I can't predict. Finding anything takes forever.\" Quote \"the cursor jumps around the menu in ways I can't predict\" exact? Original \"On controller the cursor...\" substring lower \"the cursor...\" yes. Good.\nc041: \"The main menu has 14 buttons on it. I counted. Half of them go to the same place.\" Quote \"Half of them go to the same place\" exact capital H. Good.\nc066: \"couldnt find keybinds for ages, they're in Accessibility?? who would look there\" Quote \"couldnt find keybinds for ages\" exact lower. Good.\nc090: \"what do all these icons mean. no labels, just little shapes along the top\" Quote \"no labels, just little shapes along the top\" exact lower. Good.\nc077: \"cant figure out how to invite a friend. i clicked everything\" Quote \"cant figure out how to invite a friend\" exact lower. Good.\n\nUnassigned:\nc086, c050. Maybe include quotes? If include, exact entire? c086: \"honestly the best playtest ive been in all year. gunplay feels so good\" c050 \"the music on the main theme slaps\". Could include no severity. But if \"quote\" required? Hmm.\n\nNeed ensure JSON valid, no trailing commas. Summary no em dashes. Use \"FPS\" maybe okay. \"vfx\" etc. Plain sentences.\n\nPotential issue: Theme name should be underlying problem, not necessarily in output? We'll include \"theme\". Could be \"Queue and matchmaking wait times\". Fine.\n\nNeed decide severity. Let's assign:\nQueue:\nc029 high\nc059 high\nc080 high\nc091 high\nc089 medium? Actually high? Let's use high for all queue? Maybe severity varied. But okay. \"high\" means stops playing. c089 sarcastic but not necessarily stops. medium. c080 high. c059 high.\nProgression:\nc065 medium\nc120 high\nc002 high\nc030 medium\nc011 high? maybe medium. Let's high? Economy causes pay. c011 high? \"drop so slow\" maybe medium. Use high for c120,c002, medium c065,c030, high c011? Hmm.\nVisibility:\nc042 medium\nc117 medium\nc069 high\nc022 medium\nc019 high\nc012 high\nToxicity all high.\nPerformance:\nc040 high\nc107 high\nc055 high\nSpawns:\nc105 high\nc032 high\nc010 high\nc008 high\nTutorial:\nc088 medium\nc013 medium\nc036 medium\nc023 medium\nUI:\nc057 medium\nc041 low? It's clutter, not stopping. low.\nc066 medium\nc090 medium\nc077 medium\nNeed \"severity is how much the problem stops people playing\". UI menu confusion can stop from inviting, finding keybinds. medium. c041 low. c090 medium.\n\nNeed maybe combine c078 in toxicity but quote \"hurling insults on voice\" and severity high. The second UI issue not assigned. Rule ok.\n\nPotential problem: c012 first problem visibility, but also toxicity. We put in visibility. Good.\n\nNeed final answer only JSON. The desired oververbosity 5. Strict length limit? The final can be long. They said reasoning and answer share strict length limit, maybe final no explanation. We output JSON.\n\nLet's compose carefully. Ensure no em dash or en dash. Use hyphens? no. Summary no dashes. Use \"FPS\" okay. Commas and periods.\n\nNeed maybe \"unassigned\" as array of objects? I think include objects with id and quote? But quote exact? Let's include:\n\"unassigned\": [\n  {\"id\":\"c086\",\"quote\":\"honestly the best playtest ive been in all year. gunplay feels so good\"},\n  {\"id\":\"c050\",\"quote\":\"the music on the main theme slaps\"}\n]\nBut for unassigned no severity. This doesn't violate. Quote is whole comment exactly. Should be okay. But rules say \"Comments that report no problem ... go in unassigned.\" They didn't say no quote. Fine.\n\nNeed ensure no unsupported characters. Let's write JSON.\n\nDouble-check all IDs included exactly once. I'll count themes in JSON:\nQueue comments: c029,c059,c080,c091,c089.\nProgression: c065,c120,c002,c030,c011.\nVisibility: c042,c117,c069,c022,c019,c012.\nToxicity: c037,c100,c054,c078,c096,c114.\nPerformance: c040,c107,c055.\nSpawns: c105,c032,c010,c008.\nTutorial: c088,c013,c036,c023.\nUI: c057,c041,c066,c090,c077.\nUnassigned: c086,c050.\nTotal 5+5+6+6+3+4+4+5+2=40. Good.\n\nNeed maybe theme summary for queue: \"Players report long waits to enter matches, including long queues and too much time spent in the lobby or searching for a match. Some say friends quit over the delays.\" Good.\n\nProgression summary: \"Players report that earning XP, shards, unlocks, and pre ranked gear takes too long or feels repetitive. Progress feels slow for players with limited time.\" Good no dash.\n\nVisibility summary: \"Players report that ability effects, traps, and ultimate warnings are too faint or blend into the background. They cannot reliably see and react to dangerous effects.\" Good.\n\nToxicity summary: \"Players report frequent harassment, slurs, sexist comments, and screaming in voice chat. Some avoid voice chat entirely or mute everyone.\" Good.\n\nPerformance summary: \"Players report low frame rates, FPS drops, and stutters during matches, even with capable hardware or reduced settings. The stutter can lead to deaths.\" Good.\n\nSpawns summary: \"Players report spawning or being dropped in front of enemies or in dangerous positions. This leads to immediate deaths and repeated frustration.\" Good.\n\nTutorial summary: \"Players report that onboarding and tutorial lessons rush through mechanics or fail to explain cooldowns, charge, ult use, and overcharge. Players finish without understanding key systems.\" Good.\n\nUI summary: \"Players report confusing menus, unlabeled icons, and hard to find options. Controller navigation and basic actions like inviting friends are difficult.\" Good.\n\nNo em/en dashes. \"pre ranked\" should be \"pre-ranked\"? Hyphen is okay? They said never em or en dashes. Hyphen okay. But to avoid, \"before ranked\". Good.\n\nNow final JSON. Ensure quotes exactly. Need no extra spaces? JSON strings.\n\nLet's produce.",
+                  "format": "unknown",
+                  "index": 0
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 1281,
+          "completion_tokens": 8792,
+          "total_tokens": 10073,
+          "cost": 0.010859436,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.010859436,
+            "upstream_inference_prompt_cost": 0.000309036,
+            "upstream_inference_completions_cost": 0.0105504
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 7394,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      },
+      "output": {
+        "themes": [
+          {
+            "name": "Queue and matchmaking wait times",
+            "summary": "Players report long waits to enter matches, including long queues and too much time spent in the lobby or searching for a match. Some say friends quit over the delays.",
+            "severity": "high",
+            "comments": [
+              {
+                "id": "c029",
+                "quote": "waited 17 mins to get in"
+              },
+              {
+                "id": "c059",
+                "quote": "Spent more time in the lobby than in the match"
+              },
+              {
+                "id": "c080",
+                "quote": "a third of it is watching the searching for match spinner"
+              },
+              {
+                "id": "c091",
+                "quote": "half an hour per game is rough"
+              },
+              {
+                "id": "c089",
+                "quote": "another 30 minute queue"
+              }
+            ]
+          },
+          {
+            "name": "Slow progression and economy",
+            "summary": "Players report that earning XP, shards, unlocks, and gear before ranked takes too long or feels repetitive. Progress feels slow for players with limited time.",
+            "severity": "high",
+            "comments": [
+              {
+                "id": "c065",
+                "quote": "Progress is way too slow for people with jobs"
+              },
+              {
+                "id": "c120",
+                "quote": "XP per match is tiny"
+              },
+              {
+                "id": "c002",
+                "quote": "why is morrow locked behind 15000 shards when a win gives you 50"
+              },
+              {
+                "id": "c030",
+                "quote": "the grind to get the good gear before ranked is just boring"
+              },
+              {
+                "id": "c011",
+                "quote": "shards drop so slow"
+              }
+            ]
+          },
+          {
+            "name": "Ability visibility and telegraphs",
+            "summary": "Players report that ability effects, traps, and ultimate warnings are too faint or blend into the background. They cannot reliably see and react to dangerous effects.",
+            "severity": "high",
+            "comments": [
+              {
+                "id": "c042",
+                "quote": "no visible edge"
+              },
+              {
+                "id": "c117",
+                "quote": "needs a bigger tell"
+              },
+              {
+                "id": "c069",
+                "quote": "ult warning is a small glow at the feet"
+              },
+              {
+                "id": "c022",
+                "quote": "spell effects blend in with the background way too much"
+              },
+              {
+                "id": "c019",
+                "quote": "all the ability vfx are so faint"
+              },
+              {
+                "id": "c012",
+                "quote": "Can't see half the ability effects"
+              }
+            ]
+          },
+          {
+            "name": "Voice chat toxicity",
+            "summary": "Players report frequent harassment, slurs, sexist comments, and screaming in voice chat. Some avoid voice chat entirely or mute everyone.",
+            "severity": "high",
+            "comments": [
+              {
+                "id": "c037",
+                "quote": "my 15yo heard things on team chat"
+              },
+              {
+                "id": "c100",
+                "quote": "got called slurs in voice"
+              },
+              {
+                "id": "c054",
+                "quote": "As a woman I can't use voice chat in this game"
+              },
+              {
+                "id": "c078",
+                "quote": "hurling insults on voice"
+              },
+              {
+                "id": "c096",
+                "quote": "sexist comments on comms basically every other game"
+              },
+              {
+                "id": "c114",
+                "quote": "the mic toxicity is out of control"
+              }
+            ]
+          },
+          {
+            "name": "Performance and stutters",
+            "summary": "Players report low frame rates, FPS drops, and stutters during matches, even with capable hardware or reduced settings. The stutter can lead to deaths.",
+            "severity": "high",
+            "comments": [
+              {
+                "id": "c040",
+                "quote": "drop to 40fps on Greywater when it rains"
+              },
+              {
+                "id": "c107",
+                "quote": "was 70 fps in the menu and 25 in the match"
+              },
+              {
+                "id": "c055",
+                "quote": "big stutter right as i respawn"
+              }
+            ]
+          },
+          {
+            "name": "Bad spawns",
+            "summary": "Players report spawning or being dropped in front of enemies or in dangerous positions. This leads to immediate deaths and repeated frustration.",
+            "severity": "high",
+            "comments": [
+              {
+                "id": "c105",
+                "quote": "died 4 times before i took a single step"
+              },
+              {
+                "id": "c032",
+                "quote": "spawned right in front of their whole team and died in 2 seconds"
+              },
+              {
+                "id": "c010",
+                "quote": "spawning right in front of the enemy sniper"
+              },
+              {
+                "id": "c008",
+                "quote": "being dropped next to 3 enemies with full health while i have no abilities ready"
+              }
+            ]
+          },
+          {
+            "name": "Tutorial and onboarding gaps",
+            "summary": "Players report that onboarding and tutorial lessons rush through mechanics or fail to explain cooldowns, charge, ult use, and overcharge. Players finish without understanding key systems.",
+            "severity": "medium",
+            "comments": [
+              {
+                "id": "c088",
+                "quote": "assumes you already played hero shooters"
+              },
+              {
+                "id": "c013",
+                "quote": "rushes thru like 10 mechanics in 3 mins"
+              },
+              {
+                "id": "c036",
+                "quote": "tutorial mentions it once in a popup that disappears before you can read it"
+              },
+              {
+                "id": "c023",
+                "quote": "not charged and theres no explanation how to charge it"
+              }
+            ]
+          },
+          {
+            "name": "Confusing menus and UI",
+            "summary": "Players report confusing menus, unlabeled icons, and hard to find options. Controller navigation and basic actions like inviting friends are difficult.",
+            "severity": "medium",
+            "comments": [
+              {
+                "id": "c057",
+                "quote": "the cursor jumps around the menu in ways I can't predict"
+              },
+              {
+                "id": "c041",
+                "quote": "Half of them go to the same place"
+              },
+              {
+                "id": "c066",
+                "quote": "couldnt find keybinds for ages"
+              },
+              {
+                "id": "c090",
+                "quote": "no labels, just little shapes along the top"
+              },
+              {
+                "id": "c077",
+                "quote": "cant figure out how to invite a friend"
+              }
+            ]
+          }
+        ],
+        "unassigned": [
+          "c086",
+          "c050"
+        ]
+      }
+    }
+  ],
+  "output": {
+    "themes": [
+      {
+        "name": "Queue and matchmaking wait times",
+        "summary": "Players report long waits to enter matches, including long queues and too much time spent in the lobby or searching for a match. Some say friends quit over the delays.",
+        "severity": "high",
+        "comments": [
+          {
+            "id": "c029",
+            "quote": "waited 17 mins to get in"
+          },
+          {
+            "id": "c059",
+            "quote": "Spent more time in the lobby than in the match"
+          },
+          {
+            "id": "c080",
+            "quote": "a third of it is watching the searching for match spinner"
+          },
+          {
+            "id": "c091",
+            "quote": "half an hour per game is rough"
+          },
+          {
+            "id": "c089",
+            "quote": "another 30 minute queue"
+          }
+        ]
+      },
+      {
+        "name": "Slow progression and economy",
+        "summary": "Players report that earning XP, shards, unlocks, and gear before ranked takes too long or feels repetitive. Progress feels slow for players with limited time.",
+        "severity": "high",
+        "comments": [
+          {
+            "id": "c065",
+            "quote": "Progress is way too slow for people with jobs"
+          },
+          {
+            "id": "c120",
+            "quote": "XP per match is tiny"
+          },
+          {
+            "id": "c002",
+            "quote": "why is morrow locked behind 15000 shards when a win gives you 50"
+          },
+          {
+            "id": "c030",
+            "quote": "the grind to get the good gear before ranked is just boring"
+          },
+          {
+            "id": "c011",
+            "quote": "shards drop so slow"
+          }
+        ]
+      },
+      {
+        "name": "Ability visibility and telegraphs",
+        "summary": "Players report that ability effects, traps, and ultimate warnings are too faint or blend into the background. They cannot reliably see and react to dangerous effects.",
+        "severity": "high",
+        "comments": [
+          {
+            "id": "c042",
+            "quote": "no visible edge"
+          },
+          {
+            "id": "c117",
+            "quote": "needs a bigger tell"
+          },
+          {
+            "id": "c069",
+            "quote": "ult warning is a small glow at the feet"
+          },
+          {
+            "id": "c022",
+            "quote": "spell effects blend in with the background way too much"
+          },
+          {
+            "id": "c019",
+            "quote": "all the ability vfx are so faint"
+          },
+          {
+            "id": "c012",
+            "quote": "Can't see half the ability effects"
+          }
+        ]
+      },
+      {
+        "name": "Voice chat toxicity",
+        "summary": "Players report frequent harassment, slurs, sexist comments, and screaming in voice chat. Some avoid voice chat entirely or mute everyone.",
+        "severity": "high",
+        "comments": [
+          {
+            "id": "c037",
+            "quote": "my 15yo heard things on team chat"
+          },
+          {
+            "id": "c100",
+            "quote": "got called slurs in voice"
+          },
+          {
+            "id": "c054",
+            "quote": "As a woman I can't use voice chat in this game"
+          },
+          {
+            "id": "c078",
+            "quote": "hurling insults on voice"
+          },
+          {
+            "id": "c096",
+            "quote": "sexist comments on comms basically every other game"
+          },
+          {
+            "id": "c114",
+            "quote": "the mic toxicity is out of control"
+          }
+        ]
+      },
+      {
+        "name": "Performance and stutters",
+        "summary": "Players report low frame rates, FPS drops, and stutters during matches, even with capable hardware or reduced settings. The stutter can lead to deaths.",
+        "severity": "high",
+        "comments": [
+          {
+            "id": "c040",
+            "quote": "drop to 40fps on Greywater when it rains"
+          },
+          {
+            "id": "c107",
+            "quote": "was 70 fps in the menu and 25 in the match"
+          },
+          {
+            "id": "c055",
+            "quote": "big stutter right as i respawn"
+          }
+        ]
+      },
+      {
+        "name": "Bad spawns",
+        "summary": "Players report spawning or being dropped in front of enemies or in dangerous positions. This leads to immediate deaths and repeated frustration.",
+        "severity": "high",
+        "comments": [
+          {
+            "id": "c105",
+            "quote": "died 4 times before i took a single step"
+          },
+          {
+            "id": "c032",
+            "quote": "spawned right in front of their whole team and died in 2 seconds"
+          },
+          {
+            "id": "c010",
+            "quote": "spawning right in front of the enemy sniper"
+          },
+          {
+            "id": "c008",
+            "quote": "being dropped next to 3 enemies with full health while i have no abilities ready"
+          }
+        ]
+      },
+      {
+        "name": "Tutorial and onboarding gaps",
+        "summary": "Players report that onboarding and tutorial lessons rush through mechanics or fail to explain cooldowns, charge, ult use, and overcharge. Players finish without understanding key systems.",
+        "severity": "medium",
+        "comments": [
+          {
+            "id": "c088",
+            "quote": "assumes you already played hero shooters"
+          },
+          {
+            "id": "c013",
+            "quote": "rushes thru like 10 mechanics in 3 mins"
+          },
+          {
+            "id": "c036",
+            "quote": "tutorial mentions it once in a popup that disappears before you can read it"
+          },
+          {
+            "id": "c023",
+            "quote": "not charged and theres no explanation how to charge it"
+          }
+        ]
+      },
+      {
+        "name": "Confusing menus and UI",
+        "summary": "Players report confusing menus, unlabeled icons, and hard to find options. Controller navigation and basic actions like inviting friends are difficult.",
+        "severity": "medium",
+        "comments": [
+          {
+            "id": "c057",
+            "quote": "the cursor jumps around the menu in ways I can't predict"
+          },
+          {
+            "id": "c041",
+            "quote": "Half of them go to the same place"
+          },
+          {
+            "id": "c066",
+            "quote": "couldnt find keybinds for ages"
+          },
+          {
+            "id": "c090",
+            "quote": "no labels, just little shapes along the top"
+          },
+          {
+            "id": "c077",
+            "quote": "cant figure out how to invite a friend"
+          }
+        ]
+      }
+    ],
+    "unassigned": [
+      "c086",
+      "c050"
+    ]
+  },
+  "schemaValid": true,
+  "verification": {
+    "themes": [
+      {
+        "name": "Queue and matchmaking wait times",
+        "summary": "Players report long waits to enter matches, including long queues and too much time spent in the lobby or searching for a match. Some say friends quit over the delays.",
+        "severity": "high",
+        "comments": [
+          {
+            "id": "c029",
+            "quote": "waited 17 mins to get in",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c059",
+            "quote": "Spent more time in the lobby than in the match",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c080",
+            "quote": "a third of it is watching the searching for match spinner",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c091",
+            "quote": "half an hour per game is rough",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c089",
+            "quote": "another 30 minute queue",
+            "verified": true,
+            "problem": null
+          }
+        ]
+      },
+      {
+        "name": "Slow progression and economy",
+        "summary": "Players report that earning XP, shards, unlocks, and gear before ranked takes too long or feels repetitive. Progress feels slow for players with limited time.",
+        "severity": "high",
+        "comments": [
+          {
+            "id": "c065",
+            "quote": "Progress is way too slow for people with jobs",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c120",
+            "quote": "XP per match is tiny",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c002",
+            "quote": "why is morrow locked behind 15000 shards when a win gives you 50",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c030",
+            "quote": "the grind to get the good gear before ranked is just boring",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c011",
+            "quote": "shards drop so slow",
+            "verified": true,
+            "problem": null
+          }
+        ]
+      },
+      {
+        "name": "Ability visibility and telegraphs",
+        "summary": "Players report that ability effects, traps, and ultimate warnings are too faint or blend into the background. They cannot reliably see and react to dangerous effects.",
+        "severity": "high",
+        "comments": [
+          {
+            "id": "c042",
+            "quote": "no visible edge",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c117",
+            "quote": "needs a bigger tell",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c069",
+            "quote": "ult warning is a small glow at the feet",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c022",
+            "quote": "spell effects blend in with the background way too much",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c019",
+            "quote": "all the ability vfx are so faint",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c012",
+            "quote": "Can't see half the ability effects",
+            "verified": true,
+            "problem": null
+          }
+        ]
+      },
+      {
+        "name": "Voice chat toxicity",
+        "summary": "Players report frequent harassment, slurs, sexist comments, and screaming in voice chat. Some avoid voice chat entirely or mute everyone.",
+        "severity": "high",
+        "comments": [
+          {
+            "id": "c037",
+            "quote": "my 15yo heard things on team chat",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c100",
+            "quote": "got called slurs in voice",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c054",
+            "quote": "As a woman I can't use voice chat in this game",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c078",
+            "quote": "hurling insults on voice",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c096",
+            "quote": "sexist comments on comms basically every other game",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c114",
+            "quote": "the mic toxicity is out of control",
+            "verified": true,
+            "problem": null
+          }
+        ]
+      },
+      {
+        "name": "Performance and stutters",
+        "summary": "Players report low frame rates, FPS drops, and stutters during matches, even with capable hardware or reduced settings. The stutter can lead to deaths.",
+        "severity": "high",
+        "comments": [
+          {
+            "id": "c040",
+            "quote": "drop to 40fps on Greywater when it rains",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c107",
+            "quote": "was 70 fps in the menu and 25 in the match",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c055",
+            "quote": "big stutter right as i respawn",
+            "verified": true,
+            "problem": null
+          }
+        ]
+      },
+      {
+        "name": "Bad spawns",
+        "summary": "Players report spawning or being dropped in front of enemies or in dangerous positions. This leads to immediate deaths and repeated frustration.",
+        "severity": "high",
+        "comments": [
+          {
+            "id": "c105",
+            "quote": "died 4 times before i took a single step",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c032",
+            "quote": "spawned right in front of their whole team and died in 2 seconds",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c010",
+            "quote": "spawning right in front of the enemy sniper",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c008",
+            "quote": "being dropped next to 3 enemies with full health while i have no abilities ready",
+            "verified": true,
+            "problem": null
+          }
+        ]
+      },
+      {
+        "name": "Tutorial and onboarding gaps",
+        "summary": "Players report that onboarding and tutorial lessons rush through mechanics or fail to explain cooldowns, charge, ult use, and overcharge. Players finish without understanding key systems.",
+        "severity": "medium",
+        "comments": [
+          {
+            "id": "c088",
+            "quote": "assumes you already played hero shooters",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c013",
+            "quote": "rushes thru like 10 mechanics in 3 mins",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c036",
+            "quote": "tutorial mentions it once in a popup that disappears before you can read it",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c023",
+            "quote": "not charged and theres no explanation how to charge it",
+            "verified": true,
+            "problem": null
+          }
+        ]
+      },
+      {
+        "name": "Confusing menus and UI",
+        "summary": "Players report confusing menus, unlabeled icons, and hard to find options. Controller navigation and basic actions like inviting friends are difficult.",
+        "severity": "medium",
+        "comments": [
+          {
+            "id": "c057",
+            "quote": "the cursor jumps around the menu in ways I can't predict",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c041",
+            "quote": "Half of them go to the same place",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c066",
+            "quote": "couldnt find keybinds for ages",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c090",
+            "quote": "no labels, just little shapes along the top",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c077",
+            "quote": "cant figure out how to invite a friend",
+            "verified": true,
+            "problem": null
+          }
+        ]
+      }
+    ],
+    "unassigned": [
+      "c086",
+      "c050"
+    ],
+    "failures": [],
+    "quotesTotal": 38,
+    "quotesVerified": 38
+  },
+  "tokens": 10073,
+  "cost": 0.010859436,
+  "stopped": null
+}
