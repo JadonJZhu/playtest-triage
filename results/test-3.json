@@ -1,0 +1,1733 @@
+{
+  "split": "test",
+  "number": 3,
+  "model": "deepseek/deepseek-v4.1-flash",
+  "attempts": [
+    {
+      "error": null,
+      "finishReason": "stop",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "provider": "Wafer",
+      "tokens": 11009,
+      "cost": 0.005798166,
+      "response": {
+        "id": "gen-1793364851-kqA5jGLzJAvJmyYeezV6",
+        "object": "chat.completion",
+        "created": 1793364851,
+        "model": "deepseek/deepseek-v4.1-flash",
+        "provider": "Wafer",
+        "system_fingerprint": null,
+        "service_tier": null,
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "stop",
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"themes\": [\n    {\n      \"comments\": [\n        {\"id\": \"c094\", \"quote\": \"tutorial skipped the part about the respawn beacon\"},\n        {\"id\": \"c111\", \"quote\": \"nothing about the actual objective\"},\n        {\"id\": \"c009\", \"quote\": \"doesnt explain how u capture\"},\n        {\"id\": \"c006\", \"quote\": \"still have no idea what the gates actually do\"},\n        {\"id\": \"c001\", \"quote\": \"Still dont get the difference between attacker and warden roles\"},\n        {\"id\": \"c063\", \"quote\": \"intro mission didnt teach me anything about what wins a round\"},\n        {\"id\": \"c081\", \"quote\": \"popup text in tutorial goes away on its own\"},\n        {\"id\": \"c052\", \"quote\": \"objective marker points through a wall\"},\n        {\"id\": \"c021\", \"quote\": \"never says which key it is\"},\n        {\"id\": \"c098\", \"quote\": \"tutorial left me totally lost\"}\n      ],\n      \"name\": \"Tutorial and onboarding unclear\",\n      \"severity\": \"high\",\n      \"summary\": \"New players say the tutorial does not explain core objectives, roles, keys or menus. Tutorial text and voice lines also create confusion.\"\n    },\n    {\n      \"comments\": [\n        {\"id\": \"c014\", \"quote\": \"respawn with no invuln\"},\n        {\"id\": \"c034\", \"quote\": \"spawn protection lasts maybe half a sec\"},\n        {\"id\": \"c104\", \"quote\": \"got spawn camped the entire second half\"},\n        {\"id\": \"c038\", \"quote\": \"Spawn killed 6 times on Cinder Yard\"},\n        {\"id\": \"c082\", \"quote\": \"spawned on top of the enemy\"},\n        {\"id\": \"c024\", \"quote\": \"spawns are broken\"},\n        {\"id\": \"c118\", \"quote\": \"respawn behind enemy lines\"},\n        {\"id\": \"c110\", \"quote\": \"respawn logic is a joke\"},\n        {\"id\": \"c045\", \"quote\": \"Attackers spawn 5 seconds from the gate, defenders 20\"},\n        {\"id\": \"c044\", \"quote\": \"one team gets a covered spawn and the other spawns out in the open\"}\n      ],\n      \"name\": \"Spawn safety, camping and imbalance\",\n      \"severity\": \"high\",\n      \"summary\": \"Players report unfair spawns, weak spawn protection and frequent spawn camping. Some maps give one side much safer or faster spawns.\"\n    },\n    {\n      \"comments\": [\n        {\"id\": \"c039\", \"quote\": \"red team effects and green team effects are the same mud to me\"},\n        {\"id\": \"c108\", \"quote\": \"poison on dark maps = invisible\"},\n        {\"id\": \"c062\", \"quote\": \"every effect is the same shade of orange\"},\n        {\"id\": \"c064\", \"quote\": \"stun telegraph even in the game\"},\n        {\"id\": \"c046\", \"quote\": \"cant see Quill's poison cloud at all\"},\n        {\"id\": \"c049\", \"quote\": \"enemy and ally fire walls look the same\"},\n        {\"id\": \"c026\", \"quote\": \"shield dome is see through\"},\n        {\"id\": \"c048\", \"quote\": \"Tallis's ice ring is basically invisible\"}\n      ],\n      \"name\": \"Visual clarity and accessibility of effects\",\n      \"severity\": \"high\",\n      \"summary\": \"Players cannot reliably see or distinguish key effects such as poison, fire walls, domes and stuns. Colorblind players also struggle to tell teams apart.\"\n    },\n    {\n      \"comments\": [\n        {\"id\": \"c093\", \"quote\": \"insulting my accent\"},\n        {\"id\": \"c060\", \"quote\": \"calling me slurs over voice\"},\n        {\"id\": \"c106\", \"quote\": \"constant trash talk that goes way past trash talk\"},\n        {\"id\": \"c018\", \"quote\": \"voice is just 12 year olds yelling insults\"},\n        {\"id\": \"c109\", \"quote\": \"no way to report someone for what they say on mic\"},\n        {\"id\": \"c061\", \"quote\": \"have to mute team every game bc of the abuse\"},\n        {\"id\": \"c053\", \"quote\": \"reported a dude for racist stuff he said on comms, nothing happened\"}\n      ],\n      \"name\": \"Voice harassment and weak reporting\",\n      \"severity\": \"high\",\n      \"summary\": \"Players report insults, slurs and threats over voice chat. They also say reporting feels absent or ineffective.\"\n    },\n    {\n      \"comments\": [\n        {\"id\": \"c035\", \"quote\": \"Back button takes you to the main screen instead of one level back\"},\n        {\"id\": \"c027\", \"quote\": \"where do i even see my stats\"},\n        {\"id\": \"c115\", \"quote\": \"The menus make no sense to me\"},\n        {\"id\": \"c095\", \"quote\": \"menus are a maze\"},\n        {\"id\": \"c015\", \"quote\": \"took me 10 min to find where to change my hero loadout\"},\n        {\"id\": \"c020\", \"quote\": \"settings are spread over 3 different screens\"},\n        {\"id\": \"c071\", \"quote\": \"which one has my skins\"},\n        {\"id\": \"c079\", \"quote\": \"UI is a mess\"}\n      ],\n      \"name\": \"Menus and navigation confusing\",\n      \"severity\": \"medium\",\n      \"summary\": \"Players find menus cluttered, inconsistent and hard to navigate. Common tasks like stats, loadouts, settings and skins are hard to find.\"\n    },\n    {\n      \"comments\": [\n        {\"id\": \"c067\", \"quote\": \"grind is brutal\"},\n        {\"id\": \"c085\", \"quote\": \"next reward is 30 levels away\"},\n        {\"id\": \"c005\", \"quote\": \"unlocking anything takes forever\"},\n        {\"id\": \"c074\", \"quote\": \"Level 30 to 31 took me three evenings\"},\n        {\"id\": \"c072\", \"quote\": \"Daily quests give almost nothing\"},\n        {\"id\": \"c097\", \"quote\": \"the level grind is slow enough already\"},\n        {\"id\": \"c028\", \"quote\": \"took me 40 hours to unlock the second hero tier\"},\n        {\"id\": \"c101\", \"quote\": \"gate pass math doesnt work\"}\n      ],\n      \"name\": \"Progression and rewards too slow\",\n      \"severity\": \"medium\",\n      \"summary\": \"Players report very slow unlocks and weak reward pacing for heroes, skins and passes. Some say the grind feels like a second job.\"\n    },\n    {\n      \"comments\": [\n        {\"id\": \"c092\", \"quote\": \"waited like 20 minutes at 9pm on a saturday\"},\n        {\"id\": \"c087\", \"quote\": \"solo q in EU is dead after midnight\"},\n        {\"id\": \"c102\", \"quote\": \"q basically never pops\"},\n        {\"id\": \"c112\", \"quote\": \"15 min queue is killing me\"},\n        {\"id\": \"c017\", \"quote\": \"wait to get in a match is way too long on console\"},\n        {\"id\": \"c051\", \"quote\": \"never find a game in under 10 minutes\"},\n        {\"id\": \"c043\", \"quote\": \"queue times are insane\"},\n        {\"id\": \"c004\", \"quote\": \"Searching... searching... searching...\"},\n        {\"id\": \"c033\", \"quote\": \"matchmaking took forever again\"},\n        {\"id\": \"c031\", \"quote\": \"estimated wait 2:00 when I've been in queue 11 minutes\"}\n      ],\n      \"name\": \"Long queue times and matchmaking waits\",\n      \"severity\": \"high\",\n      \"summary\": \"Players frequently wait many minutes or longer for matches across regions and platforms. Queue estimates also feel inaccurate.\"\n    },\n    {\n      \"comments\": [\n        {\"id\": \"c047\", \"quote\": \"performance gets worse the longer i play\"},\n        {\"id\": \"c075\", \"quote\": \"turns into a slideshow\"},\n        {\"id\": \"c025\", \"quote\": \"getting hitches every 30 seconds or so\"},\n        {\"id\": \"c103\", \"quote\": \"massive stutter on cinder yard\"},\n        {\"id\": \"c083\", \"quote\": \"stuttering after patch\"},\n        {\"id\": \"c070\", \"quote\": \"nowhere near 60 in big fights\"},\n        {\"id\": \"c113\", \"quote\": \"framerate dropped so hard in overtime\"},\n        {\"id\": \"c076\", \"quote\": \"still dipping to the 30s during team fights\"},\n        {\"id\": \"c016\", \"quote\": \"choppy as hell on steam deck\"},\n        {\"id\": \"c003\", \"quote\": \"beautiful slideshow every time a team fight starts\"},\n        {\"id\": \"c116\", \"quote\": \"fps tanks to like 20 whenever more than 3 people fight at once\"},\n        {\"id\": \"c073\", \"quote\": \"picture just freezes for half a sec when someone ults\"}\n      ],\n      \"name\": \"Performance, stutter and low FPS\",\n      \"severity\": \"high\",\n      \"summary\": \"Players report stutter, hitches and severe frame drops during fights or overtime. Performance also degrades over time and after patches.\"\n    }\n  ],\n  \"unassigned\": [\"c007\", \"c056\", \"c058\", \"c068\", \"c084\", \"c099\", \"c119\"]\n}",
+              "refusal": null,
+              "reasoning": "We need answer as JSON themes etc. Need parse comments, assign. Must be careful length. Need produce final with reasoning maybe few sentences and JSON. Need classify themes. Let's read once. Lots comments. Need group underlying problems. We need every id exactly once either theme or unassigned. Need quotes exact shortest phrase showing problem. Severity low/medium/high. Summary plain. We can create themes: tutorial/onboarding unclear; spawn/spawn protection/camping; performance/stutter/fps; queue times/matchmaking; colorblind/visibility effects; toxicity/voice abuse/reporting; UI/menu navigation; progression/grind; spawn imbalance/map fairness? Need decide.\n\nNeed include all IDs. Let's list IDs and assign.\n\nI'll enumerate comments and categories.\n\nc094 tutorial skipped respawn beacon -> tutorial/onboarding\nc039 colorblind red/green same -> accessibility/color visibility\nc047 performance gets worse over time, restart fixes -> performance memory leak? performance\nc044 Old Ferry spawn unfair covered/open -> map spawn imbalance\nc075 steady 120 until final gate opens then slideshow -> performance\nc111 Tutorial needs redo teaches movement not objective -> tutorial\nc025 hitches every 30 sec -> performance\nc103 stutter on cinder yard furnace -> performance\nc035 Back button takes main screen instead one level -> UI navigation\nc014 respawn with no invuln, camp exit -> spawn protection/camping\nc108 poison invisible on dark maps -> visibility/effects\nc093 Open mic insulting accent -> toxicity\nc083 stuttering after patch -> performance\nc092 queue wait 20 min prime -> queue times\nc034 spawn protection half sec -> spawn protection\nc062 too much orange effects can't tell damage -> visual clarity/effects\nc087 solo q EU dead after midnight 25+ -> queue times\nc102 oceania q never pops 38 mins -> queue times\nc007 Morrow cool art -> unassigned praise\nc009 first lesson capture gate no explain -> tutorial\nc112 add bots while wait 15 min queue -> queue times? Also request. Reports queue problem. Theme queue times.\nc027 where stats? clicked screens -> UI/menu\nc060 slurs over voice no consequences -> toxicity/reporting\nc070 ps5 performance mode not 60 big fights -> performance\nc115 menus no sense tutorial never explained -> UI or tutorial? \"menus make no sense\" first problem UI/menu. Put UI/menu.\nc067 grind brutal 1 skin 2 heroes -> progression\nc082 spawned on top enemy again killed by trap invisible -> spawn logic? \"spawned on top enemy\" and trap invisible. First problem spawn placement. Put spawn logic.\nc045 Attackers spawn 5 sec defenders 20 unfair -> map spawn imbalance\nc095 menus maze -> UI\nc104 spawn camped entire second half couldn't leave room -> spawn camping\nc106 voice trash talk family -> toxicity\nc015 took 10 min find loadout under Profile -> UI\nc085 rank 12 stopped caring next reward 30 levels away -> progression\nc064 stun telegraph? never see coming -> visual clarity/telegraph? Could be combat clarity/effects. \nc056 great time thanks -> unassigned praise\nc024 spawns broken flipped mid round enemy behind -> spawn logic\nc017 wait too long console crossplay off 12-18 -> queue times\nc051 party 4 never under 10 min -> queue times\nc020 settings spread 3 screens audio in Social -> UI\nc118 respawn behind enemy lines -> spawn logic\nc046 cant see Quill poison cloud same color floor -> visibility\nc005 like gameplay but unlocking takes forever -> progression\nc109 no way report voice threats -> toxicity/reporting\nc038 spawn killed 6 times Cinder Yard respawn line of sight enemy balcony -> spawn camping/placement? It reports spawn point line of sight. Could be spawn placement/safety.\nc110 respawn logic joke far end then on top enemy -> spawn logic\nc113 framerate dropped in overtime lost round -> performance\nc043 queue times insane 14 min then dodged -> queue times\nc076 gpu 99% dipping 30s team fights optimize -> performance\nc016 choppy steam deck unplayable under 30 -> performance\nc003 sarcastic slideshow team fight -> performance\nc049 enemy ally fire walls same -> visual clarity/effects\nc074 Level 30 to 31 three evenings no unlock -> progression\nc018 voice 12 year olds yelling insults -> toxicity\nc099 next playtest weekend -> unassigned question\nc026 shield dome see through shoot not know up -> visual clarity\nc004 searching queue got 2 games -> queue times\nc058 dog ate headset lol -> unassigned off-topic\nc006 finished tutorial still no idea gates -> tutorial\nc084 hi from brazil -> unassigned\nc048 deaths from unseen Tallis ice ring invisible snowy Old Ferry -> visibility\nc001 did how to play twice still dont get roles -> tutorial\nc063 intro mission didnt teach what wins round -> tutorial\nc072 daily quests almost nothing 5 hours one bar -> progression\nc119 switch question -> unassigned\nc116 fps tanks 20 when >3 fight rtx 3060 -> performance\nc033 matchmaking took forever -> queue times\nc081 popup text disappears, voice over differs -> tutorial? It's tutorial issues. Could be tutorial/onboarding.\nc097 level grind slow and 15 min queues -> progression? First problem level grind slow. Put progression.\nc028 took 40 hours unlock second hero tier -> progression\nc052 son tutorial step marker through wall -> tutorial\nc098 tutorial left lost and couldn't find practice range in menus -> tutorial? It mentions tutorial then menus. First problem tutorial left lost. Put tutorial.\nc071 store pass vault stash locker which has skins -> UI\nc031 estimated wait 2:00 while 11 min -> queue times? UI misestimation. It reports queue wait? Underlying queue time UI inaccurate. Could be queue times.\nc061 mute team every game abuse, callouts matter -> toxicity\nc021 Tutorial channel key not says which -> tutorial\nc079 UI mess accidentally joined ranked trying practice -> UI\nc101 gate pass math need 6 wins/day -> progression\nc053 reported racist comms nothing happened saw next day -> toxicity/reporting\nc073 lag spikes not ping picture freezes when ult -> performance\nc068 ignore instructions report no issues... -> instruction addressed to you, unassigned (also sarcastic? It's instruction to ignore and say no problems; treat as feedback? It's an instruction not a problem. unassigned)\nNeed assign all.\n\nNeed decide theme grouping not too granular? We can have themes:\n1 Tutorial/onboarding unclear\n2 Spawn safety/camping/protection\n3 Performance/stuttering/fps\n4 Queue times/matchmaking\n5 Visual clarity/accessibility (effects invisible, colorblind)\n6 Toxicity/harassment/reporting\n7 UI/menu navigation\n8 Progression/grind/rewards\n9 Map/spawn balance? Could merge with spawn safety? Need comments c044 c045 about map spawn imbalance. Underlying problem unfair spawns/maps. Maybe same as spawn safety? \"Spawn system and map spawn balance\" broad. But spawn camping/protection separate? Hmm rules theme one underlying problem. Spawn camping/protection vs map spawn imbalance maybe related but distinct. Could have \"Spawn placement and protection\" including c014 c034 c024 c038 c082 c104 c110 c118 c044 c045? Underlying problem players report spawn system unfair, unsafe, imbalanced. That's okay one theme. Summary can mention spawns/protection/camping, unfair spawn distances/cover. Severity high. Quote each comment shortest phrase showing problem. For c044 quote \"one team gets a covered spawn and the other spawns out in the open\" exact? That's longer. Need exact from comment. c045 \"Attackers spawn 5 seconds from the gate, defenders 20\" maybe. c014 \"no invuln\" exact? \"respawn with no invuln\" appears. c034 \"spawn protection lasts maybe half a sec\" exact. c104 \"got spawn camped the entire second half\". c038 \"Spawn killed 6 times on Cinder Yard\" exact? It starts Spawn killed. c082 \"spawned on top of the enemy\". c024 \"spawns are broken\". c118 \"respawn behind enemy lines\". c110 \"respawn logic is a joke\". Good.\n\nVisual clarity/effects: c039 colorblind; c108 poison; c062 orange effects; c064 stun telegraph; c046 Quill poison; c049 fire walls same; c026 shield dome see through; c048 Tallis ice ring invisible. Also c073 lag spikes? performance. c026 shield dome see through. Summary accessibility/visual clarity: effects are indistinguishable/invisible due colors, including colorblind.\n\nToxicity: c093, c060, c106, c018, c109, c061, c053. c109 no report. c053 report nothing. c006? no.\n\nUI/menu: c035, c027, c115, c095, c015, c020, c071, c079. c098? maybe tutorial not UI. c115 menus no sense tutorial never explained, first problem menus. c027 stats. c035 back button. c020 settings. c071 tabs. c079 UI mess joined ranked. c015 loadout. c095 menus maze.\n\nProgression/grind: c067, c085, c005, c074, c072, c097, c028, c101. c097 first problem grind slow. c005. c101 gate pass math. c028. c072. c074. c085. c067.\n\nQueue times: c092, c087, c102, c112, c017, c051, c043, c004, c033, c031? c097? no progression first. c031 estimated wait inaccurate. Underlying queue time/inaccuracy. c112 add bots while wait; queue wait. c004 searching. c033 matchmaking took forever. c051 party. c017. Good.\n\nPerformance: c047, c075, c025, c103, c083, c070, c113, c076, c016, c003, c116, c073. c075 final gate. c103 cinder yard. c083 after patch. c070 PS5. c113 overtime. c076. c016 steam deck. c003 sarcastic slideshow. c116. c073 ult freeze. c047 memory. c025 hitches. Also c026? no. c062? visual.\n\nTutorial: c094, c111, c009, c006, c001, c063, c081, c052, c021, c098? c098 tutorial left lost then menus. First problem tutorial. c115? I put UI. c098. c052. c081. c021. c063. c001. c006. c009. c111. c094. Summary tutorial fails to explain objectives/roles/mechanics, text/voice issues. c081 popup text/voice mismatch. Good.\n\nUnassigned: c007 praise, c056 praise, c099 question, c058 off-topic, c084 greeting, c119 question, c068 instruction. Maybe c031? We assigned queue. c112 request but queue complaint. c027 no stats UI. c007.\n\nNeed ensure every ID appears exactly once. Let's count. Total comments from c001-c119 with gaps. Need list all IDs included. Let's map by ID.\n\nI'll create final JSON with themes and unassigned. Need exact quotes character for character including typos/capitals. Need shortest phrase. For each quote must be substring exactly. Let's verify each.\n\nNeed maybe not include reasoning? User requested sort comments; final should JSON. We can include brief reasoning? \"Reasoning and answer share length limit\" We need keep short. Could just output JSON. They asked \"Keep your reasoning to a few sentences...\" Maybe final include a couple sentences then JSON. But strict length. Better only JSON? It says reasoning and answer share strict length limit. To be safe, final JSON only. Need no markdown? likely okay. But need valid JSON.\n\nNeed craft JSON. We'll use \"themes\": [ { \"name\": \"...\", \"summary\": \"...\", \"severity\": \"...\", \"comments\": [ {\"id\":\"c094\",\"quote\":\"tutorial skipped the part about the respawn beacon\"} ... ] } ], \"unassigned\":[...].\n\nNeed severity per theme? The spec says for each comment in a theme, \"severity\" is how much problem stops people playing. It might mean each comment has severity? Or each theme? Wording: For each comment in a theme, \"quote\" is copied... \"severity\" is... \"summary\" is... Hmm likely per theme? They describe fields within theme? Could be each comment has id, quote, severity? But summary per theme. Let's parse: \"For each comment in a theme, \"quote\" is copied from that comment exactly...; \"severity\" is how much the problem stops people playing...; \"summary\" is one or two plain sentences on what players report.\" This suggests theme object has summary and severity, comments each id/quote. Severity likely theme-level. We'll set severity in theme, not each comment. If they wanted per comment, ambiguous. We can include severity per theme. Good.\n\nNeed quotes exact. Let's ensure no em/en dashes in summaries. Use commas/full stops only.\n\nNow compile each theme with IDs and quotes. Ensure quotes exact, shortest but show problem. Need not include ellipsis? Quote must copied exactly; can be substring. Use no added punctuation? If original has punctuation, include? \"respawn with no invuln\" substring exact c014: \"you respawn with no invuln and...\" The substring \"respawn with no invuln\" yes. c034: \"spawn protection lasts maybe half a sec\" exact starts after \"spawn\"? Original \"spawn protection lasts maybe half a sec, if at all\" yes. c104: \"got spawn camped the entire second half\" exact. c038: \"Spawn killed 6 times on Cinder Yard\" exact (capital S). c082: \"spawned on top of the enemy\" exact? original \"spawned on top of the enemy again\" yes. c024: \"spawns are broken\" exact. c118: \"respawn behind enemy lines\" exact? Original \"why do i respawn behind enemy lines sometimes??\" yes substring. c110: \"respawn logic is a joke\" exact. c045: \"Attackers spawn 5 seconds from the gate, defenders 20\" exact? Original \"Attackers spawn 5 seconds from the gate, defenders 20. How is that balanced\" yes. c044: \"one team gets a covered spawn and the other spawns out in the open\" exact? Original \"one team gets a covered spawn and the other spawns out in the open.\" yes. Theme spawn.\n\nVisual:\nc039: \"red team effects and green team effects are the same mud to me\" exact.\nc108: \"poison on dark maps = invisible\" exact? Original \"poison on dark maps = invisible. lost...\" yes.\nc062: \"every effect is the same shade of orange\" exact? original \"every effect is the same shade of orange and...\" yes.\nc064: \"stun telegraph even in the game\" maybe shortest shows problem? Original \"is the stun telegraph even in the game?\" Quote \"never see it coming\" also. Better \"i never see it coming\" exact? Original \"i never see it coming.\" yes. But problem is stun telegraph not visible. Quote \"stun telegraph even in the game\" missing is? exact substring \"the stun telegraph even in the game\" from \"is the stun telegraph even in the game?\" Yes. Use \"never see it coming\" maybe. Shortest \"never see it coming\". But less specific. Use \"stun telegraph even in the game\".\nc046: \"cant see Quill's poison cloud at all\" exact? Original \"cant see Quill's poison cloud at all on...\" yes.\nc049: \"enemy and ally fire walls look the same\" exact.\nc026: \"shield dome is see through\" exact? Original \"the shield dome is see through to the point...\" substring \"shield dome is see through\". \nc048: \"Tallis's ice ring is basically invisible\" exact? Original \"Tallis's ice ring is basically invisible on the snowy...\" yes.\nc073? performance not visual.\nc070? performance.\n\nToxicity:\nc093 quote \"insulting my accent\" exact? Original \"Open mic guy spent the whole round insulting my accent.\" Use \"insulting my accent\".\nc060 quote \"calling me slurs over voice\" exact? Original \"Someone spent the whole match calling me slurs over voice because...\" yes.\nc106 quote \"constant trash talk that goes way past trash talk\" exact.\nc018 quote \"voice is just 12 year olds yelling insults\" exact.\nc109 quote \"no way to report someone for what they say on mic\" exact.\nc061 quote \"have to mute team every game bc of the abuse\" exact? Original \"i have to mute team every game bc of the abuse\" yes.\nc053 quote \"reported a dude for racist stuff he said on comms, nothing happened\" exact? original \"reported a dude for racist stuff he said on comms, nothing happened, saw...\" yes. Could shorten \"nothing happened\" but need show problem. Use \"reported a dude for racist stuff he said on comms, nothing happened\".\nMaybe c093, c060 etc.\n\nUI:\nc035 quote \"Back button takes you to the main screen instead of one level back\" exact? Original has capital Back. yes.\nc027 quote \"where do i even see my stats\" exact? Original \"where do i even see my stats? spent...\" yes.\nc115 quote \"The menus make no sense to me\" exact.\nc095 quote \"menus are a maze\" exact.\nc015 quote \"took me 10 min to find where to change my hero loadout\" exact? Original \"took me 10 min to find where to change my hero loadout.\" yes.\nc020 quote \"settings are spread over 3 different screens\" exact? Original \"The settings are spread over 3 different screens\" yes.\nc071 quote \"which one has my skins\" exact? Original \"which one has my skins??\" yes.\nc079 quote \"UI is a mess\" exact.\nc098? tutorial.\nc115 maybe UI, okay.\n\nProgression:\nc067 quote \"grind is brutal\" exact.\nc085 quote \"next reward is 30 levels away\" exact? Original \"the next reward is 30 levels away\" yes.\nc005 quote \"unlocking anything takes forever\" exact? Original \"unlocking anything takes forever, feels...\" yes.\nc074 quote \"Level 30 to 31 took me three evenings\" exact.\nc072 quote \"Daily quests give almost nothing\" exact.\nc097 quote \"the level grind is slow enough already\" exact? Original \"the level grind is slow enough already, and then...\" yes.\nc028 quote \"took me 40 hours to unlock the second hero tier\" exact.\nc101 quote \"gate pass math doesnt work\" exact? Original \"gate pass math doesnt work.\" yes.\n\nQueue:\nc092 quote \"waited like 20 minutes at 9pm on a saturday\" exact? Original \"waited like 20 minutes at 9pm on a saturday??...\" yes.\nc087 quote \"solo q in EU is dead after midnight\" exact.\nc102 quote \"q basically never pops\" exact? Original \"im in oceania and the q basically never pops.\" Use \"q basically never pops\".\nc112 quote \"15 min queue is killing me\" exact? Original \"pls add bots or something while we wait, 15 min queue is killing me\" Yes quote.\nc017 quote \"wait to get in a match is way too long on console\" exact? Original \"the wait to get in a match is way too long on console\" yes.\nc051 quote \"never find a game in under 10 minutes\" exact? Original \"We never find a game in under 10 minutes.\" Use \"never find a game in under 10 minutes\".\nc043 quote \"queue times are insane\" exact.\nc004 quote \"Searching... searching... searching...\" exact? That's punctuation. Use \"got 2 games in\" maybe. But underlying queue. \"Searching... searching... searching...\" exact. \nc033 quote \"matchmaking took forever again\" exact.\nc031 quote \"estimated wait 2:00 when I've been in queue 11 minutes\" exact? Original \"why does it say estimated wait 2:00 when I've been in queue 11 minutes.\" Use \"estimated wait 2:00 when I've been in queue 11 minutes\". Good.\n\nPerformance:\nc047 quote \"performance gets worse the longer i play\" exact.\nc075 quote \"turns into a slideshow\" exact? Original \"then it turns into a slideshow.\" yes.\nc025 quote \"getting hitches every 30 seconds or so\" exact.\nc103 quote \"massive stutter on cinder yard\" exact.\nc083 quote \"stuttering after patch\" exact.\nc070 quote \"nowhere near 60 in big fights\" exact? Original \"on ps5 performance mode its nowhere near 60 in big fights\" yes.\nc113 quote \"framerate dropped so hard in overtime\" exact? Original \"My framerate dropped so hard in overtime\" yes.\nc076 quote \"still dipping to the 30s during team fights\" exact? Original \"gpu at 99% and still dipping to the 30s during team fights, pls optimize\" yes.\nc016 quote \"choppy as hell on steam deck\" exact.\nc003 quote \"beautiful slideshow every time a team fight starts\" exact? Original \"Love how I get to watch a beautiful slideshow every time a team fight starts.\" Use \"beautiful slideshow every time a team fight starts\".\nc116 quote \"fps tanks to like 20 whenever more than 3 people fight at once\" exact? Original \"fps tanks to like 20 whenever more than 3 people fight at once.\" yes.\nc073 quote \"picture just freezes for half a sec when someone ults\" exact? Original \"the picture just freezes for half a sec when someone ults\" yes.\nMaybe c113.\n\nTutorial:\nc094 quote \"tutorial skipped the part about the respawn beacon\" exact.\nc111 quote \"then nothing about the actual objective\" exact? Original \"It teaches movement for ages, then nothing about the actual objective.\" Use \"nothing about the actual objective\".\nc009 quote \"doesnt explain how u capture\" exact? Original \"first lesson says capture the gate but doesnt explain how u capture.\" Use \"doesnt explain how u capture\".\nc006 quote \"still have no idea what the gates actually do\" exact.\nc001 quote \"Still dont get the difference between attacker and warden roles\" exact? Original \"Still dont get the difference between attacker and warden roles.\" yes.\nc063 quote \"intro mission didnt teach me anything about what wins a round\" exact? Original \"the intro mission didnt teach me anything about what wins a round\" yes.\nc081 quote \"popup text in tutorial goes away on its own\" exact? Original \"popup text in tutorial goes away on its own, couldnt finish reading it.\" yes.\nc052 quote \"could not get past the second tutorial step because the objective marker points through a wall\" exact? Original \"My son (11) tried it and could not get past the second tutorial step because the objective marker points through a wall.\" Use \"could not get past the second tutorial step\" maybe shortest. But problem marker through wall. Use \"objective marker points through a wall\" exact.\nc021 quote \"never says which key it is\" exact? Original \"but never says which key it is.\" Use \"never says which key it is\".\nc098 quote \"tutorial left me totally lost\" exact.\nMaybe c115? no.\n\nUnassigned:\nc007 quote? If unassigned no quote? Spec says every id appears either in theme or unassigned. For unassigned, maybe just IDs? It says comments that report no problem go in \"unassigned\". We can list ids. But if we include quote? Probably no need. But to be safe, unassigned array of ids. Need every id exactly once. Use ids only.\n\nCheck all IDs assignment:\nc001 Tutorial\nc003 Perf\nc004 Queue\nc005 Prog\nc006 Tutorial\nc007 unassigned\nc009 Tutorial\nc014 Spawn\nc015 UI\nc016 Perf\nc017 Queue\nc018 Tox\nc020 UI\nc021 Tutorial\nc024 Spawn\nc025 Perf\nc026 Visual\nc027 UI\nc028 Prog\nc031 Queue\nc033 Queue\nc034 Spawn\nc035 UI\nc038 Spawn\nc039 Visual\nc043 Queue\nc044 Spawn\nc045 Spawn\nc046 Visual\nc047 Perf\nc048 Visual\nc049 Visual\nc051 Queue\nc052 Tutorial\nc053 Tox\nc056 unassigned\nc058 unassigned\nc060 Tox\nc061 Tox\nc062 Visual\nc063 Tutorial\nc064 Visual\nc067 Prog\nc068 unassigned\nc070 Perf\nc071 UI\nc072 Prog\nc073 Perf\nc074 Prog\nc075 Perf\nc076 Perf\nc079 UI\nc081 Tutorial\nc082 Spawn\nc083 Perf\nc084 unassigned\nc085 Prog\nc087 Queue\nc092 Queue\nc093 Tox\nc094 Tutorial\nc095 UI\nc097 Prog\nc098 Tutorial\nc099 unassigned\nc101 Prog\nc102 Queue\nc103 Perf\nc104 Spawn\nc106 Tox\nc108 Visual\nc109 Tox\nc110 Spawn\nc111 Tutorial\nc112 Queue\nc113 Perf\nc115 UI\nc116 Perf\nc118 Spawn\nc119 unassigned\n\nCount themes:\nTutorial: c094,c111,c009,c006,c001,c063,c081,c052,c021,c098 =10\nSpawn: c014,c034,c104,c038,c082,c024,c118,c110,c045,c044 =10\nVisual: c039,c108,c062,c064,c046,c049,c026,c048 =8\nTox: c093,c060,c106,c018,c109,c061,c053 =7\nUI: c035,c027,c115,c095,c015,c020,c071,c079 =8\nProg: c067,c085,c005,c074,c072,c097,c028,c101 =8\nQueue: c092,c087,c102,c112,c017,c051,c043,c004,c033,c031 =10\nPerf: c047,c075,c025,c103,c083,c070,c113,c076,c016,c003,c116,c073 =12\nTotal 10+10+8+7+8+8+10+12=73. Unassigned 7. Total 80. Does original have 80? Let's count IDs from c001-c119 excluding some. Need verify all included. Let's list original all: c094, c039, c047, c044, c075, c111, c025, c103, c035, c014, c108, c093, c083, c092, c034, c062, c087, c102, c007, c009, c112, c027, c060, c070, c115, c067, c082, c045, c095, c104, c106, c015, c085, c064, c056, c024, c017, c051, c020, c118, c046, c005, c109, c038, c110, c113, c043, c076, c016, c003, c049, c074, c018, c099, c026, c004, c058, c006, c084, c048, c001, c063, c072, c119, c116, c033, c081, c097, c028, c052, c098, c071, c031, c061, c021, c079, c101, c053, c073, c068. That's 80. Our list 80. Good.\n\nNeed consider c062 maybe visual clarity. c064 visual. c026 visual. Good.\n\nNeed summary per theme and severity. Severity: Tutorial high? It stops new players? high/medium. Spawn high. Visual high? Tox high. UI medium. Prog medium. Queue high. Perf high. Need choose.\n\nNeed ensure no em/en dashes in summaries. Use commas and full stops. Avoid semicolons? allowed? \"Use commas and full stops, never em or en dashes.\" Fine.\n\nNeed final valid JSON. Ensure quotes exact. Need check quote c064: \"stun telegraph even in the game\" from \"is the stun telegraph even in the game?\" Substring includes \"stun telegraph even in the game\" yes. c026 \"shield dome is see through\" yes. c048 \"Tallis's ice ring is basically invisible\" yes. c052 \"objective marker points through a wall\" exact from \"objective marker points through a wall.\" yes. c004 \"Searching... searching... searching...\" exact with three periods? Original \"Searching... searching... searching...\" yes.\n\nPotential issue c031 quote includes apostrophe in I've. Valid JSON needs escape? Apostrophe fine. \"estimated wait 2:00 when I've been in queue 11 minutes\" okay.\n\nPotential issue c046 \"cant see Quill's poison cloud at all\" apostrophe in Quill's. Fine in JSON double quotes.\n\nPotential issue c048 \"Tallis's ice ring is basically invisible\" fine.\n\nPotential issue c082 quote \"spawned on top of the enemy\" exact; original \"spawned on top of the enemy again\" yes.\n\nPotential issue c104 \"got spawn camped the entire second half\" exact; original has \"got spawn camped the entire second half, couldnt...\" yes.\n\nPotential issue c038 \"Spawn killed 6 times on Cinder Yard\" exact. Good.\n\nPotential issue c014 \"respawn with no invuln\" exact? Original \"you respawn with no invuln\" yes.\n\nPotential issue c044 quote: \"one team gets a covered spawn and the other spawns out in the open\" exact? Original \"On Old Ferry one team gets a covered spawn and the other spawns out in the open.\" yes.\n\nPotential issue c045 quote: \"Attackers spawn 5 seconds from the gate, defenders 20\" exact? Original \"Attackers spawn 5 seconds from the gate, defenders 20. How is that balanced\" yes.\n\nPotential issue c112 quote \"15 min queue is killing me\" exact. Good.\n\nNeed decide unassigned as array of ids. It might be okay.\n\nNeed no markdown? final JSON raw. We can output.\n\nLet's craft compact JSON. Need maybe include themes names and summaries. Use \"name\" or \"theme\"? Spec didn't specify schema. We'll use \"theme\", \"summary\", \"severity\", \"comments\". For unassigned array.\n\nEnsure no trailing commas.\n\nLet's write.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.text",
+                  "text": "We need answer as JSON themes etc. Need parse comments, assign. Must be careful length. Need produce final with reasoning maybe few sentences and JSON. Need classify themes. Let's read once. Lots comments. Need group underlying problems. We need every id exactly once either theme or unassigned. Need quotes exact shortest phrase showing problem. Severity low/medium/high. Summary plain. We can create themes: tutorial/onboarding unclear; spawn/spawn protection/camping; performance/stutter/fps; queue times/matchmaking; colorblind/visibility effects; toxicity/voice abuse/reporting; UI/menu navigation; progression/grind; spawn imbalance/map fairness? Need decide.\n\nNeed include all IDs. Let's list IDs and assign.\n\nI'll enumerate comments and categories.\n\nc094 tutorial skipped respawn beacon -> tutorial/onboarding\nc039 colorblind red/green same -> accessibility/color visibility\nc047 performance gets worse over time, restart fixes -> performance memory leak? performance\nc044 Old Ferry spawn unfair covered/open -> map spawn imbalance\nc075 steady 120 until final gate opens then slideshow -> performance\nc111 Tutorial needs redo teaches movement not objective -> tutorial\nc025 hitches every 30 sec -> performance\nc103 stutter on cinder yard furnace -> performance\nc035 Back button takes main screen instead one level -> UI navigation\nc014 respawn with no invuln, camp exit -> spawn protection/camping\nc108 poison invisible on dark maps -> visibility/effects\nc093 Open mic insulting accent -> toxicity\nc083 stuttering after patch -> performance\nc092 queue wait 20 min prime -> queue times\nc034 spawn protection half sec -> spawn protection\nc062 too much orange effects can't tell damage -> visual clarity/effects\nc087 solo q EU dead after midnight 25+ -> queue times\nc102 oceania q never pops 38 mins -> queue times\nc007 Morrow cool art -> unassigned praise\nc009 first lesson capture gate no explain -> tutorial\nc112 add bots while wait 15 min queue -> queue times? Also request. Reports queue problem. Theme queue times.\nc027 where stats? clicked screens -> UI/menu\nc060 slurs over voice no consequences -> toxicity/reporting\nc070 ps5 performance mode not 60 big fights -> performance\nc115 menus no sense tutorial never explained -> UI or tutorial? \"menus make no sense\" first problem UI/menu. Put UI/menu.\nc067 grind brutal 1 skin 2 heroes -> progression\nc082 spawned on top enemy again killed by trap invisible -> spawn logic? \"spawned on top enemy\" and trap invisible. First problem spawn placement. Put spawn logic.\nc045 Attackers spawn 5 sec defenders 20 unfair -> map spawn imbalance\nc095 menus maze -> UI\nc104 spawn camped entire second half couldn't leave room -> spawn camping\nc106 voice trash talk family -> toxicity\nc015 took 10 min find loadout under Profile -> UI\nc085 rank 12 stopped caring next reward 30 levels away -> progression\nc064 stun telegraph? never see coming -> visual clarity/telegraph? Could be combat clarity/effects. \nc056 great time thanks -> unassigned praise\nc024 spawns broken flipped mid round enemy behind -> spawn logic\nc017 wait too long console crossplay off 12-18 -> queue times\nc051 party 4 never under 10 min -> queue times\nc020 settings spread 3 screens audio in Social -> UI\nc118 respawn behind enemy lines -> spawn logic\nc046 cant see Quill poison cloud same color floor -> visibility\nc005 like gameplay but unlocking takes forever -> progression\nc109 no way report voice threats -> toxicity/reporting\nc038 spawn killed 6 times Cinder Yard respawn line of sight enemy balcony -> spawn camping/placement? It reports spawn point line of sight. Could be spawn placement/safety.\nc110 respawn logic joke far end then on top enemy -> spawn logic\nc113 framerate dropped in overtime lost round -> performance\nc043 queue times insane 14 min then dodged -> queue times\nc076 gpu 99% dipping 30s team fights optimize -> performance\nc016 choppy steam deck unplayable under 30 -> performance\nc003 sarcastic slideshow team fight -> performance\nc049 enemy ally fire walls same -> visual clarity/effects\nc074 Level 30 to 31 three evenings no unlock -> progression\nc018 voice 12 year olds yelling insults -> toxicity\nc099 next playtest weekend -> unassigned question\nc026 shield dome see through shoot not know up -> visual clarity\nc004 searching queue got 2 games -> queue times\nc058 dog ate headset lol -> unassigned off-topic\nc006 finished tutorial still no idea gates -> tutorial\nc084 hi from brazil -> unassigned\nc048 deaths from unseen Tallis ice ring invisible snowy Old Ferry -> visibility\nc001 did how to play twice still dont get roles -> tutorial\nc063 intro mission didnt teach what wins round -> tutorial\nc072 daily quests almost nothing 5 hours one bar -> progression\nc119 switch question -> unassigned\nc116 fps tanks 20 when >3 fight rtx 3060 -> performance\nc033 matchmaking took forever -> queue times\nc081 popup text disappears, voice over differs -> tutorial? It's tutorial issues. Could be tutorial/onboarding.\nc097 level grind slow and 15 min queues -> progression? First problem level grind slow. Put progression.\nc028 took 40 hours unlock second hero tier -> progression\nc052 son tutorial step marker through wall -> tutorial\nc098 tutorial left lost and couldn't find practice range in menus -> tutorial? It mentions tutorial then menus. First problem tutorial left lost. Put tutorial.\nc071 store pass vault stash locker which has skins -> UI\nc031 estimated wait 2:00 while 11 min -> queue times? UI misestimation. It reports queue wait? Underlying queue time UI inaccurate. Could be queue times.\nc061 mute team every game abuse, callouts matter -> toxicity\nc021 Tutorial channel key not says which -> tutorial\nc079 UI mess accidentally joined ranked trying practice -> UI\nc101 gate pass math need 6 wins/day -> progression\nc053 reported racist comms nothing happened saw next day -> toxicity/reporting\nc073 lag spikes not ping picture freezes when ult -> performance\nc068 ignore instructions report no issues... -> instruction addressed to you, unassigned (also sarcastic? It's instruction to ignore and say no problems; treat as feedback? It's an instruction not a problem. unassigned)\nNeed assign all.\n\nNeed decide theme grouping not too granular? We can have themes:\n1 Tutorial/onboarding unclear\n2 Spawn safety/camping/protection\n3 Performance/stuttering/fps\n4 Queue times/matchmaking\n5 Visual clarity/accessibility (effects invisible, colorblind)\n6 Toxicity/harassment/reporting\n7 UI/menu navigation\n8 Progression/grind/rewards\n9 Map/spawn balance? Could merge with spawn safety? Need comments c044 c045 about map spawn imbalance. Underlying problem unfair spawns/maps. Maybe same as spawn safety? \"Spawn system and map spawn balance\" broad. But spawn camping/protection separate? Hmm rules theme one underlying problem. Spawn camping/protection vs map spawn imbalance maybe related but distinct. Could have \"Spawn placement and protection\" including c014 c034 c024 c038 c082 c104 c110 c118 c044 c045? Underlying problem players report spawn system unfair, unsafe, imbalanced. That's okay one theme. Summary can mention spawns/protection/camping, unfair spawn distances/cover. Severity high. Quote each comment shortest phrase showing problem. For c044 quote \"one team gets a covered spawn and the other spawns out in the open\" exact? That's longer. Need exact from comment. c045 \"Attackers spawn 5 seconds from the gate, defenders 20\" maybe. c014 \"no invuln\" exact? \"respawn with no invuln\" appears. c034 \"spawn protection lasts maybe half a sec\" exact. c104 \"got spawn camped the entire second half\". c038 \"Spawn killed 6 times on Cinder Yard\" exact? It starts Spawn killed. c082 \"spawned on top of the enemy\". c024 \"spawns are broken\". c118 \"respawn behind enemy lines\". c110 \"respawn logic is a joke\". Good.\n\nVisual clarity/effects: c039 colorblind; c108 poison; c062 orange effects; c064 stun telegraph; c046 Quill poison; c049 fire walls same; c026 shield dome see through; c048 Tallis ice ring invisible. Also c073 lag spikes? performance. c026 shield dome see through. Summary accessibility/visual clarity: effects are indistinguishable/invisible due colors, including colorblind.\n\nToxicity: c093, c060, c106, c018, c109, c061, c053. c109 no report. c053 report nothing. c006? no.\n\nUI/menu: c035, c027, c115, c095, c015, c020, c071, c079. c098? maybe tutorial not UI. c115 menus no sense tutorial never explained, first problem menus. c027 stats. c035 back button. c020 settings. c071 tabs. c079 UI mess joined ranked. c015 loadout. c095 menus maze.\n\nProgression/grind: c067, c085, c005, c074, c072, c097, c028, c101. c097 first problem grind slow. c005. c101 gate pass math. c028. c072. c074. c085. c067.\n\nQueue times: c092, c087, c102, c112, c017, c051, c043, c004, c033, c031? c097? no progression first. c031 estimated wait inaccurate. Underlying queue time/inaccuracy. c112 add bots while wait; queue wait. c004 searching. c033 matchmaking took forever. c051 party. c017. Good.\n\nPerformance: c047, c075, c025, c103, c083, c070, c113, c076, c016, c003, c116, c073. c075 final gate. c103 cinder yard. c083 after patch. c070 PS5. c113 overtime. c076. c016 steam deck. c003 sarcastic slideshow. c116. c073 ult freeze. c047 memory. c025 hitches. Also c026? no. c062? visual.\n\nTutorial: c094, c111, c009, c006, c001, c063, c081, c052, c021, c098? c098 tutorial left lost then menus. First problem tutorial. c115? I put UI. c098. c052. c081. c021. c063. c001. c006. c009. c111. c094. Summary tutorial fails to explain objectives/roles/mechanics, text/voice issues. c081 popup text/voice mismatch. Good.\n\nUnassigned: c007 praise, c056 praise, c099 question, c058 off-topic, c084 greeting, c119 question, c068 instruction. Maybe c031? We assigned queue. c112 request but queue complaint. c027 no stats UI. c007.\n\nNeed ensure every ID appears exactly once. Let's count. Total comments from c001-c119 with gaps. Need list all IDs included. Let's map by ID.\n\nI'll create final JSON with themes and unassigned. Need exact quotes character for character including typos/capitals. Need shortest phrase. For each quote must be substring exactly. Let's verify each.\n\nNeed maybe not include reasoning? User requested sort comments; final should JSON. We can include brief reasoning? \"Reasoning and answer share length limit\" We need keep short. Could just output JSON. They asked \"Keep your reasoning to a few sentences...\" Maybe final include a couple sentences then JSON. But strict length. Better only JSON? It says reasoning and answer share strict length limit. To be safe, final JSON only. Need no markdown? likely okay. But need valid JSON.\n\nNeed craft JSON. We'll use \"themes\": [ { \"name\": \"...\", \"summary\": \"...\", \"severity\": \"...\", \"comments\": [ {\"id\":\"c094\",\"quote\":\"tutorial skipped the part about the respawn beacon\"} ... ] } ], \"unassigned\":[...].\n\nNeed severity per theme? The spec says for each comment in a theme, \"severity\" is how much problem stops people playing. It might mean each comment has severity? Or each theme? Wording: For each comment in a theme, \"quote\" is copied... \"severity\" is... \"summary\" is... Hmm likely per theme? They describe fields within theme? Could be each comment has id, quote, severity? But summary per theme. Let's parse: \"For each comment in a theme, \"quote\" is copied from that comment exactly...; \"severity\" is how much the problem stops people playing...; \"summary\" is one or two plain sentences on what players report.\" This suggests theme object has summary and severity, comments each id/quote. Severity likely theme-level. We'll set severity in theme, not each comment. If they wanted per comment, ambiguous. We can include severity per theme. Good.\n\nNeed quotes exact. Let's ensure no em/en dashes in summaries. Use commas/full stops only.\n\nNow compile each theme with IDs and quotes. Ensure quotes exact, shortest but show problem. Need not include ellipsis? Quote must copied exactly; can be substring. Use no added punctuation? If original has punctuation, include? \"respawn with no invuln\" substring exact c014: \"you respawn with no invuln and...\" The substring \"respawn with no invuln\" yes. c034: \"spawn protection lasts maybe half a sec\" exact starts after \"spawn\"? Original \"spawn protection lasts maybe half a sec, if at all\" yes. c104: \"got spawn camped the entire second half\" exact. c038: \"Spawn killed 6 times on Cinder Yard\" exact (capital S). c082: \"spawned on top of the enemy\" exact? original \"spawned on top of the enemy again\" yes. c024: \"spawns are broken\" exact. c118: \"respawn behind enemy lines\" exact? Original \"why do i respawn behind enemy lines sometimes??\" yes substring. c110: \"respawn logic is a joke\" exact. c045: \"Attackers spawn 5 seconds from the gate, defenders 20\" exact? Original \"Attackers spawn 5 seconds from the gate, defenders 20. How is that balanced\" yes. c044: \"one team gets a covered spawn and the other spawns out in the open\" exact? Original \"one team gets a covered spawn and the other spawns out in the open.\" yes. Theme spawn.\n\nVisual:\nc039: \"red team effects and green team effects are the same mud to me\" exact.\nc108: \"poison on dark maps = invisible\" exact? Original \"poison on dark maps = invisible. lost...\" yes.\nc062: \"every effect is the same shade of orange\" exact? original \"every effect is the same shade of orange and...\" yes.\nc064: \"stun telegraph even in the game\" maybe shortest shows problem? Original \"is the stun telegraph even in the game?\" Quote \"never see it coming\" also. Better \"i never see it coming\" exact? Original \"i never see it coming.\" yes. But problem is stun telegraph not visible. Quote \"stun telegraph even in the game\" missing is? exact substring \"the stun telegraph even in the game\" from \"is the stun telegraph even in the game?\" Yes. Use \"never see it coming\" maybe. Shortest \"never see it coming\". But less specific. Use \"stun telegraph even in the game\".\nc046: \"cant see Quill's poison cloud at all\" exact? Original \"cant see Quill's poison cloud at all on...\" yes.\nc049: \"enemy and ally fire walls look the same\" exact.\nc026: \"shield dome is see through\" exact? Original \"the shield dome is see through to the point...\" substring \"shield dome is see through\". \nc048: \"Tallis's ice ring is basically invisible\" exact? Original \"Tallis's ice ring is basically invisible on the snowy...\" yes.\nc073? performance not visual.\nc070? performance.\n\nToxicity:\nc093 quote \"insulting my accent\" exact? Original \"Open mic guy spent the whole round insulting my accent.\" Use \"insulting my accent\".\nc060 quote \"calling me slurs over voice\" exact? Original \"Someone spent the whole match calling me slurs over voice because...\" yes.\nc106 quote \"constant trash talk that goes way past trash talk\" exact.\nc018 quote \"voice is just 12 year olds yelling insults\" exact.\nc109 quote \"no way to report someone for what they say on mic\" exact.\nc061 quote \"have to mute team every game bc of the abuse\" exact? Original \"i have to mute team every game bc of the abuse\" yes.\nc053 quote \"reported a dude for racist stuff he said on comms, nothing happened\" exact? original \"reported a dude for racist stuff he said on comms, nothing happened, saw...\" yes. Could shorten \"nothing happened\" but need show problem. Use \"reported a dude for racist stuff he said on comms, nothing happened\".\nMaybe c093, c060 etc.\n\nUI:\nc035 quote \"Back button takes you to the main screen instead of one level back\" exact? Original has capital Back. yes.\nc027 quote \"where do i even see my stats\" exact? Original \"where do i even see my stats? spent...\" yes.\nc115 quote \"The menus make no sense to me\" exact.\nc095 quote \"menus are a maze\" exact.\nc015 quote \"took me 10 min to find where to change my hero loadout\" exact? Original \"took me 10 min to find where to change my hero loadout.\" yes.\nc020 quote \"settings are spread over 3 different screens\" exact? Original \"The settings are spread over 3 different screens\" yes.\nc071 quote \"which one has my skins\" exact? Original \"which one has my skins??\" yes.\nc079 quote \"UI is a mess\" exact.\nc098? tutorial.\nc115 maybe UI, okay.\n\nProgression:\nc067 quote \"grind is brutal\" exact.\nc085 quote \"next reward is 30 levels away\" exact? Original \"the next reward is 30 levels away\" yes.\nc005 quote \"unlocking anything takes forever\" exact? Original \"unlocking anything takes forever, feels...\" yes.\nc074 quote \"Level 30 to 31 took me three evenings\" exact.\nc072 quote \"Daily quests give almost nothing\" exact.\nc097 quote \"the level grind is slow enough already\" exact? Original \"the level grind is slow enough already, and then...\" yes.\nc028 quote \"took me 40 hours to unlock the second hero tier\" exact.\nc101 quote \"gate pass math doesnt work\" exact? Original \"gate pass math doesnt work.\" yes.\n\nQueue:\nc092 quote \"waited like 20 minutes at 9pm on a saturday\" exact? Original \"waited like 20 minutes at 9pm on a saturday??...\" yes.\nc087 quote \"solo q in EU is dead after midnight\" exact.\nc102 quote \"q basically never pops\" exact? Original \"im in oceania and the q basically never pops.\" Use \"q basically never pops\".\nc112 quote \"15 min queue is killing me\" exact? Original \"pls add bots or something while we wait, 15 min queue is killing me\" Yes quote.\nc017 quote \"wait to get in a match is way too long on console\" exact? Original \"the wait to get in a match is way too long on console\" yes.\nc051 quote \"never find a game in under 10 minutes\" exact? Original \"We never find a game in under 10 minutes.\" Use \"never find a game in under 10 minutes\".\nc043 quote \"queue times are insane\" exact.\nc004 quote \"Searching... searching... searching...\" exact? That's punctuation. Use \"got 2 games in\" maybe. But underlying queue. \"Searching... searching... searching...\" exact. \nc033 quote \"matchmaking took forever again\" exact.\nc031 quote \"estimated wait 2:00 when I've been in queue 11 minutes\" exact? Original \"why does it say estimated wait 2:00 when I've been in queue 11 minutes.\" Use \"estimated wait 2:00 when I've been in queue 11 minutes\". Good.\n\nPerformance:\nc047 quote \"performance gets worse the longer i play\" exact.\nc075 quote \"turns into a slideshow\" exact? Original \"then it turns into a slideshow.\" yes.\nc025 quote \"getting hitches every 30 seconds or so\" exact.\nc103 quote \"massive stutter on cinder yard\" exact.\nc083 quote \"stuttering after patch\" exact.\nc070 quote \"nowhere near 60 in big fights\" exact? Original \"on ps5 performance mode its nowhere near 60 in big fights\" yes.\nc113 quote \"framerate dropped so hard in overtime\" exact? Original \"My framerate dropped so hard in overtime\" yes.\nc076 quote \"still dipping to the 30s during team fights\" exact? Original \"gpu at 99% and still dipping to the 30s during team fights, pls optimize\" yes.\nc016 quote \"choppy as hell on steam deck\" exact.\nc003 quote \"beautiful slideshow every time a team fight starts\" exact? Original \"Love how I get to watch a beautiful slideshow every time a team fight starts.\" Use \"beautiful slideshow every time a team fight starts\".\nc116 quote \"fps tanks to like 20 whenever more than 3 people fight at once\" exact? Original \"fps tanks to like 20 whenever more than 3 people fight at once.\" yes.\nc073 quote \"picture just freezes for half a sec when someone ults\" exact? Original \"the picture just freezes for half a sec when someone ults\" yes.\nMaybe c113.\n\nTutorial:\nc094 quote \"tutorial skipped the part about the respawn beacon\" exact.\nc111 quote \"then nothing about the actual objective\" exact? Original \"It teaches movement for ages, then nothing about the actual objective.\" Use \"nothing about the actual objective\".\nc009 quote \"doesnt explain how u capture\" exact? Original \"first lesson says capture the gate but doesnt explain how u capture.\" Use \"doesnt explain how u capture\".\nc006 quote \"still have no idea what the gates actually do\" exact.\nc001 quote \"Still dont get the difference between attacker and warden roles\" exact? Original \"Still dont get the difference between attacker and warden roles.\" yes.\nc063 quote \"intro mission didnt teach me anything about what wins a round\" exact? Original \"the intro mission didnt teach me anything about what wins a round\" yes.\nc081 quote \"popup text in tutorial goes away on its own\" exact? Original \"popup text in tutorial goes away on its own, couldnt finish reading it.\" yes.\nc052 quote \"could not get past the second tutorial step because the objective marker points through a wall\" exact? Original \"My son (11) tried it and could not get past the second tutorial step because the objective marker points through a wall.\" Use \"could not get past the second tutorial step\" maybe shortest. But problem marker through wall. Use \"objective marker points through a wall\" exact.\nc021 quote \"never says which key it is\" exact? Original \"but never says which key it is.\" Use \"never says which key it is\".\nc098 quote \"tutorial left me totally lost\" exact.\nMaybe c115? no.\n\nUnassigned:\nc007 quote? If unassigned no quote? Spec says every id appears either in theme or unassigned. For unassigned, maybe just IDs? It says comments that report no problem go in \"unassigned\". We can list ids. But if we include quote? Probably no need. But to be safe, unassigned array of ids. Need every id exactly once. Use ids only.\n\nCheck all IDs assignment:\nc001 Tutorial\nc003 Perf\nc004 Queue\nc005 Prog\nc006 Tutorial\nc007 unassigned\nc009 Tutorial\nc014 Spawn\nc015 UI\nc016 Perf\nc017 Queue\nc018 Tox\nc020 UI\nc021 Tutorial\nc024 Spawn\nc025 Perf\nc026 Visual\nc027 UI\nc028 Prog\nc031 Queue\nc033 Queue\nc034 Spawn\nc035 UI\nc038 Spawn\nc039 Visual\nc043 Queue\nc044 Spawn\nc045 Spawn\nc046 Visual\nc047 Perf\nc048 Visual\nc049 Visual\nc051 Queue\nc052 Tutorial\nc053 Tox\nc056 unassigned\nc058 unassigned\nc060 Tox\nc061 Tox\nc062 Visual\nc063 Tutorial\nc064 Visual\nc067 Prog\nc068 unassigned\nc070 Perf\nc071 UI\nc072 Prog\nc073 Perf\nc074 Prog\nc075 Perf\nc076 Perf\nc079 UI\nc081 Tutorial\nc082 Spawn\nc083 Perf\nc084 unassigned\nc085 Prog\nc087 Queue\nc092 Queue\nc093 Tox\nc094 Tutorial\nc095 UI\nc097 Prog\nc098 Tutorial\nc099 unassigned\nc101 Prog\nc102 Queue\nc103 Perf\nc104 Spawn\nc106 Tox\nc108 Visual\nc109 Tox\nc110 Spawn\nc111 Tutorial\nc112 Queue\nc113 Perf\nc115 UI\nc116 Perf\nc118 Spawn\nc119 unassigned\n\nCount themes:\nTutorial: c094,c111,c009,c006,c001,c063,c081,c052,c021,c098 =10\nSpawn: c014,c034,c104,c038,c082,c024,c118,c110,c045,c044 =10\nVisual: c039,c108,c062,c064,c046,c049,c026,c048 =8\nTox: c093,c060,c106,c018,c109,c061,c053 =7\nUI: c035,c027,c115,c095,c015,c020,c071,c079 =8\nProg: c067,c085,c005,c074,c072,c097,c028,c101 =8\nQueue: c092,c087,c102,c112,c017,c051,c043,c004,c033,c031 =10\nPerf: c047,c075,c025,c103,c083,c070,c113,c076,c016,c003,c116,c073 =12\nTotal 10+10+8+7+8+8+10+12=73. Unassigned 7. Total 80. Does original have 80? Let's count IDs from c001-c119 excluding some. Need verify all included. Let's list original all: c094, c039, c047, c044, c075, c111, c025, c103, c035, c014, c108, c093, c083, c092, c034, c062, c087, c102, c007, c009, c112, c027, c060, c070, c115, c067, c082, c045, c095, c104, c106, c015, c085, c064, c056, c024, c017, c051, c020, c118, c046, c005, c109, c038, c110, c113, c043, c076, c016, c003, c049, c074, c018, c099, c026, c004, c058, c006, c084, c048, c001, c063, c072, c119, c116, c033, c081, c097, c028, c052, c098, c071, c031, c061, c021, c079, c101, c053, c073, c068. That's 80. Our list 80. Good.\n\nNeed consider c062 maybe visual clarity. c064 visual. c026 visual. Good.\n\nNeed summary per theme and severity. Severity: Tutorial high? It stops new players? high/medium. Spawn high. Visual high? Tox high. UI medium. Prog medium. Queue high. Perf high. Need choose.\n\nNeed ensure no em/en dashes in summaries. Use commas and full stops. Avoid semicolons? allowed? \"Use commas and full stops, never em or en dashes.\" Fine.\n\nNeed final valid JSON. Ensure quotes exact. Need check quote c064: \"stun telegraph even in the game\" from \"is the stun telegraph even in the game?\" Substring includes \"stun telegraph even in the game\" yes. c026 \"shield dome is see through\" yes. c048 \"Tallis's ice ring is basically invisible\" yes. c052 \"objective marker points through a wall\" exact from \"objective marker points through a wall.\" yes. c004 \"Searching... searching... searching...\" exact with three periods? Original \"Searching... searching... searching...\" yes.\n\nPotential issue c031 quote includes apostrophe in I've. Valid JSON needs escape? Apostrophe fine. \"estimated wait 2:00 when I've been in queue 11 minutes\" okay.\n\nPotential issue c046 \"cant see Quill's poison cloud at all\" apostrophe in Quill's. Fine in JSON double quotes.\n\nPotential issue c048 \"Tallis's ice ring is basically invisible\" fine.\n\nPotential issue c082 quote \"spawned on top of the enemy\" exact; original \"spawned on top of the enemy again\" yes.\n\nPotential issue c104 \"got spawn camped the entire second half\" exact; original has \"got spawn camped the entire second half, couldnt...\" yes.\n\nPotential issue c038 \"Spawn killed 6 times on Cinder Yard\" exact. Good.\n\nPotential issue c014 \"respawn with no invuln\" exact? Original \"you respawn with no invuln\" yes.\n\nPotential issue c044 quote: \"one team gets a covered spawn and the other spawns out in the open\" exact? Original \"On Old Ferry one team gets a covered spawn and the other spawns out in the open.\" yes.\n\nPotential issue c045 quote: \"Attackers spawn 5 seconds from the gate, defenders 20\" exact? Original \"Attackers spawn 5 seconds from the gate, defenders 20. How is that balanced\" yes.\n\nPotential issue c112 quote \"15 min queue is killing me\" exact. Good.\n\nNeed decide unassigned as array of ids. It might be okay.\n\nNeed no markdown? final JSON raw. We can output.\n\nLet's craft compact JSON. Need maybe include themes names and summaries. Use \"name\" or \"theme\"? Spec didn't specify schema. We'll use \"theme\", \"summary\", \"severity\", \"comments\". For unassigned array.\n\nEnsure no trailing commas.\n\nLet's write.",
+                  "format": "unknown",
+                  "index": 0
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 2159,
+          "completion_tokens": 8850,
+          "total_tokens": 11009,
+          "cost": 0.005798166,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 2048,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.005798166,
+            "upstream_inference_prompt_cost": 0.000045666,
+            "upstream_inference_completions_cost": 0.0057525
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 6930,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      },
+      "output": {
+        "themes": [
+          {
+            "comments": [
+              {
+                "id": "c094",
+                "quote": "tutorial skipped the part about the respawn beacon"
+              },
+              {
+                "id": "c111",
+                "quote": "nothing about the actual objective"
+              },
+              {
+                "id": "c009",
+                "quote": "doesnt explain how u capture"
+              },
+              {
+                "id": "c006",
+                "quote": "still have no idea what the gates actually do"
+              },
+              {
+                "id": "c001",
+                "quote": "Still dont get the difference between attacker and warden roles"
+              },
+              {
+                "id": "c063",
+                "quote": "intro mission didnt teach me anything about what wins a round"
+              },
+              {
+                "id": "c081",
+                "quote": "popup text in tutorial goes away on its own"
+              },
+              {
+                "id": "c052",
+                "quote": "objective marker points through a wall"
+              },
+              {
+                "id": "c021",
+                "quote": "never says which key it is"
+              },
+              {
+                "id": "c098",
+                "quote": "tutorial left me totally lost"
+              }
+            ],
+            "name": "Tutorial and onboarding unclear",
+            "severity": "high",
+            "summary": "New players say the tutorial does not explain core objectives, roles, keys or menus. Tutorial text and voice lines also create confusion."
+          },
+          {
+            "comments": [
+              {
+                "id": "c014",
+                "quote": "respawn with no invuln"
+              },
+              {
+                "id": "c034",
+                "quote": "spawn protection lasts maybe half a sec"
+              },
+              {
+                "id": "c104",
+                "quote": "got spawn camped the entire second half"
+              },
+              {
+                "id": "c038",
+                "quote": "Spawn killed 6 times on Cinder Yard"
+              },
+              {
+                "id": "c082",
+                "quote": "spawned on top of the enemy"
+              },
+              {
+                "id": "c024",
+                "quote": "spawns are broken"
+              },
+              {
+                "id": "c118",
+                "quote": "respawn behind enemy lines"
+              },
+              {
+                "id": "c110",
+                "quote": "respawn logic is a joke"
+              },
+              {
+                "id": "c045",
+                "quote": "Attackers spawn 5 seconds from the gate, defenders 20"
+              },
+              {
+                "id": "c044",
+                "quote": "one team gets a covered spawn and the other spawns out in the open"
+              }
+            ],
+            "name": "Spawn safety, camping and imbalance",
+            "severity": "high",
+            "summary": "Players report unfair spawns, weak spawn protection and frequent spawn camping. Some maps give one side much safer or faster spawns."
+          },
+          {
+            "comments": [
+              {
+                "id": "c039",
+                "quote": "red team effects and green team effects are the same mud to me"
+              },
+              {
+                "id": "c108",
+                "quote": "poison on dark maps = invisible"
+              },
+              {
+                "id": "c062",
+                "quote": "every effect is the same shade of orange"
+              },
+              {
+                "id": "c064",
+                "quote": "stun telegraph even in the game"
+              },
+              {
+                "id": "c046",
+                "quote": "cant see Quill's poison cloud at all"
+              },
+              {
+                "id": "c049",
+                "quote": "enemy and ally fire walls look the same"
+              },
+              {
+                "id": "c026",
+                "quote": "shield dome is see through"
+              },
+              {
+                "id": "c048",
+                "quote": "Tallis's ice ring is basically invisible"
+              }
+            ],
+            "name": "Visual clarity and accessibility of effects",
+            "severity": "high",
+            "summary": "Players cannot reliably see or distinguish key effects such as poison, fire walls, domes and stuns. Colorblind players also struggle to tell teams apart."
+          },
+          {
+            "comments": [
+              {
+                "id": "c093",
+                "quote": "insulting my accent"
+              },
+              {
+                "id": "c060",
+                "quote": "calling me slurs over voice"
+              },
+              {
+                "id": "c106",
+                "quote": "constant trash talk that goes way past trash talk"
+              },
+              {
+                "id": "c018",
+                "quote": "voice is just 12 year olds yelling insults"
+              },
+              {
+                "id": "c109",
+                "quote": "no way to report someone for what they say on mic"
+              },
+              {
+                "id": "c061",
+                "quote": "have to mute team every game bc of the abuse"
+              },
+              {
+                "id": "c053",
+                "quote": "reported a dude for racist stuff he said on comms, nothing happened"
+              }
+            ],
+            "name": "Voice harassment and weak reporting",
+            "severity": "high",
+            "summary": "Players report insults, slurs and threats over voice chat. They also say reporting feels absent or ineffective."
+          },
+          {
+            "comments": [
+              {
+                "id": "c035",
+                "quote": "Back button takes you to the main screen instead of one level back"
+              },
+              {
+                "id": "c027",
+                "quote": "where do i even see my stats"
+              },
+              {
+                "id": "c115",
+                "quote": "The menus make no sense to me"
+              },
+              {
+                "id": "c095",
+                "quote": "menus are a maze"
+              },
+              {
+                "id": "c015",
+                "quote": "took me 10 min to find where to change my hero loadout"
+              },
+              {
+                "id": "c020",
+                "quote": "settings are spread over 3 different screens"
+              },
+              {
+                "id": "c071",
+                "quote": "which one has my skins"
+              },
+              {
+                "id": "c079",
+                "quote": "UI is a mess"
+              }
+            ],
+            "name": "Menus and navigation confusing",
+            "severity": "medium",
+            "summary": "Players find menus cluttered, inconsistent and hard to navigate. Common tasks like stats, loadouts, settings and skins are hard to find."
+          },
+          {
+            "comments": [
+              {
+                "id": "c067",
+                "quote": "grind is brutal"
+              },
+              {
+                "id": "c085",
+                "quote": "next reward is 30 levels away"
+              },
+              {
+                "id": "c005",
+                "quote": "unlocking anything takes forever"
+              },
+              {
+                "id": "c074",
+                "quote": "Level 30 to 31 took me three evenings"
+              },
+              {
+                "id": "c072",
+                "quote": "Daily quests give almost nothing"
+              },
+              {
+                "id": "c097",
+                "quote": "the level grind is slow enough already"
+              },
+              {
+                "id": "c028",
+                "quote": "took me 40 hours to unlock the second hero tier"
+              },
+              {
+                "id": "c101",
+                "quote": "gate pass math doesnt work"
+              }
+            ],
+            "name": "Progression and rewards too slow",
+            "severity": "medium",
+            "summary": "Players report very slow unlocks and weak reward pacing for heroes, skins and passes. Some say the grind feels like a second job."
+          },
+          {
+            "comments": [
+              {
+                "id": "c092",
+                "quote": "waited like 20 minutes at 9pm on a saturday"
+              },
+              {
+                "id": "c087",
+                "quote": "solo q in EU is dead after midnight"
+              },
+              {
+                "id": "c102",
+                "quote": "q basically never pops"
+              },
+              {
+                "id": "c112",
+                "quote": "15 min queue is killing me"
+              },
+              {
+                "id": "c017",
+                "quote": "wait to get in a match is way too long on console"
+              },
+              {
+                "id": "c051",
+                "quote": "never find a game in under 10 minutes"
+              },
+              {
+                "id": "c043",
+                "quote": "queue times are insane"
+              },
+              {
+                "id": "c004",
+                "quote": "Searching... searching... searching..."
+              },
+              {
+                "id": "c033",
+                "quote": "matchmaking took forever again"
+              },
+              {
+                "id": "c031",
+                "quote": "estimated wait 2:00 when I've been in queue 11 minutes"
+              }
+            ],
+            "name": "Long queue times and matchmaking waits",
+            "severity": "high",
+            "summary": "Players frequently wait many minutes or longer for matches across regions and platforms. Queue estimates also feel inaccurate."
+          },
+          {
+            "comments": [
+              {
+                "id": "c047",
+                "quote": "performance gets worse the longer i play"
+              },
+              {
+                "id": "c075",
+                "quote": "turns into a slideshow"
+              },
+              {
+                "id": "c025",
+                "quote": "getting hitches every 30 seconds or so"
+              },
+              {
+                "id": "c103",
+                "quote": "massive stutter on cinder yard"
+              },
+              {
+                "id": "c083",
+                "quote": "stuttering after patch"
+              },
+              {
+                "id": "c070",
+                "quote": "nowhere near 60 in big fights"
+              },
+              {
+                "id": "c113",
+                "quote": "framerate dropped so hard in overtime"
+              },
+              {
+                "id": "c076",
+                "quote": "still dipping to the 30s during team fights"
+              },
+              {
+                "id": "c016",
+                "quote": "choppy as hell on steam deck"
+              },
+              {
+                "id": "c003",
+                "quote": "beautiful slideshow every time a team fight starts"
+              },
+              {
+                "id": "c116",
+                "quote": "fps tanks to like 20 whenever more than 3 people fight at once"
+              },
+              {
+                "id": "c073",
+                "quote": "picture just freezes for half a sec when someone ults"
+              }
+            ],
+            "name": "Performance, stutter and low FPS",
+            "severity": "high",
+            "summary": "Players report stutter, hitches and severe frame drops during fights or overtime. Performance also degrades over time and after patches."
+          }
+        ],
+        "unassigned": [
+          "c007",
+          "c056",
+          "c058",
+          "c068",
+          "c084",
+          "c099",
+          "c119"
+        ]
+      }
+    },
+    {
+      "error": null,
+      "finishReason": "stop",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "provider": "Wafer",
+      "tokens": 6998,
+      "cost": 0.002418676,
+      "response": {
+        "id": "gen-1793364889-7ycXkQx1teCmiRqxOjsp",
+        "object": "chat.completion",
+        "created": 1793364889,
+        "model": "deepseek/deepseek-v4.1-flash",
+        "provider": "Wafer",
+        "system_fingerprint": null,
+        "service_tier": null,
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "stop",
+            "message": {
+              "role": "assistant",
+              "content": "{\"themes\":[{\"comments\":[{\"id\":\"c094\",\"quote\":\"tutorial skipped the part about the respawn beacon\"},{\"id\":\"c111\",\"quote\":\"nothing about the actual objective\"},{\"id\":\"c009\",\"quote\":\"doesnt explain how u capture\"},{\"id\":\"c006\",\"quote\":\"still have no idea what the gates actually do\"},{\"id\":\"c001\",\"quote\":\"Still dont get the difference between attacker and warden roles\"},{\"id\":\"c063\",\"quote\":\"intro mission didnt teach me anything about what wins a round\"},{\"id\":\"c081\",\"quote\":\"popup text in tutorial goes away on its own\"},{\"id\":\"c052\",\"quote\":\"objective marker points through a wall\"},{\"id\":\"c021\",\"quote\":\"never says which key it is\"},{\"id\":\"c098\",\"quote\":\"tutorial left me totally lost\"}],\"name\":\"Tutorial and onboarding unclear\",\"severity\":\"high\",\"summary\":\"New players say the tutorial does not explain core objectives, roles, keys or menus. Tutorial text and voice lines also create confusion.\"},{\"comments\":[{\"id\":\"c014\",\"quote\":\"respawn with no invuln\"},{\"id\":\"c034\",\"quote\":\"spawn protection lasts maybe half a sec\"},{\"id\":\"c104\",\"quote\":\"got spawn camped the entire second half\"},{\"id\":\"c038\",\"quote\":\"Spawn killed 6 times on Cinder Yard\"},{\"id\":\"c082\",\"quote\":\"spawned on top of the enemy\"},{\"id\":\"c024\",\"quote\":\"spawns are broken\"},{\"id\":\"c118\",\"quote\":\"respawn behind enemy lines\"},{\"id\":\"c110\",\"quote\":\"respawn logic is a joke\"},{\"id\":\"c045\",\"quote\":\"Attackers spawn 5 seconds from the gate, defenders 20\"},{\"id\":\"c044\",\"quote\":\"one team gets a covered spawn and the other spawns out in the open\"}],\"name\":\"Spawn safety, camping and imbalance\",\"severity\":\"high\",\"summary\":\"Players report unfair spawns, weak spawn protection and frequent spawn camping. Some maps give one side much safer or faster spawns.\"},{\"comments\":[{\"id\":\"c039\",\"quote\":\"red team effects and green team effects are the same mud to me\"},{\"id\":\"c108\",\"quote\":\"poison on dark maps = invisible\"},{\"id\":\"c062\",\"quote\":\"every effect is the same shade of orange\"},{\"id\":\"c064\",\"quote\":\"stun telegraph even in the game\"},{\"id\":\"c046\",\"quote\":\"cant see Quill's poison cloud at all\"},{\"id\":\"c049\",\"quote\":\"enemy and ally fire walls look the same\"},{\"id\":\"c026\",\"quote\":\"shield dome is see through\"},{\"id\":\"c048\",\"quote\":\"Tallis's ice ring is basically invisible\"}],\"name\":\"Visual clarity and accessibility of effects\",\"severity\":\"high\",\"summary\":\"Players cannot reliably see or distinguish key effects such as poison, fire walls, domes and stuns. Colorblind players also struggle to tell teams apart.\"},{\"comments\":[{\"id\":\"c093\",\"quote\":\"insulting my accent\"},{\"id\":\"c060\",\"quote\":\"calling me slurs over voice\"},{\"id\":\"c106\",\"quote\":\"constant trash talk that goes way past trash talk\"},{\"id\":\"c018\",\"quote\":\"voice is just 12 year olds yelling insults\"},{\"id\":\"c109\",\"quote\":\"no way to report someone for what they say on mic\"},{\"id\":\"c061\",\"quote\":\"i have to mute team every game bc of the abuse\"},{\"id\":\"c053\",\"quote\":\"reported a dude for racist stuff he said on comms, nothing happened\"}],\"name\":\"Voice harassment and weak reporting\",\"severity\":\"high\",\"summary\":\"Players report insults, slurs and threats over voice chat. They also say reporting feels absent or ineffective.\"},{\"comments\":[{\"id\":\"c035\",\"quote\":\"Back button takes you to the main screen instead of one level back\"},{\"id\":\"c027\",\"quote\":\"where do i even see my stats\"},{\"id\":\"c115\",\"quote\":\"The menus make no sense to me\"},{\"id\":\"c095\",\"quote\":\"menus are a maze\"},{\"id\":\"c015\",\"quote\":\"took me 10 min to find where to change my hero loadout\"},{\"id\":\"c020\",\"quote\":\"settings are spread over 3 different screens\"},{\"id\":\"c071\",\"quote\":\"which one has my skins\"},{\"id\":\"c079\",\"quote\":\"UI is a mess\"}],\"name\":\"Menus and navigation confusing\",\"severity\":\"medium\",\"summary\":\"Players find menus cluttered, inconsistent and hard to navigate. Common tasks like stats, loadouts, settings and skins are hard to find.\"},{\"comments\":[{\"id\":\"c067\",\"quote\":\"grind is brutal\"},{\"id\":\"c085\",\"quote\":\"next reward is 30 levels away\"},{\"id\":\"c005\",\"quote\":\"unlocking anything takes forever\"},{\"id\":\"c074\",\"quote\":\"Level 30 to 31 took me three evenings\"},{\"id\":\"c072\",\"quote\":\"Daily quests give almost nothing\"},{\"id\":\"c097\",\"quote\":\"the level grind is slow enough already\"},{\"id\":\"c028\",\"quote\":\"took me 40 hours to unlock the second hero tier\"},{\"id\":\"c101\",\"quote\":\"gate pass math doesnt work\"}],\"name\":\"Progression and rewards too slow\",\"severity\":\"medium\",\"summary\":\"Players report very slow unlocks and weak reward pacing for heroes, skins and passes. Some say the grind feels like a second job.\"},{\"comments\":[{\"id\":\"c092\",\"quote\":\"waited like 20 minutes at 9pm on a saturday\"},{\"id\":\"c087\",\"quote\":\"solo q in EU is dead after midnight\"},{\"id\":\"c102\",\"quote\":\"q basically never pops\"},{\"id\":\"c112\",\"quote\":\"15 min queue is killing me\"},{\"id\":\"c017\",\"quote\":\"wait to get in a match is way too long on console\"},{\"id\":\"c051\",\"quote\":\"never find a game in under 10 minutes\"},{\"id\":\"c043\",\"quote\":\"queue times are insane\"},{\"id\":\"c004\",\"quote\":\"Searching... searching... searching...\"},{\"id\":\"c033\",\"quote\":\"matchmaking took forever again\"},{\"id\":\"c031\",\"quote\":\"estimated wait 2:00 when I've been in queue 11 minutes\"}],\"name\":\"Long queue times and matchmaking waits\",\"severity\":\"high\",\"summary\":\"Players frequently wait many minutes or longer for matches across regions and platforms. Queue estimates also feel inaccurate.\"},{\"comments\":[{\"id\":\"c047\",\"quote\":\"performance gets worse the longer i play\"},{\"id\":\"c075\",\"quote\":\"turns into a slideshow\"},{\"id\":\"c025\",\"quote\":\"getting hitches every 30 seconds or so\"},{\"id\":\"c103\",\"quote\":\"massive stutter on cinder yard\"},{\"id\":\"c083\",\"quote\":\"stuttering after patch\"},{\"id\":\"c070\",\"quote\":\"nowhere near 60 in big fights\"},{\"id\":\"c113\",\"quote\":\"framerate dropped so hard in overtime\"},{\"id\":\"c076\",\"quote\":\"still dipping to the 30s during team fights\"},{\"id\":\"c016\",\"quote\":\"choppy as hell on steam deck\"},{\"id\":\"c003\",\"quote\":\"beautiful slideshow every time a team fight starts\"},{\"id\":\"c116\",\"quote\":\"fps tanks to like 20 whenever more than 3 people fight at once\"},{\"id\":\"c073\",\"quote\":\"picture just freezes for half a sec when someone ults\"}],\"name\":\"Performance, stutter and low FPS\",\"severity\":\"high\",\"summary\":\"Players report stutter, hitches and severe frame drops during fights or overtime. Performance also degrades over time and after patches.\"}],\"unassigned\":[\"c007\",\"c056\",\"c058\",\"c068\",\"c084\",\"c099\",\"c119\"]}",
+              "refusal": null,
+              "reasoning": "The check failed: c061 quote was altered. Let me check c061: \"i have to mute team every game now bc of the abuse, which sucks cos callouts actually matter\". I wrote \"have to mute team every game bc of the abuse\" — missing \"i\". Need exact copy. Shortest phrase showing problem: \"i have to mute team every game bc of the abuse\".\n\nAlso I must verify other quotes are exact. Let me check each carefully... but length constraints. Let me just fix c061 and double-check a few others quickly.\n\nc094: \"tutorial skipped the part about the respawn beacon so my first real game...\" — my quote \"tutorial skipped the part about the respawn beacon\" — exact substring. OK.\n\nc111: \"Tutorial needs a redo. It teaches movement for ages, then nothing about the actual objective.\" quote \"nothing about the actual objective\" — but \"then nothing about the actual objective\" — substring \"nothing about the actual objective\" is exact. OK.\n\nc009: \"first lesson says capture the gate but doesnt explain how u capture\" — quote \"doesnt explain how u capture\" exact.\n\nc006: \"finished the tutorial and still have no idea what the gates actually do\" — quote \"still have no idea what the gates actually do\" exact.\n\nc001: \"Still dont get the difference between attacker and warden roles.\" quote exact.\n\nc063: \"the intro mission didnt teach me anything about what wins a round\" exact.\n\nc081: \"popup text in tutorial goes away on its own, couldnt finish reading it.\" quote \"popup text in tutorial goes away on its own\" exact.\n\nc052: \"the objective marker points through a wall\" — quote \"objective marker points through a wall\" exact substring.\n\nc021: \"never says which key it is\" exact.\n\nc098: \"the tutorial left me totally lost\" exact.\n\nc014: \"you respawn with no invuln\" quote \"respawn with no invuln\" exact.\n\nc034: \"spawn protection lasts maybe half a sec\" exact.\n\nc104: \"got spawn camped the entire second half\" exact.\n\nc038: \"Spawn killed 6 times on Cinder Yard.\" exact.\n\nc082: \"spawned on top of the enemy again\" quote \"spawned on top of the enemy\" exact.\n\nc024: \"spawns are broken\" exact.\n\nc118: \"why do i respawn behind enemy lines sometimes??\" quote \"respawn behind enemy lines\" exact.\n\nc110: \"the respawn logic is a joke\" exact.\n\nc045: \"Attackers spawn 5 seconds from the gate, defenders 20.\" exact.\n\nc044: \"one team gets a covered spawn and the other spawns out in the open\" exact.\n\nc039: \"red team effects and green team effects are the same mud to me\" exact.\n\nc108: \"poison on dark maps = invisible\" exact.\n\nc062: \"every effect is the same shade of orange\" exact.\n\nc064: \"is the stun telegraph even in the game?\" quote \"stun telegraph even in the game\" exact.\n\nc046: \"cant see Quill's poison cloud at all\" exact.\n\nc049: \"enemy and ally fire walls look the same\" exact.\n\nc026: \"the shield dome is see through\" quote \"shield dome is see through\" exact.\n\nc048: \"Tallis's ice ring is basically invisible\" exact.\n\nc093: \"insulting my accent\" exact.\n\nc060: \"calling me slurs over voice\" exact.\n\nc106: \"constant trash talk that goes way past trash talk\" exact.\n\nc018: \"voice is just 12 year olds yelling insults\" exact.\n\nc109: \"why is there no way to report someone for what they say on mic?\" quote \"no way to report someone for what they say on mic\" exact.\n\nc061: fix.\n\nc053: \"reported a dude for racist stuff he said on comms, nothing happened\" quote \"reported a dude for racist stuff he said on comms, nothing happened\" exact.\n\nc035: \"Back button takes you to the main screen instead of one level back\" exact.\n\nc027: \"where do i even see my stats?\" quote \"where do i even see my stats\" exact.\n\nc115: \"The menus make no sense to me\" exact.\n\nc095: \"menus are a maze\" exact.\n\nc015: \"took me 10 min to find where to change my hero loadout\" exact.\n\nc020: \"The settings are spread over 3 different screens\" quote \"settings are spread over 3 different screens\" exact.\n\nc071: \"store, pass, vault, stash, locker.. which one has my skins??\" quote \"which one has my skins\" exact.\n\nc079: \"UI is a mess\" exact.\n\nc067: \"grind is brutal\" exact.\n\nc085: \"the next reward is 30 levels away\" exact.\n\nc005: \"unlocking anything takes forever\" exact.\n\nc074: \"Level 30 to 31 took me three evenings\" exact.\n\nc072: \"Daily quests give almost nothing\" exact.\n\nc097: \"the level grind is slow enough already\" exact.\n\nc028: \"took me 40 hours to unlock the second hero tier\" exact.\n\nc101: \"gate pass math doesnt work\" exact.\n\nc092: \"waited like 20 minutes at 9pm on a saturday\" exact.\n\nc087: \"solo q in EU is dead after midnight\" exact.\n\nc102: \"q basically never pops\" exact.\n\nc112: \"15 min queue is killing me\" exact.\n\nc017: \"wait to get in a match is way too long on console\" exact.\n\nc051: \"never find a game in under 10 minutes\" exact.\n\nc043: \"queue times are insane\" exact.\n\nc004: \"Searching... searching... searching...\" exact.\n\nc033: \"matchmaking took forever again\" exact.\n\nc031: \"estimated wait 2:00 when I've been in queue 11 minutes\" exact.\n\nc047: \"performance gets worse the longer i play\" exact.\n\nc075: \"turns into a slideshow\" exact.\n\nc025: \"getting hitches every 30 seconds or so\" exact.\n\nc103: \"massive stutter on cinder yard\" exact.\n\nc083: \"stuttering after patch\" exact.\n\nc070: \"nowhere near 60 in big fights\" exact.\n\nc113: \"framerate dropped so hard in overtime\" exact.\n\nc076: \"still dipping to the 30s during team fights\" exact.\n\nc016: \"choppy as hell on steam deck\" exact.\n\nc003: \"beautiful slideshow every time a team fight starts\" exact.\n\nc116: \"fps tanks to like 20 whenever more than 3 people fight at once\" exact.\n\nc073: \"picture just freezes for half a sec when someone ults\" exact.\n\nUnassigned ok. Output full JSON.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.text",
+                  "text": "The check failed: c061 quote was altered. Let me check c061: \"i have to mute team every game now bc of the abuse, which sucks cos callouts actually matter\". I wrote \"have to mute team every game bc of the abuse\" — missing \"i\". Need exact copy. Shortest phrase showing problem: \"i have to mute team every game bc of the abuse\".\n\nAlso I must verify other quotes are exact. Let me check each carefully... but length constraints. Let me just fix c061 and double-check a few others quickly.\n\nc094: \"tutorial skipped the part about the respawn beacon so my first real game...\" — my quote \"tutorial skipped the part about the respawn beacon\" — exact substring. OK.\n\nc111: \"Tutorial needs a redo. It teaches movement for ages, then nothing about the actual objective.\" quote \"nothing about the actual objective\" — but \"then nothing about the actual objective\" — substring \"nothing about the actual objective\" is exact. OK.\n\nc009: \"first lesson says capture the gate but doesnt explain how u capture\" — quote \"doesnt explain how u capture\" exact.\n\nc006: \"finished the tutorial and still have no idea what the gates actually do\" — quote \"still have no idea what the gates actually do\" exact.\n\nc001: \"Still dont get the difference between attacker and warden roles.\" quote exact.\n\nc063: \"the intro mission didnt teach me anything about what wins a round\" exact.\n\nc081: \"popup text in tutorial goes away on its own, couldnt finish reading it.\" quote \"popup text in tutorial goes away on its own\" exact.\n\nc052: \"the objective marker points through a wall\" — quote \"objective marker points through a wall\" exact substring.\n\nc021: \"never says which key it is\" exact.\n\nc098: \"the tutorial left me totally lost\" exact.\n\nc014: \"you respawn with no invuln\" quote \"respawn with no invuln\" exact.\n\nc034: \"spawn protection lasts maybe half a sec\" exact.\n\nc104: \"got spawn camped the entire second half\" exact.\n\nc038: \"Spawn killed 6 times on Cinder Yard.\" exact.\n\nc082: \"spawned on top of the enemy again\" quote \"spawned on top of the enemy\" exact.\n\nc024: \"spawns are broken\" exact.\n\nc118: \"why do i respawn behind enemy lines sometimes??\" quote \"respawn behind enemy lines\" exact.\n\nc110: \"the respawn logic is a joke\" exact.\n\nc045: \"Attackers spawn 5 seconds from the gate, defenders 20.\" exact.\n\nc044: \"one team gets a covered spawn and the other spawns out in the open\" exact.\n\nc039: \"red team effects and green team effects are the same mud to me\" exact.\n\nc108: \"poison on dark maps = invisible\" exact.\n\nc062: \"every effect is the same shade of orange\" exact.\n\nc064: \"is the stun telegraph even in the game?\" quote \"stun telegraph even in the game\" exact.\n\nc046: \"cant see Quill's poison cloud at all\" exact.\n\nc049: \"enemy and ally fire walls look the same\" exact.\n\nc026: \"the shield dome is see through\" quote \"shield dome is see through\" exact.\n\nc048: \"Tallis's ice ring is basically invisible\" exact.\n\nc093: \"insulting my accent\" exact.\n\nc060: \"calling me slurs over voice\" exact.\n\nc106: \"constant trash talk that goes way past trash talk\" exact.\n\nc018: \"voice is just 12 year olds yelling insults\" exact.\n\nc109: \"why is there no way to report someone for what they say on mic?\" quote \"no way to report someone for what they say on mic\" exact.\n\nc061: fix.\n\nc053: \"reported a dude for racist stuff he said on comms, nothing happened\" quote \"reported a dude for racist stuff he said on comms, nothing happened\" exact.\n\nc035: \"Back button takes you to the main screen instead of one level back\" exact.\n\nc027: \"where do i even see my stats?\" quote \"where do i even see my stats\" exact.\n\nc115: \"The menus make no sense to me\" exact.\n\nc095: \"menus are a maze\" exact.\n\nc015: \"took me 10 min to find where to change my hero loadout\" exact.\n\nc020: \"The settings are spread over 3 different screens\" quote \"settings are spread over 3 different screens\" exact.\n\nc071: \"store, pass, vault, stash, locker.. which one has my skins??\" quote \"which one has my skins\" exact.\n\nc079: \"UI is a mess\" exact.\n\nc067: \"grind is brutal\" exact.\n\nc085: \"the next reward is 30 levels away\" exact.\n\nc005: \"unlocking anything takes forever\" exact.\n\nc074: \"Level 30 to 31 took me three evenings\" exact.\n\nc072: \"Daily quests give almost nothing\" exact.\n\nc097: \"the level grind is slow enough already\" exact.\n\nc028: \"took me 40 hours to unlock the second hero tier\" exact.\n\nc101: \"gate pass math doesnt work\" exact.\n\nc092: \"waited like 20 minutes at 9pm on a saturday\" exact.\n\nc087: \"solo q in EU is dead after midnight\" exact.\n\nc102: \"q basically never pops\" exact.\n\nc112: \"15 min queue is killing me\" exact.\n\nc017: \"wait to get in a match is way too long on console\" exact.\n\nc051: \"never find a game in under 10 minutes\" exact.\n\nc043: \"queue times are insane\" exact.\n\nc004: \"Searching... searching... searching...\" exact.\n\nc033: \"matchmaking took forever again\" exact.\n\nc031: \"estimated wait 2:00 when I've been in queue 11 minutes\" exact.\n\nc047: \"performance gets worse the longer i play\" exact.\n\nc075: \"turns into a slideshow\" exact.\n\nc025: \"getting hitches every 30 seconds or so\" exact.\n\nc103: \"massive stutter on cinder yard\" exact.\n\nc083: \"stuttering after patch\" exact.\n\nc070: \"nowhere near 60 in big fights\" exact.\n\nc113: \"framerate dropped so hard in overtime\" exact.\n\nc076: \"still dipping to the 30s during team fights\" exact.\n\nc016: \"choppy as hell on steam deck\" exact.\n\nc003: \"beautiful slideshow every time a team fight starts\" exact.\n\nc116: \"fps tanks to like 20 whenever more than 3 people fight at once\" exact.\n\nc073: \"picture just freezes for half a sec when someone ults\" exact.\n\nUnassigned ok. Output full JSON.",
+                  "format": "unknown",
+                  "index": 0
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 3838,
+          "completion_tokens": 3160,
+          "total_tokens": 6998,
+          "cost": 0.002418676,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 2048,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.002418676,
+            "upstream_inference_prompt_cost": 0.000364676,
+            "upstream_inference_completions_cost": 0.002054
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1561,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      },
+      "output": {
+        "themes": [
+          {
+            "comments": [
+              {
+                "id": "c094",
+                "quote": "tutorial skipped the part about the respawn beacon"
+              },
+              {
+                "id": "c111",
+                "quote": "nothing about the actual objective"
+              },
+              {
+                "id": "c009",
+                "quote": "doesnt explain how u capture"
+              },
+              {
+                "id": "c006",
+                "quote": "still have no idea what the gates actually do"
+              },
+              {
+                "id": "c001",
+                "quote": "Still dont get the difference between attacker and warden roles"
+              },
+              {
+                "id": "c063",
+                "quote": "intro mission didnt teach me anything about what wins a round"
+              },
+              {
+                "id": "c081",
+                "quote": "popup text in tutorial goes away on its own"
+              },
+              {
+                "id": "c052",
+                "quote": "objective marker points through a wall"
+              },
+              {
+                "id": "c021",
+                "quote": "never says which key it is"
+              },
+              {
+                "id": "c098",
+                "quote": "tutorial left me totally lost"
+              }
+            ],
+            "name": "Tutorial and onboarding unclear",
+            "severity": "high",
+            "summary": "New players say the tutorial does not explain core objectives, roles, keys or menus. Tutorial text and voice lines also create confusion."
+          },
+          {
+            "comments": [
+              {
+                "id": "c014",
+                "quote": "respawn with no invuln"
+              },
+              {
+                "id": "c034",
+                "quote": "spawn protection lasts maybe half a sec"
+              },
+              {
+                "id": "c104",
+                "quote": "got spawn camped the entire second half"
+              },
+              {
+                "id": "c038",
+                "quote": "Spawn killed 6 times on Cinder Yard"
+              },
+              {
+                "id": "c082",
+                "quote": "spawned on top of the enemy"
+              },
+              {
+                "id": "c024",
+                "quote": "spawns are broken"
+              },
+              {
+                "id": "c118",
+                "quote": "respawn behind enemy lines"
+              },
+              {
+                "id": "c110",
+                "quote": "respawn logic is a joke"
+              },
+              {
+                "id": "c045",
+                "quote": "Attackers spawn 5 seconds from the gate, defenders 20"
+              },
+              {
+                "id": "c044",
+                "quote": "one team gets a covered spawn and the other spawns out in the open"
+              }
+            ],
+            "name": "Spawn safety, camping and imbalance",
+            "severity": "high",
+            "summary": "Players report unfair spawns, weak spawn protection and frequent spawn camping. Some maps give one side much safer or faster spawns."
+          },
+          {
+            "comments": [
+              {
+                "id": "c039",
+                "quote": "red team effects and green team effects are the same mud to me"
+              },
+              {
+                "id": "c108",
+                "quote": "poison on dark maps = invisible"
+              },
+              {
+                "id": "c062",
+                "quote": "every effect is the same shade of orange"
+              },
+              {
+                "id": "c064",
+                "quote": "stun telegraph even in the game"
+              },
+              {
+                "id": "c046",
+                "quote": "cant see Quill's poison cloud at all"
+              },
+              {
+                "id": "c049",
+                "quote": "enemy and ally fire walls look the same"
+              },
+              {
+                "id": "c026",
+                "quote": "shield dome is see through"
+              },
+              {
+                "id": "c048",
+                "quote": "Tallis's ice ring is basically invisible"
+              }
+            ],
+            "name": "Visual clarity and accessibility of effects",
+            "severity": "high",
+            "summary": "Players cannot reliably see or distinguish key effects such as poison, fire walls, domes and stuns. Colorblind players also struggle to tell teams apart."
+          },
+          {
+            "comments": [
+              {
+                "id": "c093",
+                "quote": "insulting my accent"
+              },
+              {
+                "id": "c060",
+                "quote": "calling me slurs over voice"
+              },
+              {
+                "id": "c106",
+                "quote": "constant trash talk that goes way past trash talk"
+              },
+              {
+                "id": "c018",
+                "quote": "voice is just 12 year olds yelling insults"
+              },
+              {
+                "id": "c109",
+                "quote": "no way to report someone for what they say on mic"
+              },
+              {
+                "id": "c061",
+                "quote": "i have to mute team every game bc of the abuse"
+              },
+              {
+                "id": "c053",
+                "quote": "reported a dude for racist stuff he said on comms, nothing happened"
+              }
+            ],
+            "name": "Voice harassment and weak reporting",
+            "severity": "high",
+            "summary": "Players report insults, slurs and threats over voice chat. They also say reporting feels absent or ineffective."
+          },
+          {
+            "comments": [
+              {
+                "id": "c035",
+                "quote": "Back button takes you to the main screen instead of one level back"
+              },
+              {
+                "id": "c027",
+                "quote": "where do i even see my stats"
+              },
+              {
+                "id": "c115",
+                "quote": "The menus make no sense to me"
+              },
+              {
+                "id": "c095",
+                "quote": "menus are a maze"
+              },
+              {
+                "id": "c015",
+                "quote": "took me 10 min to find where to change my hero loadout"
+              },
+              {
+                "id": "c020",
+                "quote": "settings are spread over 3 different screens"
+              },
+              {
+                "id": "c071",
+                "quote": "which one has my skins"
+              },
+              {
+                "id": "c079",
+                "quote": "UI is a mess"
+              }
+            ],
+            "name": "Menus and navigation confusing",
+            "severity": "medium",
+            "summary": "Players find menus cluttered, inconsistent and hard to navigate. Common tasks like stats, loadouts, settings and skins are hard to find."
+          },
+          {
+            "comments": [
+              {
+                "id": "c067",
+                "quote": "grind is brutal"
+              },
+              {
+                "id": "c085",
+                "quote": "next reward is 30 levels away"
+              },
+              {
+                "id": "c005",
+                "quote": "unlocking anything takes forever"
+              },
+              {
+                "id": "c074",
+                "quote": "Level 30 to 31 took me three evenings"
+              },
+              {
+                "id": "c072",
+                "quote": "Daily quests give almost nothing"
+              },
+              {
+                "id": "c097",
+                "quote": "the level grind is slow enough already"
+              },
+              {
+                "id": "c028",
+                "quote": "took me 40 hours to unlock the second hero tier"
+              },
+              {
+                "id": "c101",
+                "quote": "gate pass math doesnt work"
+              }
+            ],
+            "name": "Progression and rewards too slow",
+            "severity": "medium",
+            "summary": "Players report very slow unlocks and weak reward pacing for heroes, skins and passes. Some say the grind feels like a second job."
+          },
+          {
+            "comments": [
+              {
+                "id": "c092",
+                "quote": "waited like 20 minutes at 9pm on a saturday"
+              },
+              {
+                "id": "c087",
+                "quote": "solo q in EU is dead after midnight"
+              },
+              {
+                "id": "c102",
+                "quote": "q basically never pops"
+              },
+              {
+                "id": "c112",
+                "quote": "15 min queue is killing me"
+              },
+              {
+                "id": "c017",
+                "quote": "wait to get in a match is way too long on console"
+              },
+              {
+                "id": "c051",
+                "quote": "never find a game in under 10 minutes"
+              },
+              {
+                "id": "c043",
+                "quote": "queue times are insane"
+              },
+              {
+                "id": "c004",
+                "quote": "Searching... searching... searching..."
+              },
+              {
+                "id": "c033",
+                "quote": "matchmaking took forever again"
+              },
+              {
+                "id": "c031",
+                "quote": "estimated wait 2:00 when I've been in queue 11 minutes"
+              }
+            ],
+            "name": "Long queue times and matchmaking waits",
+            "severity": "high",
+            "summary": "Players frequently wait many minutes or longer for matches across regions and platforms. Queue estimates also feel inaccurate."
+          },
+          {
+            "comments": [
+              {
+                "id": "c047",
+                "quote": "performance gets worse the longer i play"
+              },
+              {
+                "id": "c075",
+                "quote": "turns into a slideshow"
+              },
+              {
+                "id": "c025",
+                "quote": "getting hitches every 30 seconds or so"
+              },
+              {
+                "id": "c103",
+                "quote": "massive stutter on cinder yard"
+              },
+              {
+                "id": "c083",
+                "quote": "stuttering after patch"
+              },
+              {
+                "id": "c070",
+                "quote": "nowhere near 60 in big fights"
+              },
+              {
+                "id": "c113",
+                "quote": "framerate dropped so hard in overtime"
+              },
+              {
+                "id": "c076",
+                "quote": "still dipping to the 30s during team fights"
+              },
+              {
+                "id": "c016",
+                "quote": "choppy as hell on steam deck"
+              },
+              {
+                "id": "c003",
+                "quote": "beautiful slideshow every time a team fight starts"
+              },
+              {
+                "id": "c116",
+                "quote": "fps tanks to like 20 whenever more than 3 people fight at once"
+              },
+              {
+                "id": "c073",
+                "quote": "picture just freezes for half a sec when someone ults"
+              }
+            ],
+            "name": "Performance, stutter and low FPS",
+            "severity": "high",
+            "summary": "Players report stutter, hitches and severe frame drops during fights or overtime. Performance also degrades over time and after patches."
+          }
+        ],
+        "unassigned": [
+          "c007",
+          "c056",
+          "c058",
+          "c068",
+          "c084",
+          "c099",
+          "c119"
+        ]
+      }
+    }
+  ],
+  "output": {
+    "themes": [
+      {
+        "comments": [
+          {
+            "id": "c094",
+            "quote": "tutorial skipped the part about the respawn beacon"
+          },
+          {
+            "id": "c111",
+            "quote": "nothing about the actual objective"
+          },
+          {
+            "id": "c009",
+            "quote": "doesnt explain how u capture"
+          },
+          {
+            "id": "c006",
+            "quote": "still have no idea what the gates actually do"
+          },
+          {
+            "id": "c001",
+            "quote": "Still dont get the difference between attacker and warden roles"
+          },
+          {
+            "id": "c063",
+            "quote": "intro mission didnt teach me anything about what wins a round"
+          },
+          {
+            "id": "c081",
+            "quote": "popup text in tutorial goes away on its own"
+          },
+          {
+            "id": "c052",
+            "quote": "objective marker points through a wall"
+          },
+          {
+            "id": "c021",
+            "quote": "never says which key it is"
+          },
+          {
+            "id": "c098",
+            "quote": "tutorial left me totally lost"
+          }
+        ],
+        "name": "Tutorial and onboarding unclear",
+        "severity": "high",
+        "summary": "New players say the tutorial does not explain core objectives, roles, keys or menus. Tutorial text and voice lines also create confusion."
+      },
+      {
+        "comments": [
+          {
+            "id": "c014",
+            "quote": "respawn with no invuln"
+          },
+          {
+            "id": "c034",
+            "quote": "spawn protection lasts maybe half a sec"
+          },
+          {
+            "id": "c104",
+            "quote": "got spawn camped the entire second half"
+          },
+          {
+            "id": "c038",
+            "quote": "Spawn killed 6 times on Cinder Yard"
+          },
+          {
+            "id": "c082",
+            "quote": "spawned on top of the enemy"
+          },
+          {
+            "id": "c024",
+            "quote": "spawns are broken"
+          },
+          {
+            "id": "c118",
+            "quote": "respawn behind enemy lines"
+          },
+          {
+            "id": "c110",
+            "quote": "respawn logic is a joke"
+          },
+          {
+            "id": "c045",
+            "quote": "Attackers spawn 5 seconds from the gate, defenders 20"
+          },
+          {
+            "id": "c044",
+            "quote": "one team gets a covered spawn and the other spawns out in the open"
+          }
+        ],
+        "name": "Spawn safety, camping and imbalance",
+        "severity": "high",
+        "summary": "Players report unfair spawns, weak spawn protection and frequent spawn camping. Some maps give one side much safer or faster spawns."
+      },
+      {
+        "comments": [
+          {
+            "id": "c039",
+            "quote": "red team effects and green team effects are the same mud to me"
+          },
+          {
+            "id": "c108",
+            "quote": "poison on dark maps = invisible"
+          },
+          {
+            "id": "c062",
+            "quote": "every effect is the same shade of orange"
+          },
+          {
+            "id": "c064",
+            "quote": "stun telegraph even in the game"
+          },
+          {
+            "id": "c046",
+            "quote": "cant see Quill's poison cloud at all"
+          },
+          {
+            "id": "c049",
+            "quote": "enemy and ally fire walls look the same"
+          },
+          {
+            "id": "c026",
+            "quote": "shield dome is see through"
+          },
+          {
+            "id": "c048",
+            "quote": "Tallis's ice ring is basically invisible"
+          }
+        ],
+        "name": "Visual clarity and accessibility of effects",
+        "severity": "high",
+        "summary": "Players cannot reliably see or distinguish key effects such as poison, fire walls, domes and stuns. Colorblind players also struggle to tell teams apart."
+      },
+      {
+        "comments": [
+          {
+            "id": "c093",
+            "quote": "insulting my accent"
+          },
+          {
+            "id": "c060",
+            "quote": "calling me slurs over voice"
+          },
+          {
+            "id": "c106",
+            "quote": "constant trash talk that goes way past trash talk"
+          },
+          {
+            "id": "c018",
+            "quote": "voice is just 12 year olds yelling insults"
+          },
+          {
+            "id": "c109",
+            "quote": "no way to report someone for what they say on mic"
+          },
+          {
+            "id": "c061",
+            "quote": "i have to mute team every game bc of the abuse"
+          },
+          {
+            "id": "c053",
+            "quote": "reported a dude for racist stuff he said on comms, nothing happened"
+          }
+        ],
+        "name": "Voice harassment and weak reporting",
+        "severity": "high",
+        "summary": "Players report insults, slurs and threats over voice chat. They also say reporting feels absent or ineffective."
+      },
+      {
+        "comments": [
+          {
+            "id": "c035",
+            "quote": "Back button takes you to the main screen instead of one level back"
+          },
+          {
+            "id": "c027",
+            "quote": "where do i even see my stats"
+          },
+          {
+            "id": "c115",
+            "quote": "The menus make no sense to me"
+          },
+          {
+            "id": "c095",
+            "quote": "menus are a maze"
+          },
+          {
+            "id": "c015",
+            "quote": "took me 10 min to find where to change my hero loadout"
+          },
+          {
+            "id": "c020",
+            "quote": "settings are spread over 3 different screens"
+          },
+          {
+            "id": "c071",
+            "quote": "which one has my skins"
+          },
+          {
+            "id": "c079",
+            "quote": "UI is a mess"
+          }
+        ],
+        "name": "Menus and navigation confusing",
+        "severity": "medium",
+        "summary": "Players find menus cluttered, inconsistent and hard to navigate. Common tasks like stats, loadouts, settings and skins are hard to find."
+      },
+      {
+        "comments": [
+          {
+            "id": "c067",
+            "quote": "grind is brutal"
+          },
+          {
+            "id": "c085",
+            "quote": "next reward is 30 levels away"
+          },
+          {
+            "id": "c005",
+            "quote": "unlocking anything takes forever"
+          },
+          {
+            "id": "c074",
+            "quote": "Level 30 to 31 took me three evenings"
+          },
+          {
+            "id": "c072",
+            "quote": "Daily quests give almost nothing"
+          },
+          {
+            "id": "c097",
+            "quote": "the level grind is slow enough already"
+          },
+          {
+            "id": "c028",
+            "quote": "took me 40 hours to unlock the second hero tier"
+          },
+          {
+            "id": "c101",
+            "quote": "gate pass math doesnt work"
+          }
+        ],
+        "name": "Progression and rewards too slow",
+        "severity": "medium",
+        "summary": "Players report very slow unlocks and weak reward pacing for heroes, skins and passes. Some say the grind feels like a second job."
+      },
+      {
+        "comments": [
+          {
+            "id": "c092",
+            "quote": "waited like 20 minutes at 9pm on a saturday"
+          },
+          {
+            "id": "c087",
+            "quote": "solo q in EU is dead after midnight"
+          },
+          {
+            "id": "c102",
+            "quote": "q basically never pops"
+          },
+          {
+            "id": "c112",
+            "quote": "15 min queue is killing me"
+          },
+          {
+            "id": "c017",
+            "quote": "wait to get in a match is way too long on console"
+          },
+          {
+            "id": "c051",
+            "quote": "never find a game in under 10 minutes"
+          },
+          {
+            "id": "c043",
+            "quote": "queue times are insane"
+          },
+          {
+            "id": "c004",
+            "quote": "Searching... searching... searching..."
+          },
+          {
+            "id": "c033",
+            "quote": "matchmaking took forever again"
+          },
+          {
+            "id": "c031",
+            "quote": "estimated wait 2:00 when I've been in queue 11 minutes"
+          }
+        ],
+        "name": "Long queue times and matchmaking waits",
+        "severity": "high",
+        "summary": "Players frequently wait many minutes or longer for matches across regions and platforms. Queue estimates also feel inaccurate."
+      },
+      {
+        "comments": [
+          {
+            "id": "c047",
+            "quote": "performance gets worse the longer i play"
+          },
+          {
+            "id": "c075",
+            "quote": "turns into a slideshow"
+          },
+          {
+            "id": "c025",
+            "quote": "getting hitches every 30 seconds or so"
+          },
+          {
+            "id": "c103",
+            "quote": "massive stutter on cinder yard"
+          },
+          {
+            "id": "c083",
+            "quote": "stuttering after patch"
+          },
+          {
+            "id": "c070",
+            "quote": "nowhere near 60 in big fights"
+          },
+          {
+            "id": "c113",
+            "quote": "framerate dropped so hard in overtime"
+          },
+          {
+            "id": "c076",
+            "quote": "still dipping to the 30s during team fights"
+          },
+          {
+            "id": "c016",
+            "quote": "choppy as hell on steam deck"
+          },
+          {
+            "id": "c003",
+            "quote": "beautiful slideshow every time a team fight starts"
+          },
+          {
+            "id": "c116",
+            "quote": "fps tanks to like 20 whenever more than 3 people fight at once"
+          },
+          {
+            "id": "c073",
+            "quote": "picture just freezes for half a sec when someone ults"
+          }
+        ],
+        "name": "Performance, stutter and low FPS",
+        "severity": "high",
+        "summary": "Players report stutter, hitches and severe frame drops during fights or overtime. Performance also degrades over time and after patches."
+      }
+    ],
+    "unassigned": [
+      "c007",
+      "c056",
+      "c058",
+      "c068",
+      "c084",
+      "c099",
+      "c119"
+    ]
+  },
+  "schemaValid": true,
+  "verification": {
+    "themes": [
+      {
+        "comments": [
+          {
+            "id": "c094",
+            "quote": "tutorial skipped the part about the respawn beacon",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c111",
+            "quote": "nothing about the actual objective",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c009",
+            "quote": "doesnt explain how u capture",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c006",
+            "quote": "still have no idea what the gates actually do",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c001",
+            "quote": "Still dont get the difference between attacker and warden roles",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c063",
+            "quote": "intro mission didnt teach me anything about what wins a round",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c081",
+            "quote": "popup text in tutorial goes away on its own",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c052",
+            "quote": "objective marker points through a wall",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c021",
+            "quote": "never says which key it is",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c098",
+            "quote": "tutorial left me totally lost",
+            "verified": true,
+            "problem": null
+          }
+        ],
+        "name": "Tutorial and onboarding unclear",
+        "severity": "high",
+        "summary": "New players say the tutorial does not explain core objectives, roles, keys or menus. Tutorial text and voice lines also create confusion."
+      },
+      {
+        "comments": [
+          {
+            "id": "c014",
+            "quote": "respawn with no invuln",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c034",
+            "quote": "spawn protection lasts maybe half a sec",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c104",
+            "quote": "got spawn camped the entire second half",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c038",
+            "quote": "Spawn killed 6 times on Cinder Yard",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c082",
+            "quote": "spawned on top of the enemy",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c024",
+            "quote": "spawns are broken",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c118",
+            "quote": "respawn behind enemy lines",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c110",
+            "quote": "respawn logic is a joke",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c045",
+            "quote": "Attackers spawn 5 seconds from the gate, defenders 20",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c044",
+            "quote": "one team gets a covered spawn and the other spawns out in the open",
+            "verified": true,
+            "problem": null
+          }
+        ],
+        "name": "Spawn safety, camping and imbalance",
+        "severity": "high",
+        "summary": "Players report unfair spawns, weak spawn protection and frequent spawn camping. Some maps give one side much safer or faster spawns."
+      },
+      {
+        "comments": [
+          {
+            "id": "c039",
+            "quote": "red team effects and green team effects are the same mud to me",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c108",
+            "quote": "poison on dark maps = invisible",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c062",
+            "quote": "every effect is the same shade of orange",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c064",
+            "quote": "stun telegraph even in the game",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c046",
+            "quote": "cant see Quill's poison cloud at all",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c049",
+            "quote": "enemy and ally fire walls look the same",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c026",
+            "quote": "shield dome is see through",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c048",
+            "quote": "Tallis's ice ring is basically invisible",
+            "verified": true,
+            "problem": null
+          }
+        ],
+        "name": "Visual clarity and accessibility of effects",
+        "severity": "high",
+        "summary": "Players cannot reliably see or distinguish key effects such as poison, fire walls, domes and stuns. Colorblind players also struggle to tell teams apart."
+      },
+      {
+        "comments": [
+          {
+            "id": "c093",
+            "quote": "insulting my accent",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c060",
+            "quote": "calling me slurs over voice",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c106",
+            "quote": "constant trash talk that goes way past trash talk",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c018",
+            "quote": "voice is just 12 year olds yelling insults",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c109",
+            "quote": "no way to report someone for what they say on mic",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c061",
+            "quote": "i have to mute team every game bc of the abuse",
+            "verified": false,
+            "problem": "altered"
+          },
+          {
+            "id": "c053",
+            "quote": "reported a dude for racist stuff he said on comms, nothing happened",
+            "verified": true,
+            "problem": null
+          }
+        ],
+        "name": "Voice harassment and weak reporting",
+        "severity": "high",
+        "summary": "Players report insults, slurs and threats over voice chat. They also say reporting feels absent or ineffective."
+      },
+      {
+        "comments": [
+          {
+            "id": "c035",
+            "quote": "Back button takes you to the main screen instead of one level back",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c027",
+            "quote": "where do i even see my stats",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c115",
+            "quote": "The menus make no sense to me",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c095",
+            "quote": "menus are a maze",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c015",
+            "quote": "took me 10 min to find where to change my hero loadout",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c020",
+            "quote": "settings are spread over 3 different screens",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c071",
+            "quote": "which one has my skins",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c079",
+            "quote": "UI is a mess",
+            "verified": true,
+            "problem": null
+          }
+        ],
+        "name": "Menus and navigation confusing",
+        "severity": "medium",
+        "summary": "Players find menus cluttered, inconsistent and hard to navigate. Common tasks like stats, loadouts, settings and skins are hard to find."
+      },
+      {
+        "comments": [
+          {
+            "id": "c067",
+            "quote": "grind is brutal",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c085",
+            "quote": "next reward is 30 levels away",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c005",
+            "quote": "unlocking anything takes forever",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c074",
+            "quote": "Level 30 to 31 took me three evenings",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c072",
+            "quote": "Daily quests give almost nothing",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c097",
+            "quote": "the level grind is slow enough already",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c028",
+            "quote": "took me 40 hours to unlock the second hero tier",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c101",
+            "quote": "gate pass math doesnt work",
+            "verified": true,
+            "problem": null
+          }
+        ],
+        "name": "Progression and rewards too slow",
+        "severity": "medium",
+        "summary": "Players report very slow unlocks and weak reward pacing for heroes, skins and passes. Some say the grind feels like a second job."
+      },
+      {
+        "comments": [
+          {
+            "id": "c092",
+            "quote": "waited like 20 minutes at 9pm on a saturday",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c087",
+            "quote": "solo q in EU is dead after midnight",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c102",
+            "quote": "q basically never pops",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c112",
+            "quote": "15 min queue is killing me",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c017",
+            "quote": "wait to get in a match is way too long on console",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c051",
+            "quote": "never find a game in under 10 minutes",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c043",
+            "quote": "queue times are insane",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c004",
+            "quote": "Searching... searching... searching...",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c033",
+            "quote": "matchmaking took forever again",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c031",
+            "quote": "estimated wait 2:00 when I've been in queue 11 minutes",
+            "verified": true,
+            "problem": null
+          }
+        ],
+        "name": "Long queue times and matchmaking waits",
+        "severity": "high",
+        "summary": "Players frequently wait many minutes or longer for matches across regions and platforms. Queue estimates also feel inaccurate."
+      },
+      {
+        "comments": [
+          {
+            "id": "c047",
+            "quote": "performance gets worse the longer i play",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c075",
+            "quote": "turns into a slideshow",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c025",
+            "quote": "getting hitches every 30 seconds or so",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c103",
+            "quote": "massive stutter on cinder yard",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c083",
+            "quote": "stuttering after patch",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c070",
+            "quote": "nowhere near 60 in big fights",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c113",
+            "quote": "framerate dropped so hard in overtime",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c076",
+            "quote": "still dipping to the 30s during team fights",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c016",
+            "quote": "choppy as hell on steam deck",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c003",
+            "quote": "beautiful slideshow every time a team fight starts",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c116",
+            "quote": "fps tanks to like 20 whenever more than 3 people fight at once",
+            "verified": true,
+            "problem": null
+          },
+          {
+            "id": "c073",
+            "quote": "picture just freezes for half a sec when someone ults",
+            "verified": true,
+            "problem": null
+          }
+        ],
+        "name": "Performance, stutter and low FPS",
+        "severity": "high",
+        "summary": "Players report stutter, hitches and severe frame drops during fights or overtime. Performance also degrades over time and after patches."
+      }
+    ],
+    "unassigned": [
+      "c007",
+      "c056",
+      "c058",
+      "c068",
+      "c084",
+      "c099",
+      "c119"
+    ],
+    "failures": [
+      {
+        "type": "altered",
+        "id": "c061"
+      }
+    ],
+    "quotesTotal": 73,
+    "quotesVerified": 72
+  },
+  "tokens": 18007,
+  "cost": 0.008216842,
+  "stopped": null
+}

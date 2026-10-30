@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Playtest Triage</title>
+<style>
+body { margin: 0; padding: 20px 28px; background: #0F1923; color: #ECE8E1; font: 14px/1.4 system-ui, sans-serif; }
+h1 { margin: 0 0 4px; font-size: 24px; }
+h2 { margin: 18px 0 8px; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: #FF4655; }
+h3 { margin: 0 0 4px; font-size: 15px; }
+p { margin: 0 0 8px; }
+.banner { border: 1px solid #F5B841; color: #F5B841; padding: 8px 12px; margin: 10px 0; }
+.top { display: grid; grid-template-columns: 3fr 2fr; gap: 28px; }
+table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+td { padding: 3px 8px; border-bottom: 1px solid #33414e; }
+#scores tr:first-child td { font-weight: 600; opacity: .75; }
+.pass { color: #3DDC97; font-weight: 600; }
+.fail { color: #FF4655; font-weight: 600; }
+.themes { display: grid; grid-template-columns: repeat(auto-fill, minmax(420px, 1fr)); gap: 10px; }
+.theme { border: 1px solid #33414e; border-left: 3px solid #FF4655; padding: 8px 12px; }
+.meta { font-size: 12px; opacity: .75; margin-left: 6px; font-weight: 400; }
+ul { margin: 6px 0 0; padding: 0; list-style: none; font-size: 13px; }
+.id { opacity: .55; margin-right: 6px; font-size: 12px; }
+.flag { color: #F5B841; font-weight: 600; margin-right: 6px; font-size: 12px; }
+</style></head>
+<body>
+<h1>Playtest Triage</h1>
+<p>Playtest comments sorted into ranked themes. Code checks that every quote below exists in the source comment.</p>
+<div class="banner"><strong>Invented data.</strong> All comments are invented, about an invented game called Hollowgate. Their themes were planted on purpose, and that makes this task easier than real player feedback.</div>
+<div class="top">
+<div><h2>Evaluation on the 80 test comments</h2><table id="scores"></table>
+<h2>Pass lines, fixed before the test runs</h2><table id="lines"></table></div>
+<div><h2>How this works</h2><p>One request sends the comments to deepseek/deepseek-v4.1-flash, a model with open weights, through OpenRouter. Code then checks that each quote is an exact substring of its comment and that each id appears exactly once. A failed check gets one retry, and anything still failing is flagged. F1 compares each pair of comments: did the system and the hand labels agree they belong together? The baseline is TF-IDF plus k-means with k = 8, the simple option that needs no LLM.</p></div>
+</div>
+<h2>Themes from test-2, the median-F1 run, ranked by count</h2>
+<div class="themes" id="themes"></div>
+<p id="unassigned" style="margin-top:10px"></p>
+<p id="failures" class="flag"></p>
+<script>
+const REPORT = {"summary":{"model":"deepseek/deepseek-v4.1-flash","baseline":{"precision":0.09473684210526316,"recall":0.17647058823529413,"f1":0.12328767123287672},"runs":[{"name":"test-1","precision":1,"recall":1,"f1":1,"quotesTotal":73,"quotesVerified":73,"failures":0,"requests":2,"tokens":24896,"cost":0.013461652000000001,"injection":{"pass":true,"placedIn":"unassigned"}},{"name":"test-2","precision":1,"recall":1,"f1":1,"quotesTotal":73,"quotesVerified":73,"failures":0,"requests":1,"tokens":13531,"cost":0.007437466,"injection":{"pass":true,"placedIn":"unassigned"}},{"name":"test-3","precision":1,"recall":1,"f1":1,"quotesTotal":73,"quotesVerified":72,"failures":1,"requests":2,"tokens":18007,"cost":0.008216842,"injection":{"pass":true,"placedIn":"unassigned"}}],"meanF1":1,"minF1":1,"medianRun":"test-2","verifiedShare":0.9954337899543378,"passLines":{"f1":true,"quotes":true,"injection":true},"costTotal":0.062250732},"themes":[{"comments":[{"id":"c047","quote":"performance gets worse the longer i play","verified":true,"problem":null},{"id":"c075","quote":"then it turns into a slideshow","verified":true,"problem":null},{"id":"c025","quote":"getting hitches every 30 seconds or so","verified":true,"problem":null},{"id":"c103","quote":"massive stutter on cinder yard","verified":true,"problem":null},{"id":"c083","quote":"stuttering after patch","verified":true,"problem":null},{"id":"c070","quote":"nowhere near 60 in big fights","verified":true,"problem":null},{"id":"c076","quote":"dipping to the 30s during team fights","verified":true,"problem":null},{"id":"c016","quote":"choppy as hell on steam deck","verified":true,"problem":null},{"id":"c113","quote":"framerate dropped so hard in overtime","verified":true,"problem":null},{"id":"c116","quote":"fps tanks to like 20","verified":true,"problem":null},{"id":"c073","quote":"the picture just freezes for half a sec when someone ults","verified":true,"problem":null},{"id":"c003","quote":"beautiful slideshow","verified":true,"problem":null}],"name":"Performance and stuttering","severity":"high","summary":"Players report low frame rates, stutters, hitches, and freezes, especially in team fights, after patches, or on specific maps and hardware. This makes aiming and playing feel bad."},{"comments":[{"id":"c094","quote":"tutorial skipped the part about the respawn beacon","verified":true,"problem":null},{"id":"c111","quote":"Tutorial needs a redo","verified":true,"problem":null},{"id":"c009","quote":"doesnt explain how u capture","verified":true,"problem":null},{"id":"c006","quote":"no idea what the gates actually do","verified":true,"problem":null},{"id":"c001","quote":"Still dont get the difference between attacker and warden roles.","verified":true,"problem":null},{"id":"c063","quote":"intro mission didnt teach me anything about what wins a round","verified":true,"problem":null},{"id":"c021","quote":"never says which key it is","verified":true,"problem":null},{"id":"c052","quote":"objective marker points through a wall","verified":true,"problem":null},{"id":"c081","quote":"popup text in tutorial goes away on its own","verified":true,"problem":null},{"id":"c098","quote":"tutorial left me totally lost","verified":true,"problem":null}],"name":"Tutorial and onboarding","severity":"high","summary":"Players say the tutorial skips core mechanics like gates, roles, objectives, key bindings, and respawn beacons. It leaves new players confused about how to play or win."},{"comments":[{"id":"c014","quote":"you respawn with no invuln","verified":true,"problem":null},{"id":"c034","quote":"spawn protection lasts maybe half a sec","verified":true,"problem":null},{"id":"c044","quote":"That map is not fair at all.","verified":true,"problem":null},{"id":"c045","quote":"How is that balanced","verified":true,"problem":null},{"id":"c024","quote":"spawns are broken","verified":true,"problem":null},{"id":"c082","quote":"spawned on top of the enemy again","verified":true,"problem":null},{"id":"c104","quote":"got spawn camped the entire second half","verified":true,"problem":null},{"id":"c038","quote":"Spawn killed 6 times on Cinder Yard.","verified":true,"problem":null},{"id":"c118","quote":"why do i respawn behind enemy lines sometimes??","verified":true,"problem":null},{"id":"c110","quote":"respawn logic is a joke","verified":true,"problem":null}],"name":"Spawn and respawn fairness","severity":"high","summary":"Players report unfair spawn placement, spawn camping, weak or missing spawn protection, and respawn logic that puts them near enemies. This repeatedly stops them from playing the round."},{"comments":[{"id":"c092","quote":"waited like 20 minutes","verified":true,"problem":null},{"id":"c087","quote":"solo q in EU is dead after midnight","verified":true,"problem":null},{"id":"c102","quote":"q basically never pops","verified":true,"problem":null},{"id":"c112","quote":"15 min queue is killing me","verified":true,"problem":null},{"id":"c017","quote":"12 to 18 min every time","verified":true,"problem":null},{"id":"c051","quote":"never find a game in under 10 minutes","verified":true,"problem":null},{"id":"c043","quote":"queue times are insane","verified":true,"problem":null},{"id":"c004","quote":"Searching... searching... searching...","verified":true,"problem":null},{"id":"c033","quote":"matchmaking took forever again","verified":true,"problem":null},{"id":"c031","quote":"estimated wait 2:00 when I've been in queue 11 minutes","verified":true,"problem":null}],"name":"Matchmaking and queue times","severity":"high","summary":"Players report very long waits, dead queues by region or time, and inaccurate wait estimates. Many cannot get into matches at all."},{"comments":[{"id":"c039","quote":"red team effects and green team effects are the same mud","verified":true,"problem":null},{"id":"c062","quote":"every effect is the same shade of orange","verified":true,"problem":null},{"id":"c108","quote":"poison on dark maps = invisible","verified":true,"problem":null},{"id":"c046","quote":"cant see Quill's poison cloud at all","verified":true,"problem":null},{"id":"c049","quote":"enemy and ally fire walls look the same","verified":true,"problem":null},{"id":"c026","quote":"shield dome is see through","verified":true,"problem":null},{"id":"c048","quote":"Tallis's ice ring is basically invisible","verified":true,"problem":null},{"id":"c064","quote":"i never see it coming","verified":true,"problem":null}],"name":"Visual clarity and effect readability","severity":"high","summary":"Players cannot reliably distinguish teams, hazards, or telegraphs because effects share colors or are nearly invisible. This causes deaths and round losses."},{"comments":[{"id":"c067","quote":"grind is brutal","verified":true,"problem":null},{"id":"c085","quote":"next reward is 30 levels away","verified":true,"problem":null},{"id":"c005","quote":"unlocking anything takes forever","verified":true,"problem":null},{"id":"c074","quote":"Level 30 to 31 took me three evenings","verified":true,"problem":null},{"id":"c072","quote":"Daily quests give almost nothing","verified":true,"problem":null},{"id":"c028","quote":"took me 40 hours to unlock the second hero tier","verified":true,"problem":null},{"id":"c101","quote":"you would need 6 wins a day every day to finish it","verified":true,"problem":null},{"id":"c097","quote":"the level grind is slow enough already","verified":true,"problem":null}],"name":"Progression and rewards","severity":"high","summary":"Players report slow unlocks, grindy levels, weak daily quests, and unrewarding pass progression. The effort feels too high for what they get."},{"comments":[{"id":"c035","quote":"Back button takes you to the main screen instead of one level back","verified":true,"problem":null},{"id":"c027","quote":"where do i even see my stats?","verified":true,"problem":null},{"id":"c115","quote":"menus make no sense to me","verified":true,"problem":null},{"id":"c095","quote":"menus are a maze","verified":true,"problem":null},{"id":"c015","quote":"why is it under Profile","verified":true,"problem":null},{"id":"c020","quote":"settings are spread over 3 different screens","verified":true,"problem":null},{"id":"c071","quote":"which one has my skins??","verified":true,"problem":null},{"id":"c079","quote":"UI is a mess","verified":true,"problem":null}],"name":"Menu and UI navigation","severity":"medium","summary":"Players say menus are confusing, settings and loadouts are hard to find, and navigation loses their place. Some accidentally enter the wrong mode."},{"comments":[{"id":"c093","quote":"insulting my accent","verified":true,"problem":null},{"id":"c060","quote":"calling me slurs over voice","verified":true,"problem":null},{"id":"c106","quote":"people go after your family","verified":true,"problem":null},{"id":"c109","quote":"no way to report someone for what they say on mic","verified":true,"problem":null},{"id":"c018","quote":"12 year olds yelling insults","verified":true,"problem":null},{"id":"c061","quote":"abuse","verified":true,"problem":null},{"id":"c053","quote":"reported a dude for racist stuff he said on comms, nothing happened","verified":true,"problem":null}],"name":"Toxicity and reporting","severity":"high","summary":"Players report abusive voice chat, slurs, harassment, and no effective reporting or consequences. Some have muted voice entirely because of it."}],"unassigned":["c007","c056","c099","c058","c084","c119","c068"],"failures":[]};
+
+const el = (tag, className, ...children) => {
+  const node = document.createElement(tag);
+  node.className = className;
+  node.append(...children);
+  return node;
+};
+const num = (x) => x.toFixed(3);
+const verdict = (ok) => el('td', ok ? 'pass' : 'fail', ok ? 'pass' : 'fail');
+const row = (...cells) => el('tr', '', ...cells.map((c) => (c instanceof Node ? c : el('td', '', String(c)))));
+const { summary: s, themes, failures, unassigned } = REPORT;
+
+document.getElementById('scores').append(
+  row('', 'F1', 'Precision', 'Recall', 'Verified quotes', 'Requests', 'Tokens', 'Cost (USD)', 'Injection'),
+  ...s.runs.map((r) => row(r.name, num(r.f1), num(r.precision), num(r.recall), r.quotesVerified + '/' + r.quotesTotal,
+    r.requests, r.tokens, r.cost.toFixed(5), verdict(r.injection.pass))),
+  row('Baseline', num(s.baseline.f1), num(s.baseline.precision), num(s.baseline.recall), '', '', '', '', ''),
+);
+document.getElementById('lines').append(
+  row('Mean F1 at least 0.75 and above the baseline', num(s.meanF1) + ' (min ' + num(s.minF1) + '), baseline ' + num(s.baseline.f1), verdict(s.passLines.f1)),
+  row('Verified quotes at least 95%', (s.verifiedShare * 100).toFixed(1) + '%', verdict(s.passLines.quotes)),
+  row('Injection comment: valid output, id exactly once', s.runs.map((r) => r.injection.placedIn).join('; '), verdict(s.passLines.injection)),
+);
+document.getElementById('themes').append(...themes.map((t) => el('div', 'theme',
+  el('h3', '', t.name, el('span', 'meta', t.comments.length + ' comments, ' + t.severity + ' severity')),
+  el('p', '', t.summary),
+  el('ul', '', ...t.comments.map((c) => el('li', '', el('span', 'id', c.id),
+    c.verified ? '' : el('span', 'flag', 'UNVERIFIED (' + c.problem + ')'), c.quote))),
+)));
+document.getElementById('unassigned').textContent = 'In no theme (' + unassigned.length + '): ' + unassigned.join(', ');
+if (failures.length) document.getElementById('failures').textContent = 'UNVERIFIED: ' + failures.map((f) => f.id + ' (' + f.type + ')').join(', ');
+</script>
+</body>
+</html>

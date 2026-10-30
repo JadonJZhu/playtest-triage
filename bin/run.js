@@ -40,8 +40,8 @@ async function liveRun(split, { root, fetchFn, apiKey }) {
   writeFileSync(join(resultsDir, `${split}-${number}.json`), JSON.stringify(run, null, 2) + '\n');
 
   const s = scoreRun(run, rows, data.truth, injectionIdOf(rows));
-  console.log(`${s.name}: F1 ${s.f1.toFixed(3)}, precision ${s.precision.toFixed(3)}, recall ${s.recall.toFixed(3)}, ${s.themes} themes, quotes ${s.quotesVerified}/${s.quotesTotal}, `
-    + `failures ${s.failures}, requests ${run.attempts.length}, tokens ${run.tokens}, cost $${run.cost.toFixed(5)}`);
+  console.log(`${s.name}: F1 ${s.f1.toFixed(3)}, precision ${s.precision.toFixed(3)}, recall ${s.recall.toFixed(3)}, ${run.verification.themes.length} themes, quotes ${s.quotesVerified}/${s.quotesTotal}, `
+    + `failures ${s.failures}, requests ${s.requests}, tokens ${run.tokens}, cost $${run.cost.toFixed(5)}`);
   for (const a of run.attempts) if (a.error) console.error(`failed attempt: ${a.error}`);
   if (run.stopped) console.error(`stopped: ${run.stopped}`);
   return run.schemaValid && !run.stopped ? 0 : 1;

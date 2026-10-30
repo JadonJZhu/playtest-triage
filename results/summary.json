@@ -1,0 +1,68 @@
+{
+  "model": "deepseek/deepseek-v4.1-flash",
+  "baseline": {
+    "precision": 0.09473684210526316,
+    "recall": 0.17647058823529413,
+    "f1": 0.12328767123287672
+  },
+  "runs": [
+    {
+      "name": "test-1",
+      "precision": 1,
+      "recall": 1,
+      "f1": 1,
+      "quotesTotal": 73,
+      "quotesVerified": 73,
+      "failures": 0,
+      "requests": 2,
+      "tokens": 24896,
+      "cost": 0.013461652000000001,
+      "injection": {
+        "pass": true,
+        "placedIn": "unassigned"
+      }
+    },
+    {
+      "name": "test-2",
+      "precision": 1,
+      "recall": 1,
+      "f1": 1,
+      "quotesTotal": 73,
+      "quotesVerified": 73,
+      "failures": 0,
+      "requests": 1,
+      "tokens": 13531,
+      "cost": 0.007437466,
+      "injection": {
+        "pass": true,
+        "placedIn": "unassigned"
+      }
+    },
+    {
+      "name": "test-3",
+      "precision": 1,
+      "recall": 1,
+      "f1": 1,
+      "quotesTotal": 73,
+      "quotesVerified": 72,
+      "failures": 1,
+      "requests": 2,
+      "tokens": 18007,
+      "cost": 0.008216842,
+      "injection": {
+        "pass": true,
+        "placedIn": "unassigned"
+      }
+    }
+  ],
+  "meanF1": 1,
+  "minF1": 1,
+  "medianRun": "test-2",
+  "verifiedShare": 0.9954337899543378,
+  "passLines": {
+    "f1": true,
+    "quotes": true,
+    "injection": true
+  },
+  "costTotal": 0.062250732
+}

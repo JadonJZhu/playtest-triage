@@ -35,10 +35,10 @@ const row = (...cells) => el('tr', '', ...cells.map((c) => (c instanceof Node ? 
 const { summary: s, themes, failures, unassigned } = REPORT;
 
 document.getElementById('scores').append(
-  row('', 'F1', 'Precision', 'Recall', 'Verified quotes', 'Tokens', 'Cost (USD)', 'Injection'),
+  row('', 'F1', 'Precision', 'Recall', 'Verified quotes', 'Requests', 'Tokens', 'Cost (USD)', 'Injection'),
   ...s.runs.map((r) => row(r.name, num(r.f1), num(r.precision), num(r.recall), r.quotesVerified + '/' + r.quotesTotal,
-    r.tokens, r.cost.toFixed(5), verdict(r.injection.pass))),
-  row('Baseline', num(s.baseline.f1), num(s.baseline.precision), num(s.baseline.recall), '', '', '', ''),
+    r.requests, r.tokens, r.cost.toFixed(5), verdict(r.injection.pass))),
+  row('Baseline', num(s.baseline.f1), num(s.baseline.precision), num(s.baseline.recall), '', '', '', '', ''),
 );
 document.getElementById('lines').append(
   row('Mean F1 at least 0.75 and above the baseline', num(s.meanF1) + ' (min ' + num(s.minF1) + '), baseline ' + num(s.baseline.f1), verdict(s.passLines.f1)),
@@ -72,7 +72,7 @@ export function buildReport(summary, medianRun) {
 <div class="top">
 <div><h2>Evaluation on the 80 test comments</h2><table id="scores"></table>
 <h2>Pass lines, fixed before the test runs</h2><table id="lines"></table></div>
-<div><h2>How this works</h2><p>One request sends the comments to ${summary.model}, a model with open weights, through OpenRouter. Code then checks that each quote is an exact substring of its comment and that each id appears exactly once, and flags anything that fails. F1 compares each pair of comments: did the system and the hand labels agree they belong together? The baseline is TF-IDF plus k-means with k = 8, the simple option that needs no LLM.</p></div>
+<div><h2>How this works</h2><p>One request sends the comments to ${summary.model}, a model with open weights, through OpenRouter. Code then checks that each quote is an exact substring of its comment and that each id appears exactly once. A failed check gets one retry, and anything still failing is flagged. F1 compares each pair of comments: did the system and the hand labels agree they belong together? The baseline is TF-IDF plus k-means with k = 8, the simple option that needs no LLM.</p></div>
 </div>
 <h2>Themes from ${summary.medianRun}, the median-F1 run, ranked by count</h2>
 <div class="themes" id="themes"></div>

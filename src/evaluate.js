@@ -44,7 +44,7 @@ export function scoreRun(run, rows, truth, injectionId) {
     quotesTotal: v.quotesTotal,
     quotesVerified: v.quotesVerified,
     failures: v.failures.length,
-    themes: v.themes.length,
+    requests: run.attempts.length,
     tokens: run.tokens,
     cost: run.cost,
     injection: injectionResult(run, injectionId),

@@ -32,7 +32,7 @@ export function tfidfVectors(texts) {
   });
 }
 
-const dot = (a, b) => a.reduce((sum, x, i) => sum + x * b[i], 0);
+const squaredDistance = (a, b) => a.reduce((sum, x, i) => sum + (x - b[i]) ** 2, 0);
 
 function kmeansOnce(vectors, k, random) {
   const picks = new Set();
@@ -41,8 +41,8 @@ function kmeansOnce(vectors, k, random) {
   let assignment = [];
   for (let iteration = 0; iteration < 50; iteration++) {
     const next = vectors.map((v) => {
-      const scores = centers.map((c) => dot(v, c));
-      return scores.indexOf(Math.max(...scores));
+      const distances = centers.map((c) => squaredDistance(v, c));
+      return distances.indexOf(Math.min(...distances));
     });
     if (next.join() === assignment.join()) break;
     assignment = next;
@@ -52,8 +52,8 @@ function kmeansOnce(vectors, k, random) {
       return center.map((_, d) => members.reduce((sum, m) => sum + m[d], 0) / members.length);
     });
   }
-  const fit = vectors.reduce((sum, v, i) => sum + dot(v, centers[assignment[i]]), 0);
-  return { assignment, fit };
+  const spread = vectors.reduce((sum, v, i) => sum + squaredDistance(v, centers[assignment[i]]), 0);
+  return { assignment, spread };
 }
 
 // Returns { id: clusterNumber }. Keeps the best of 10 random starts.
@@ -63,7 +63,7 @@ export function baselineClusters(rows, k = 8, seed = 42) {
   let best = null;
   for (let start = 0; start < 10; start++) {
     const result = kmeansOnce(vectors, k, random);
-    if (!best || result.fit > best.fit) best = result;
+    if (!best || result.spread < best.spread) best = result;
   }
   return Object.fromEntries(rows.map((row, i) => [row.id, best.assignment[i]]));
 }
