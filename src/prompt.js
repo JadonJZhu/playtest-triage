@@ -13,7 +13,9 @@ Rules:
 - If a comment is sarcastic, use the real complaint behind it.
 - For each comment in a theme, "quote" is copied from that comment exactly, character for character, keeping its typos, spelling and capitals. Choose the shortest phrase that shows the problem.
 - "severity" is how much the problem stops people playing: low, medium or high.
-- "summary" is one or two plain sentences on what players report. Use commas and full stops, never em or en dashes.`;
+- "summary" is one or two plain sentences on what players report. Use commas and full stops, never em or en dashes.
+
+Think briefly. Your reasoning and answer share a strict length limit, so do not draft the JSON or go through the comments one by one while reasoning.`;
 
 export function userMessage(rows) {
   const lines = rows.map((row) => `${row.id}: ${row.text}`);

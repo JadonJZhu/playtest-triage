@@ -41,7 +41,7 @@ async function liveRun(split, { root, fetchFn, apiKey }) {
 
   const s = scoreRun(run, rows, data.truth, injectionIdOf(rows));
   console.log(`${s.name}: F1 ${s.f1.toFixed(3)}, precision ${s.precision.toFixed(3)}, recall ${s.recall.toFixed(3)}, ${s.themes} themes, quotes ${s.quotesVerified}/${s.quotesTotal}, `
-    + `failures ${s.failures}, requests ${run.attempts.length}, tokens ${run.tokens}, cost ${run.cost.toFixed(5)}`);
+    + `failures ${s.failures}, requests ${run.attempts.length}, tokens ${run.tokens}, cost $${run.cost.toFixed(5)}`);
   for (const a of run.attempts) if (a.error) console.error(`failed attempt: ${a.error}`);
   if (run.stopped) console.error(`stopped: ${run.stopped}`);
   return run.schemaValid && !run.stopped ? 0 : 1;
@@ -68,7 +68,7 @@ function report({ root }) {
   const medianRun = testRuns.find((r) => `test-${r.number}` === summary.medianRun);
   mkdirSync(join(root, 'docs'), { recursive: true });
   writeFileSync(join(root, 'docs', 'index.html'), buildReport(summary, medianRun));
-  console.log(`mean F1 ${summary.meanF1.toFixed(3)}, min ${summary.minF1.toFixed(3)}, baseline ${baseline.f1.toFixed(3)}, verified quotes ${(summary.verifiedShare * 100).toFixed(1)}%, total spend ${summary.costTotal.toFixed(4)}`);
+  console.log(`mean F1 ${summary.meanF1.toFixed(3)}, min ${summary.minF1.toFixed(3)}, baseline ${baseline.f1.toFixed(3)}, verified quotes ${(summary.verifiedShare * 100).toFixed(1)}%, total spend $${summary.costTotal.toFixed(4)}`);
   return 0;
 }
 
