@@ -7,7 +7,7 @@ h2 { margin: 18px 0 8px; font-size: 13px; letter-spacing: .08em; text-transform:
 h3 { margin: 0 0 4px; font-size: 15px; }
 p { margin: 0 0 8px; }
 .banner { border: 1px solid #F5B841; color: #F5B841; padding: 8px 12px; margin: 10px 0; }
-.top { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 520px), 1fr)); gap: 28px; }
+.top { display: flex; flex-wrap: wrap; gap: 28px; } .top > :first-child { flex: 3 1 680px; min-width: 0; } .top > :last-child { flex: 2 1 320px; min-width: 0; }
 table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; } #scores { display: block; overflow-x: auto; }
 td { padding: 3px 8px; border-bottom: 1px solid #33414e; }
 #scores tr:first-child td { font-weight: 600; opacity: .75; }
