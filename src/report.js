@@ -68,11 +68,11 @@ export function buildReport(summary, medianRun) {
 <body>
 <h1>Playtest Triage</h1>
 <p>Proof-of-concept: use an LLM to categorize playtest comments into themes for easier downstream processing.</p>
-<div class="banner">All comments about an invented game called Hollowgate.</div>
+<div class="banner">All comments are about an invented game called Hollowgate.</div>
 <div class="top">
 <div><h2>Evaluation on the 80 test comments</h2><table id="scores"></table>
 <h2>Pass lines, fixed before the test runs</h2><table id="lines"></table></div>
-<div><h2>How this works</h2><p>What is being tested: can an LLM sort playtest comments into the same themes a person would? 120 comments about Hollowgate were written with 8 themes planted in them and labelled by hand. The prompt was tuned on 40; the other 80 are the test, run 3 times. Code checks every quote the model gives.</p><p>Scoring looks at every pair of comments: did the model and the labels agree they belong together? Precision is how often the model's pairs are right, recall is how many right pairs it found, and F1 combines both into a score from 0 to 1. The baseline groups comments by shared words, with no LLM.</p></div>
+<div><h2>How this works</h2><p>What is being tested: can an LLM sort playtest comments into the same themes a person would? 120 comments about Hollowgate were written with 8 themes planted in them and labelled by hand. The prompt was tuned on 40 and then tested on the other 80. Deterministic code was then used to verify every quote the model provides.</p><p>Scoring looks at every pair of comments: did the model and the ground truth labels agree that they belong together? Precision is how often the model's pairs are correct, recall is how many of the correct pairs it actually found, and F1 is the harmonic mean of those two measurements. The baseline comparison groups comments by shared words, with no LLM.</p><p>In this test, we use ${summary.model}.</p></div>
 </div>
 <h2>Themes from ${summary.medianRun}, the median-F1 run, ranked by count</h2>
 <div class="themes" id="themes"></div>

@@ -67,7 +67,7 @@ test('whole pipeline: live run, results file, summary and report, with no networ
   assert.equal(summary.runs[0].cost, 0.001);
 
   const html = readFileSync(join(root, 'docs', 'index.html'), 'utf8');
-  assert.ok(html.includes('All comments about an invented game called Hollowgate.'));
+  assert.ok(html.includes('All comments are about an invented game called Hollowgate.'));
   assert.ok(html.includes('deepseek/deepseek-v4.1-flash'));
   assert.equal(html.match(/<script/g).length, 1);
 

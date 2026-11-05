@@ -55,5 +55,3 @@ The checks mattered more than the score. In test-1 the first response returned o
 - The quote check proves that a quote exists in its comment. It does not prove that the quote supports the theme.
 - The model spends most of its 16000 token limit on reasoning (up to 11506 tokens in one request), and a run gets only one retry. A run that fails twice scores 0.
 - Only one injection comment was tested, and a simple one. A comment containing the block's closing line, `COMMENTS>>>`, is not handled.
-
-Built with Claude Code.
