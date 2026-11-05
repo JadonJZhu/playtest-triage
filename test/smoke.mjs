@@ -21,10 +21,10 @@ page.on('request', (req) => { if (!req.url().startsWith('file:')) problems.push(
 await page.goto(page_url);
 
 assert.deepEqual(problems, []);
-assert.ok(await page.locator('.banner').innerText().then((t) => t.includes('Invented data')));
+assert.ok(await page.locator('.banner').innerText().then((t) => t === 'All comments about an invented game called Hollowgate.'));
 assert.ok(await page.locator('.theme').count() > 0, 'themes are drawn');
 assert.ok(await page.locator('#scores tr').count() >= 5, 'three runs and the baseline are in the table');
-assert.ok((await page.locator('body').innerText()).includes('open weights'));
+assert.ok((await page.locator('body').innerText()).includes('shared words, with no LLM'));
 
 await page.screenshot({ path: fileURLToPath(new URL('../docs/screenshot.png', import.meta.url)) });
 await browser.close();

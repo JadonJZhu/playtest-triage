@@ -63,16 +63,16 @@ export function buildReport(summary, medianRun) {
   return `<!doctype html>
 <html lang="en">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Playtest Triage</title>
+<title>Playtest Triage</title><link rel="icon" href="data:,">
 <style>${STYLE}</style></head>
 <body>
 <h1>Playtest Triage</h1>
-<p>Playtest comments sorted into ranked themes. Code checks that every quote below exists in the source comment.</p>
-<div class="banner"><strong>Invented data.</strong> All comments are invented, about an invented game called Hollowgate. Their themes were planted on purpose, and that makes this task easier than real player feedback.</div>
+<p>Proof-of-concept: use an LLM to categorize playtest comments into themes for easier downstream processing.</p>
+<div class="banner">All comments about an invented game called Hollowgate.</div>
 <div class="top">
 <div><h2>Evaluation on the 80 test comments</h2><table id="scores"></table>
 <h2>Pass lines, fixed before the test runs</h2><table id="lines"></table></div>
-<div><h2>How this works</h2><p>One request sends the comments to ${summary.model}, a model with open weights, through OpenRouter. Code then checks that each quote is an exact substring of its comment and that each id appears exactly once. A failed check gets one retry, and anything still failing is flagged. F1 compares each pair of comments: did the system and the hand labels agree they belong together? The baseline is TF-IDF plus k-means with k = 8, the simple option that needs no LLM.</p></div>
+<div><h2>How this works</h2><p>What is being tested: can an LLM sort playtest comments into the same themes a person would? 120 comments about Hollowgate were written with 8 themes planted in them and labelled by hand. The prompt was tuned on 40; the other 80 are the test, run 3 times. Code checks every quote the model gives.</p><p>Scoring looks at every pair of comments: did the model and the labels agree they belong together? Precision is how often the model's pairs are right, recall is how many right pairs it found, and F1 combines both into a score from 0 to 1. The baseline groups comments by shared words, with no LLM.</p></div>
 </div>
 <h2>Themes from ${summary.medianRun}, the median-F1 run, ranked by count</h2>
 <div class="themes" id="themes"></div>
